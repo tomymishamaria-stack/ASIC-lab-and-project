@@ -1,0 +1,54 @@
+Cadence Genus(TM) Synthesis Solution.
+Copyright 2022 Cadence Design Systems, Inc. All rights reserved worldwide.
+Cadence and the Cadence logo are registered trademarks and Genus is a trademark
+of Cadence Design Systems, Inc. in the United States and other countries.
+
+[12:37:09.328626] Configured Lic search path (21.01-s002): 5281@14.139.1.126:1717@14.139.1.126
+
+Version: 21.14-s082_1, built Thu Jun 23 02:02:08 PDT 2022
+Options: -files /home/vlsi12/24BVD1041/lab4/genus_structural_synthesis_labs/lab1_adder4_structural/scripts 
+Date:    Fri Jul 31 12:37:09 2026
+Host:    cad312vitcc.vit.ac.in (x86_64 w/Linux 4.18.0-553.89.1.el8_10.x86_64) (16cores*64cpus*2physical cpus*INTEL(R) XEON(R) GOLD 6526Y 38400KB) (2112776984KB)
+PID:     2040317
+OS:      Red Hat Enterprise Linux release 8.10 (Ootpa)
+
+Checkout succeeded: Genus_Synthesis/3FFB3787901511A9760E
+	License file: 5281@14.139.1.126
+	License Server: 5281@14.139.1.126
+
+[12:37:11.383498] Periodic Lic check successful
+[12:37:11.383504] Feature usage summary:
+[12:37:11.383504] Genus_Synthesis
+Checking out license: Genus_Synthesis
+
+
+***********************************************************************************************************
+***********************************************************************************************************
+
+
+
+Loading tool scripts...
+Another Ctrl-C within 1 second will terminate the tool.
+CURRENT RESOURCES: RT {elapsed: 5s, ST: 3s, FG: 3s, CPU: 100.0%}, MEM {curr: 0.9G, peak: 0.9G, phys curr: 0.1G, phys peak: 0.1G}, SYS {load: 1.3, cpu: 64, total: 2014.9G, free: 1911.6G}
+
+
+Another Ctrl-C within 1 second will terminate the tool.
+CURRENT RESOURCES: RT {elapsed: 7s, ST: 5s, FG: 5s, CPU: 100.0%}, MEM {curr: 1.0G, peak: 1.0G, phys curr: 0.1G, phys peak: 0.1G}, SYS {load: 1.3, cpu: 64, total: 2014.9G, free: 1911.5G}
+Finished loading tool scripts (6 seconds elapsed).
+
+#@ Processing -files option
+@genus 1> source /home/vlsi12/24BVD1041/lab4/genus_structural_synthesis_labs/lab1_adder4_structural/scripts
+File '/home/vlsi12/24BVD1041/lab4/genus_structural_synthesis_labs/lab1_adder4_structural/scripts' cannot be opened for reading.
+1
+Encountered problems processing file: /home/vlsi12/24BVD1041/lab4/genus_structural_synthesis_labs/lab1_adder4_structural/scripts
+WARNING: This version of the tool is 1498 days old.
+
+Another Ctrl-C within 1 second will terminate the tool.
+CURRENT RESOURCES: RT {elapsed: 17s, ST: 6s, FG: 6s, CPU: 57.7%}, MEM {curr: 1.0G, peak: 1.0G, phys curr: 0.2G, phys peak: 0.2G}, SYS {load: 1.3, cpu: 64, total: 2014.9G, free: 1912.6G}
+
+Another Ctrl-C within 1 second will terminate the tool.
+CURRENT RESOURCES: RT {elapsed: 18s, ST: 6s, FG: 6s, CPU: 57.7%}, MEM {curr: 1.0G, peak: 1.0G, phys curr: 0.2G, phys peak: 0.2G}, SYS {load: 1.3, cpu: 64, total: 2014.9G, free: 1912.7G}
+
+Another Ctrl-C within 1 second will terminate the tool.
+CURRENT RESOURCES: RT {elapsed: 19s, ST: 6s, FG: 6s, CPU: 57.7%}, MEM {curr: 1.0G, peak: 1.0G, phys curr: 0.2G, phys peak: 0.2G}, SYS {load: 1.3, cpu: 64, total: 2014.9G, free: 1912.7G}
+Abnormal exit.

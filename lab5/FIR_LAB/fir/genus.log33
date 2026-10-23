@@ -1,0 +1,65 @@
+Cadence Genus(TM) Synthesis Solution.
+Copyright 2022 Cadence Design Systems, Inc. All rights reserved worldwide.
+Cadence and the Cadence logo are registered trademarks and Genus is a trademark
+of Cadence Design Systems, Inc. in the United States and other countries.
+
+[12:11:27.328562] Configured Lic search path (21.01-s002): 5281@14.139.1.126:1717@14.139.1.126
+
+Version: 21.14-s082_1, built Thu Jun 23 02:02:08 PDT 2022
+Options: -files fir_4taps.tcl 
+Date:    Wed Sep 09 12:11:27 2026
+Host:    cad312vitcc.vit.ac.in (x86_64 w/Linux 4.18.0-553.150.1.el8_10.x86_64) (16cores*64cpus*2physical cpus*INTEL(R) XEON(R) GOLD 6526Y 38400KB) (2112776988KB)
+PID:     4084293
+OS:      Red Hat Enterprise Linux release 8.10 (Ootpa)
+
+Checkout succeeded: Genus_Synthesis/3FFB3787901511A9760E
+	License file: 5281@14.139.1.126
+	License Server: 5281@14.139.1.126
+
+[12:11:30.431355] Periodic Lic check successful
+[12:11:30.431360] Feature usage summary:
+[12:11:30.431360] Genus_Synthesis
+Checking out license: Genus_Synthesis (3 seconds elapsed).
+
+
+***********************************************************************************************************
+***********************************************************************************************************
+
+
+
+Loading tool scripts...
+Finished loading tool scripts (6 seconds elapsed).
+
+#@ Processing -files option
+@genus 1> source fir_4taps.tcl
+#@ Begin verbose source ./fir_4taps.tcl
+@file(fir_4taps.tcl) 1: set TOP_MODULE "fir_4tap"
+@file(fir_4taps.tcl) 2: array set lib_search_path {
+    180nm /home/install/FOUNDRY/digital/180nm/dig/lib
+    90nm /home/install/FOUNDRY/digital/90nm/dig/lib
+    45nm /home/install/FOUNDRY/digital/45nm/dig/lib
+}
+@file(fir_4taps.tcl) 7: array set lib_files {
+    180nm,slow slow.lib
+    180nm,typical typical.lib
+    180nm,fast fast.lib
+    90nm,slow slow.lib
+    90nm,typical typical.lib
+    90nm,fast fast.lib
+    45nm,slow slow.lib
+    45nm,typical typical.lib
+    45nm,fast fast.lib
+}
+@file(fir_4taps.tcl) 18: set outdir "output/${node}/${corner}"
+#@ End verbose source ./fir_4taps.tcl
+can't read "node": no such variable
+Encountered problems processing file: fir_4taps.tcl
+WARNING: This version of the tool is 1538 days old.
+@genus:root: 2> exit
+
+Lic Summary:
+[12:13:11.012794] Cdslmd servers: cadence-c2s
+[12:13:11.012802] Feature usage summary:
+[12:13:11.012802] Genus_Synthesis
+
+Normal exit.

@@ -1,0 +1,134 @@
+Cadence Genus(TM) Synthesis Solution.
+Copyright 2022 Cadence Design Systems, Inc. All rights reserved worldwide.
+Cadence and the Cadence logo are registered trademarks and Genus is a trademark
+of Cadence Design Systems, Inc. in the United States and other countries.
+
+[18:34:16.328634] Configured Lic search path (21.01-s002): 5281@14.139.1.126:1717@14.139.1.126
+
+Version: 21.14-s082_1, built Thu Jun 23 02:02:08 PDT 2022
+Options: -batch -files /home/vlsi12/24BVD1041/lab5/FIR_LAB/fir/run_180nm_typical.tcl 
+Date:    Tue Sep 08 18:34:16 2026
+Host:    cad312vitcc.vit.ac.in (x86_64 w/Linux 4.18.0-553.150.1.el8_10.x86_64) (16cores*64cpus*2physical cpus*INTEL(R) XEON(R) GOLD 6526Y 38400KB) (2112776988KB)
+PID:     2617827
+OS:      Red Hat Enterprise Linux release 8.10 (Ootpa)
+
+Checkout succeeded: Genus_Synthesis/3FFB3787901511A9760E
+	License file: 5281@14.139.1.126
+	License Server: 5281@14.139.1.126
+
+[18:34:18.181729] Periodic Lic check successful
+[18:34:18.181738] Feature usage summary:
+[18:34:18.181739] Genus_Synthesis
+Checking out license: Genus_Synthesis
+
+
+***********************************************************************************************************
+***********************************************************************************************************
+
+
+
+Loading tool scripts...Using chipware dir from user defined $CW_DIR environment variable set to /home/install/GENUS211/tools.lnx86/lib/chipware
+Using chipware simulation model dir from user defined $CW_DIR_SIM environment variable set to /home/install/GENUS211/tools.lnx86/lib/chipware/sim
+
+Finished loading tool scripts (5 seconds elapsed).
+
+#@ Processing -files option
+@genus 1> source /home/vlsi12/24BVD1041/lab5/FIR_LAB/fir/run_180nm_typical.tcl
+#@ Begin verbose source /home/vlsi12/24BVD1041/lab5/FIR_LAB/fir/run_180nm_typical.tcl
+@file(run_180nm_typical.tcl) 1: puts ""
+
+@file(run_180nm_typical.tcl) 2: puts "============================================================"
+============================================================
+@file(run_180nm_typical.tcl) 3: puts " RUNNING 180nm - TYPICAL"
+ RUNNING 180nm - TYPICAL
+@file(run_180nm_typical.tcl) 4: puts "============================================================"
+============================================================
+@file(run_180nm_typical.tcl) 6: set TOP_MODULE "fir_4tap"
+@file(run_180nm_typical.tcl) 7: set RTL_FILE "fir_4tap.v"
+@file(run_180nm_typical.tcl) 8: set SDC_FILE "fir_4tap.sdc"
+@file(run_180nm_typical.tcl) 11: set_db init_lib_search_path {/home/install/FOUNDRY/digital/180nm/RC_Libs/libraries/lib/STDCELL}
+  Setting attribute of root '/': 'init_lib_search_path' = /home/install/FOUNDRY/digital/180nm/RC_Libs/libraries/lib/STDCELL
+@file(run_180nm_typical.tcl) 14: read_libs {typical.lib}
+
+Threads Configured:3
+
+  Message Summary for Library typical.lib:
+  ****************************************
+  An unsupported construct was detected in this library. [LBR-40]: 1
+  ****************************************
+ 
+Info    : Created nominal operating condition. [LBR-412]
+        : Operating condition '_nominal_' was created for the PVT values (1.000000, 1.200000, 25.000000) in library 'typical.lib'.
+        : The nominal operating condition is represented, either by the nominal PVT values specified in the library source (via nom_process,nom_voltage and nom_temperature respectively), or by the default PVT values (1.0,1.0,1.0).
+@file(run_180nm_typical.tcl) 17: read_hdl $RTL_FILE
+@file(run_180nm_typical.tcl) 20: elaborate
+Info    : Elaborating Design. [ELAB-1]
+        : Elaborating top-level block 'fir_4tap' from file 'fir_4tap.v'.
+Info    : Done Elaborating Design. [ELAB-3]
+        : Done elaborating 'fir_4tap'.
+Checking for analog nets...
+Check completed for analog nets.
+Checking for source RTL...
+Check completed for source RTL.
+Running Unified Mux Engine Tricks...
+Completed Unified Mux Engine Tricks
+
+Stage: post_elab
+--------------------------------------------------------
+| Trick             | Accepts | Rejects | Runtime (ms) | 
+--------------------------------------------------------
+| ume_constant_bmux |       0 |       0 |         0.00 | 
+--------------------------------------------------------
+Starting clip mux common data inputs [v1.0] (stage: post_elab, startdef: fir_4tap, recur: true)
+Completed clip mux common data inputs (accepts: 0, rejects: 0, runtime: 0.000s)
+Starting clip the non-user hierarchies [v2.0] (stage: post_elab, startdef: fir_4tap, recur: true)
+Completed clip the non-user hierarchies (accepts: 0, rejects: 0, runtime: 0.000s)
+
+Stage: post_elab
+---------------------------------------------------------
+| Transform          | Accepts | Rejects | Runtime (ms) | 
+---------------------------------------------------------
+| hlo_clip_mux_input |       0 |       0 |         0.00 | 
+| hlo_clip           |       0 |       0 |         0.00 | 
+---------------------------------------------------------
+UM:   flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+UM:*                                                                   elaborate
+@file(run_180nm_typical.tcl) 23: read_sdc $SDC_FILE
+Statistics for commands executed by read_sdc:
+ "create_clock"             - successful      1 , failed      0 (runtime  0.00)
+ "current_design"           - successful      2 , failed      0 (runtime  0.00)
+ "get_clocks"               - successful      4 , failed      0 (runtime  0.00)
+ "get_ports"                - successful      5 , failed      0 (runtime  0.00)
+ "set_clock_transition"     - successful      1 , failed      0 (runtime  0.00)
+ "set_clock_uncertainty"    - successful      1 , failed      0 (runtime  0.00)
+ "set_false_path"           - successful      1 , failed      0 (runtime  0.00)
+ "set_input_delay"          - successful      1 , failed      0 (runtime  0.00)
+ "set_load"                 - successful      1 , failed      0 (runtime  0.00)
+ "set_max_fanout"           - successful      1 , failed      0 (runtime  0.00)
+ "set_max_transition"       - successful      1 , failed      0 (runtime  0.00)
+ "set_output_delay"         - successful      1 , failed      0 (runtime  0.00)
+read_sdc completed in 00:00:00 (hh:mm:ss)
+@file(run_180nm_typical.tcl) 26: set_db syn_generic_effort medium
+  Setting attribute of root '/': 'syn_generic_effort' = medium
+@file(run_180nm_typical.tcl) 27: set_db syn_map_effort medium
+  Setting attribute of root '/': 'syn_map_effort' = medium
+@file(run_180nm_typical.tcl) 28: set_db syn_opt_effort medium
+  Setting attribute of root '/': 'syn_opt_effort' = medium
+@file(run_180nm_typical.tcl) 30: puts "Running syn_generic..."
+Running syn_generic...
+@file(run_180nm_typical.tcl) 31: syn_generic
+Error   : Cannot perform synthesis because libraries do not have usable inverters. [LBR-171] [syn_generic]
+        : Inverters are required for mapping. Ensure that the loaded libraries contain at least one usable inverter.
+Error   : Synthesis can't be performed because libraries do not have usable basic gates. [LBR-172] [syn_generic]
+        : At least one usable two-input and/or/nand/nor gate (module inversion at inputs) is required for mapping. Ensure that the loaded libraries contain at least one such cell. A library cell is considered not usable if it has a 'dont_use' or a 'dont_touch' attribute set to 'true' in the .lib files. Thus to make the cell usable, use 'set_attribute preserve false <libcell>' and 'set_attribute avoid false <libcell>'(in legacy_ui) or 'set_db <libcell> .preserve false' and 'set_db <libcell> .avoid false' (in common_ui)
+      flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+UM:*                                                                   syn_gen
+#@ End verbose source /home/vlsi12/24BVD1041/lab5/FIR_LAB/fir/run_180nm_typical.tcl
+1
+Encountered problems processing file: /home/vlsi12/24BVD1041/lab5/FIR_LAB/fir/run_180nm_typical.tcl
+
+Lic Summary:
+[18:34:23.479803] Cdslmd servers: cadence-c2s
+[18:34:23.479810] Feature usage summary:
+[18:34:23.479811] Genus_Synthesis
+

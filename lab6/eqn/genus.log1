@@ -1,0 +1,64 @@
+Cadence Genus(TM) Synthesis Solution.
+Copyright 2022 Cadence Design Systems, Inc. All rights reserved worldwide.
+Cadence and the Cadence logo are registered trademarks and Genus is a trademark
+of Cadence Design Systems, Inc. in the United States and other countries.
+
+[18:36:24.328642] Configured Lic search path (21.01-s002): 5281@14.139.1.126:1717@14.139.1.126
+
+Version: 21.14-s082_1, built Thu Jun 23 02:02:08 PDT 2022
+Options: -files alu_expr.tcl 
+Date:    Thu Oct 15 18:36:24 2026
+Host:    cad312vitcc.vit.ac.in (x86_64 w/Linux 4.18.0-553.150.1.el8_10.x86_64) (16cores*64cpus*2physical cpus*INTEL(R) XEON(R) GOLD 6526Y 38400KB) (2112776972KB)
+PID:     2754122
+OS:      Red Hat Enterprise Linux release 8.10 (Ootpa)
+
+Checkout succeeded: Genus_Synthesis/3FFB3787901511A9760E
+	License file: 5281@14.139.1.126
+	License Server: 5281@14.139.1.126
+
+[18:36:26.239344] Periodic Lic check successful
+[18:36:26.239346] Feature usage summary:
+[18:36:26.239347] Genus_Synthesis
+Checking out license: Genus_Synthesis
+
+
+***********************************************************************************************************
+***********************************************************************************************************
+
+
+
+Loading tool scripts...
+Finished loading tool scripts (6 seconds elapsed).
+
+#@ Processing -files option
+@genus 1> source alu_expr.tcl
+#@ Begin verbose source ./alu_expr.tcl
+@file(alu_expr.tcl) 9: set DESIGN alu_expr
+@file(alu_expr.tcl) 10: set RTL_FILE "./alu_expr.sv"
+@file(alu_expr.tcl) 11: set SDC_FILE "./alu_expr.sdc"
+@file(alu_expr.tcl) 14: set LIB_FILE /home/install/FOUNDRY/digital/90nm/dig/lib
+@file(alu_expr.tcl) 15: read_libs slow.lib
+Error   : File error. [FILE-100] [::legacy::set_attribute]
+        : Cannot open file 'slow.lib'
+        : Make sure that the file is a readable regular file and has the specified name.
+Error   : A library file does not exist. [LBR-68] [::legacy::set_attribute]
+        : File 'slow.lib' could not be found. File '<none>' was the last file that was successfully read in.
+        : Make sure that the library file exists or check for a typo in the file name.
+Error   : The data value for this attribute is invalid. [TUI-24] [::legacy::set_attribute]
+        : The value '  { slow.lib } ' cannot be set for attribute 'library'.
+        : To see the usage/description for this attribute, type '::legacy::set_attribute -h <attr_name> *' (in legacy UI mode) or 'help * <attr_name> -detail' (in CUI mode).
+#@ End verbose source ./alu_expr.tcl
+1
+Encountered problems processing file: alu_expr.tcl
+WARNING: This version of the tool is 1575 days old.
+
+Another Ctrl-C within 1 second will terminate the tool.
+CURRENT RESOURCES: RT {elapsed: 21s, ST: 6s, FG: 6s, CPU: 48.9%}, MEM {curr: 1.0G, peak: 1.0G, phys curr: 0.2G, phys peak: 0.2G}, SYS {load: 3.7, cpu: 64, total: 2014.9G, free: 1610.1G}
+@genus:root: 2> exit
+
+Lic Summary:
+[18:36:46.131249] Cdslmd servers: cadence-c2s
+[18:36:46.131257] Feature usage summary:
+[18:36:46.131257] Genus_Synthesis
+
+Normal exit.

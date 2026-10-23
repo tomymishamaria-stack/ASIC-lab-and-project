@@ -1,0 +1,6 @@
+General information about this run 
+-- piranha worklib.mux_verygood:module
+-- TOOL:	cfe64	15.20.s086..-()
+-- cfe64 Build : Mon Dec  7 22:53:08 IST 2020 ldvopt223
+-- Options : +TOOLNAME halsynth -HAL ALL -BB_SIG_SIZE 16384 +DISABLE -MULTI_DRIVEN_REG TRI -NOLOG +PRIM_TRI +FSM_RULE_CHECKS -SYNTHESIS ALL -IGNORE_COMB_INIT -VITAL_BLACKBOX +MDARRAY_ON -DEFINES /home/install/INCISIVE152/tools/hal/files/hal.def -DUMP +RULES_LIST +HAL_SIDEFILE hal.log -PRAGMA ALL -cdslib /home/vlsi12/24BVD1041/lab2/lab/HAL_MUX_ALU_Labs/HAL_MUX_ALU_Labs/HAL_MUX/cds.lib worklib.mux_verygood:module
+-- SMV File is :/home/vlsi12/24BVD1041/lab2/lab/HAL_MUX_ALU_Labs/HAL_MUX_ALU_Labs/HAL_MUX/INCA_libs/worklib/mux_verygood/module/mux_verygood.smv

@@ -1,0 +1,98 @@
+module tb_alu_expr;
+
+    logic [7:0] A, B, C, D;
+    logic signed [10:0] Y;
+
+    integer expected;
+    integer i;
+    integer errors;
+
+    alu_expr dut (
+        .A(A),
+        .B(B),
+        .C(C),
+        .D(D),
+        .Y(Y)
+    );
+
+    task automatic check_result(
+        input logic [7:0] a_in,
+        input logic [7:0] b_in,
+        input logic [7:0] c_in,
+        input logic [7:0] d_in
+    );
+        begin
+            A = a_in;
+            B = b_in;
+            C = c_in;
+            D = d_in;
+
+            #1;
+
+            expected = a_in + b_in + c_in - d_in;
+
+            if ($signed(Y) !== expected) begin
+                $error(
+                    "FAIL: A=%0d B=%0d C=%0d D=%0d Y=%0d Expected=%0d",
+                    A, B, C, D, $signed(Y), expected
+                );
+                errors = errors + 1;
+            end
+        end
+    endtask
+
+    initial begin
+        errors = 0;
+
+        // Test 1: All zeros
+        check_result(0, 0, 0, 0);
+
+        // Test 2: Maximum positive result
+        check_result(255, 255, 255, 0);
+
+        // Test 3: Minimum result
+        check_result(0, 0, 0, 255);
+
+        // Test 4: All inputs at maximum
+        check_result(255, 255, 255, 255);
+
+        // Test 5: Result exactly zero
+        check_result(100, 50, 25, 175);
+
+        // Test 6: Negative result
+        check_result(10, 20, 30, 200);
+
+        // Test 7: Carry-related boundaries
+        check_result(127, 1, 0, 0);
+        check_result(255, 1, 0, 0);
+        check_result(128, 128, 0, 0);
+
+        // Test 8: Subtraction boundaries
+        check_result(0, 0, 128, 129);
+        check_result(255, 0, 0, 254);
+
+        // Test 9: Exercise each input independently
+        check_result(255, 0, 0, 0);
+        check_result(0, 255, 0, 0);
+        check_result(0, 0, 255, 0);
+        check_result(0, 0, 0, 255);
+
+        // Test 10: Randomized testing
+        for (i = 0; i < 1000; i = i + 1) begin
+            check_result(
+                $urandom_range(0, 255),
+                $urandom_range(0, 255),
+                $urandom_range(0, 255),
+                $urandom_range(0, 255)
+            );
+        end
+
+        if (errors == 0)
+            $display("PASS: All test cases passed.");
+        else
+            $display("FAIL: %0d errors detected.", errors);
+
+        $finish;
+    end
+
+endmodule

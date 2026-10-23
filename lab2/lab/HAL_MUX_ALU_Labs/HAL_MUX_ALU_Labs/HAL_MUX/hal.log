@@ -1,0 +1,74 @@
+hal(64): 15.20-s086: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+hal: Options:   -cdslib /home/vlsi12/24BVD1041/lab2/lab/HAL_MUX_ALU_Labs/HAL_MUX_ALU_Labs/HAL_MUX/cds.lib -logfile hal.log worklib.mux_verygood:module.
+hal: Snapshot:  worklib.mux_verygood:module.
+hal: Workspace: /home/vlsi12/24BVD1041/lab2/lab/HAL_MUX_ALU_Labs/HAL_MUX_ALU_Labs/HAL_MUX.
+hal: Date: Wed Jul 29 11:56:37 IST 2026.
+
+hal: Running on elaborated SNAPSHOT.....
+
+  ==========================================================================
+Performing lint checks 
+
+halcheck(64): 15.20-s086: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+visadev(64): 15.20-s086: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+module mux_verygood #(
+|
+halcheck: *N,PRTCNT (./mux_verygood.v,1|0): Module/Entity 'mux_verygood' contains '6' ports.
+halcheck: (./mux_verygood.v,1): Number of Input ports: 5.
+halcheck: (./mux_verygood.v,1): Number of Output ports: 1.
+halcheck: Total errors   = 0.
+halcheck: Total warnings = 0.
+
+  ==========================================================================
+Performing synthesizability checks 
+
+cfe64: 15.20.s086..-(): (c) Copyright 1995 - 2020 Cadence Design Systems, Inc.
+cfe64 Build : Mon Dec  7 22:53:08 IST 2020 ldvopt223
+halsynth: Loading design snapshot....
+halsynth: Traversing design hierarchy....
+halsynth: Total errors   = 0.
+halsynth: Total warnings = 0.
+
+  ==========================================================================
+Performing structural checks 
+
+halstruct(64): 15.20-s086: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+visadev(64): 15.20-s086: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+            reg_a <= a;
+|
+halstruct: *N,FFASRT (./mux_verygood.v,23|0): Flip-flop 'reg_a' has an asynchronous reset 'rst_n'.
+    input wire clk,
+|
+halstruct: *N,CLKINF (./mux_verygood.v,4|0): Signal 'mux_verygood.clk' was inferred as clock.
+halstruct: (./mux_verygood.v,4): Clock source is signal 'mux_verygood.clk'.
+halstruct: (./mux_verygood.v,23): Drives the flip-flop 'mux_verygood.reg_a'.
+            reg_b <= b;
+|
+halstruct: *N,FFASRT (./mux_verygood.v,24|0): Flip-flop 'reg_b' has an asynchronous reset 'rst_n'.
+            reg_sel <= sel;
+|
+halstruct: *N,FFASRT (./mux_verygood.v,25|0): Flip-flop 'reg_sel' has an asynchronous reset 'rst_n'.
+                y <= reg_b;
+|
+halstruct: *N,FFASRT (./mux_verygood.v,38|0): Flip-flop 'y' has an asynchronous reset 'rst_n'.
+module mux_verygood #(
+|
+halstruct: *N,NUMDFF (./mux_verygood.v,1|0): Number of single-bit D flip-flops present in the hierarchy is 13.
+halstruct: Design facts generated in 'hal.design_facts'.
+halstruct: Total errors   = 0.
+halstruct: Total warnings = 0.
+
+  ==========================================================================
+
+Analysis summary :
+
+ Notes    : (7)
+  CLKINF (1)      FFASRT (4)      NUMDFF (1)      PRTCNT (1)     
+
+Analysis complete.
+
+ ==========================================================================
+
+To analyze results, run following command :
+    ncbrowse -64bit -cdslib /home/vlsi12/24BVD1041/lab2/lab/HAL_MUX_ALU_Labs/HAL_MUX_ALU_Labs/HAL_MUX/cds.lib -sortby severity -sortby category -sortby tag hal.log
+

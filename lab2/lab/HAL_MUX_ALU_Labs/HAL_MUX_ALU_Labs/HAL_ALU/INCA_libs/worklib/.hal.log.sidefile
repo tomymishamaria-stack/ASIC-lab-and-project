@@ -1,0 +1,353 @@
+hal: Options:   -cdslib /home/vlsi12/24BVD1041/lab2/lab/HAL_MUX_ALU_Labs/HAL_MUX_ALU_Labs/HAL_ALU/cds.lib -logfile hal.log worklib.alu_verygood:module.
+hal: Snapshot:  worklib.alu_verygood:module.
+hal: Workspace: /home/vlsi12/24BVD1041/lab2/lab/HAL_MUX_ALU_Labs/HAL_MUX_ALU_Labs/HAL_ALU.
+hal: Date: Wed Jul 29 12:02:27 IST 2026.
+hal: Running on elaborated SNAPSHOT.....
+hal: *M,_SCOPE: __dummy_top
+halcheck: *M,_SCOPE: alu_verygood
+halcheck: *N,PRTCNT (./rtl/alu_verygood.v,1|0): Module/Entity 'alu_verygood' contains '6' ports.
+halcheck: (./rtl/alu_verygood.v,1): Number of Input ports: 5.
+halcheck: (./rtl/alu_verygood.v,1): Number of Output ports: 1.
+halcheck: *N,IDLENG (./rtl/alu_verygood.v,18|0): Identifier name 'proc_input_register' is not of appropriate length (4 to 16 characters).
+halcheck: Total errors   = 0.
+halcheck: Total warnings = 0.
+hal: *M,_SCOPE: __dummy_top
+halsynth: Loading design snapshot....
+halsynth: Traversing design hierarchy....
+~:CLKOUT
+~:CLKSRD
+~:COMBLP
+~:INPOUT
+~:MUDREG
+~:MULWIR
+~:UNDRIV
+halsynth: *M,_SCOPE: alu_verygood
+halsynth: Total errors   = 0.
+halsynth: Total warnings = 0.
+hal: *M,_SCOPE: __dummy_top
+halstruct: *M,_SCOPE: alu_verygood
+halstruct: *N,FFASRT (./rtl/alu_verygood.v,26|0): Flip-flop 'reg_a' has an asynchronous reset 'rst_n'.
+@:$$cpiST_56_1840 
+@:reg_a 
+@:rst_n 
+@:alu_verygood alu_verygood
+halstruct: *N,CLKINF (./rtl/alu_verygood.v,5|0): Signal 'alu_verygood.clk' was inferred as clock.
+@:clk 
+@:$$cpiST_56_1840 
+@:reg_a 
+halstruct: (./rtl/alu_verygood.v,5): Clock source is signal 'alu_verygood.clk'.
+@:clk 
+halstruct: (./rtl/alu_verygood.v,26): Drives the flip-flop 'alu_verygood.reg_a'.
+@:clk 
+halstruct: *N,FFASRT (./rtl/alu_verygood.v,27|0): Flip-flop 'reg_b' has an asynchronous reset 'rst_n'.
+@:$$cpiST_56_1896 
+@:reg_b 
+@:rst_n 
+@:alu_verygood alu_verygood
+halstruct: *N,FFASRT (./rtl/alu_verygood.v,28|0): Flip-flop 'reg_op' has an asynchronous reset 'rst_n'.
+@:$$cpiST_56_1952 
+@:reg_op 
+@:rst_n 
+@:alu_verygood alu_verygood
+halstruct: *N,FFASRT (./rtl/alu_verygood.v,57|0): Flip-flop 'y' has an asynchronous reset 'rst_n'.
+@:$$cpiST_56_2008 
+@:y 
+@:rst_n 
+@:alu_verygood alu_verygood
+halstruct: *N,NUMDFF (./rtl/alu_verygood.v,1|0): Number of single-bit D flip-flops present in the hierarchy is 14.
+halstruct: Design facts generated in 'hal.design_facts'.
+halstruct: Total errors   = 0.
+halstruct: Total warnings = 0.
+~:DSCNCK
+^:DSCNCK
+~:SLENEX
+^:SLENEX
+~:DSCNEN
+^:DSCNEN
+~:PCNOTC
+^:PCNOTC
+~:INPASN
+~:UNCONN
+~:UNDRIV
+~:USEPRT
+~:UASPRT
+~:URDPRT
+~:GATCLK
+~:RENAME
+~:RWRACE
+~:WWRACE
+~:LPISCS
+~:LPSRCS
+~:CMBPAU
+^:CMBPAU
+~:ASNCFL
+^:ASNCFL
+~:CONTLN
+^:CONTLN
+~:LATINF
+^:LATINF
+~:MULMCK
+^:MULMCK
+~:FFCKNP
+^:FFCKNP
+~:GTDCLK
+^:GTDCLK
+~:CLKLAT
+^:CLKLAT
+~:CLKNPI
+^:CLKNPI
+~:GTCLKN
+^:GTCLKN
+~:MRSTDT
+^:MRSTDT
+~:FDTHRU
+^:FDTHRU
+~:DFDRVS
+^:DFDRVS
+~:NEFLOP
+^:NEFLOP
+~:ACNCPI
+^:ACNCPI
+~:LENCPI
+^:LENCPI
+~:CLKDAT
+^:CLKDAT
+~:CLKLDT
+^:CLKLDT
+~:CLKINF
+^:CLKINF
+~:CDFDAT
+^:CDFDAT
+~:CDLDAT
+^:CDLDAT
+~:CAAFSR
+^:CAAFSR
+~:CACSRF
+^:CACSRF
+~:CAALSR
+^:CAALSR
+~:CACSRL
+^:CACSRL
+~:CLKDMN
+^:CLKDMN
+~:INSYNC
+^:INSYNC
+~:CBPAHI
+^:CBPAHI
+~:LFLTSE
+^:LFLTSE
+~:LFFTNE
+^:LFFTNE
+~:INFNOT
+^:INFNOT
+~:DALIAS
+^:DALIAS
+~:JKFFDT
+^:JKFFDT
+~:LATRAN
+^:LATRAN
+~:UNCONI
+^:UNCONI
+~:UNCONO
+^:UNCONO
+~:DIFCLK
+^:DIFCLK
+~:DIFRST
+^:DIFRST
+~:MLTDRV
+^:MLTDRV
+~:SUTHRU
+^:SUTHRU
+~:SEICLK
+^:SEICLK
+~:SMTCLK
+^:SMTCLK
+~:ASRTCK
+^:ASRTCK
+~:ASRTCL
+^:ASRTCL
+~:ASRTSC
+^:ASRTSC
+~:SCICLK
+^:SCICLK
+~:MULTCK
+^:MULTCK
+~:NOTCLK
+^:NOTCLK
+~:TCDFDT
+^:TCDFDT
+~:TCDLDT
+^:TCDLDT
+~:TCKDAT
+^:TCKDAT
+~:TCKLDT
+^:TCKLDT
+~:TXCNOP
+^:TXCNOP
+~:MEMNOP
+^:MEMNOP
+~:TENNOC
+^:TENNOC
+~:TENNOD
+^:TENNOD
+~:GLTASR
+^:GLTASR
+~:RSTEDG
+^:RSTEDG
+~:NOTSCN
+^:NOTSCN
+~:MCKNDB
+^:MCKNDB
+~:WENNDB
+^:WENNDB
+~:SCNLEN
+^:SCNLEN
+~:TMSCFF
+^:TMSCFF
+~:OUTMNR
+^:OUTMNR
+~:INPMNR
+^:INPMNR
+~:SRENSL
+^:SRENSL
+~:LDFFPI
+^:LDFFPI
+~:RSTDAT
+^:RSTDAT
+~:RSTGNH
+^:RSTGNH
+~:CLKGNH
+^:CLKGNH
+~:MXTSBC
+^:MXTSBC
+~:TSBNTH
+^:TSBNTH
+~:MXFNOT
+^:MXFNOT
+~:ATLGLC
+^:ATLGLC
+~:SLNOTP
+^:SLNOTP
+~:TPOUNR
+^:TPOUNR
+~:SELCLK
+^:SELCLK
+~:EDGMIX
+^:EDGMIX
+~:LGRSTL
+^:LGRSTL
+~:FRSTDL
+^:FRSTDL
+~:FRSTDF
+^:FRSTDF
+~:RSTDPT
+^:RSTDPT
+~:CLKDPT
+^:CLKDPT
+~:CLKUCL
+^:CLKUCL
+~:RSTUCL
+^:RSTUCL
+~:ENGTNR
+^:ENGTNR
+~:RSTDMN
+^:RSTDMN
+~:CLKNTP
+^:CLKNTP
+~:ADRSND
+^:ADRSND
+~:CGCENC
+^:CGCENC
+~:SEDFRS
+^:SEDFRS
+~:MULTCC
+^:MULTCC
+~:SMCKRS
+^:SMCKRS
+~:MEMNCB
+^:MEMNCB
+~:MTOMPH
+^:MTOMPH
+~:UVRFCN
+^:UVRFCN
+~:CONVRF
+^:CONVRF
+~:RSTENA
+^:RSTENA
+~:MOTINP
+^:MOTINP
+~:OPDNMT
+^:OPDNMT
+~:FENCNT
+^:FENCNT
+~:TPIUNR
+^:TPIUNR
+~:IPRTNR
+^:IPRTNR
+~:SYNPRT
+^:SYNPRT
+~:CONCLK
+^:CONCLK
+~:DATUNB
+^:DATUNB
+~:RSTINF
+^:RSTINF
+~:CKSMFC
+^:CKSMFC
+~:CDRNCF
+^:CDRNCF
+~:SAMESR
+^:SAMESR
+~:CGECCP
+^:CGECCP
+~:RSTNFR
+^:RSTNFR
+~:DTUNCP
+^:DTUNCP
+~:INSTCL
+^:INSTCL
+~:INSTCN
+^:INSTCN
+~:RSTCCK
+^:RSTCCK
+~:CGCPCK
+^:CGCPCK
+~:RSTCLK
+^:RSTCLK
+~:FFSRST
+^:FFSRST
+~:SGUNDV
+^:SGUNDV
+~:FFWASR
+^:FFWASR
+~:FFWNSR
+^:FFWNSR
+~:FFASRT
+^:FFASRT
+~:LCNSTD
+^:LCNSTD
+~:FFCSTD
+^:FFCSTD
+~:GENTOP
+^:GENTOP
+~:LTCHNT
+^:LTCHNT
+~:MLTDIO
+^:MLTDIO
+~:SYNASN
+^:SYNASN
+~:MULRST
+^:MULRST
+~:MCKDMN
+^:MCKDMN
+~:CLKGNP
+^:CLKGNP
+~:RSTGNP
+^:RSTGNP
+~:TSBINF
+^:TSBINF
+~:RTCDAT
+^:RTCDAT
+~:LENCPC
+^:LENCPC
+hal: *M,_SCOPE: __dummy_top

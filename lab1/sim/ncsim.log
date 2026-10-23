@@ -1,0 +1,26 @@
+ncsim(64): 15.20-s086: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+
+-------------------------------------
+Relinquished control to SimVision...
+ncsim> 
+ncsim> database -open waves -into waves.shm -default
+Created default SHM database waves
+ncsim> probe -create -shm ripple_tb.A ripple_tb.B ripple_tb.Cin ripple_tb.Cout ripple_tb.Sum
+Created probe 1
+ncsim> run
+ Time	 A	 B	 Cin	 Sum	 Cout
+   0	0000	0000	0	0000	0
+10000	0001	0010	0	0011	0
+20000	0011	0101	0	1000	0
+30000	1111	0001	0	0000	1
+40000	1010	0101	0	1111	0
+50000	1111	1111	0	1110	1
+60000	1001	0110	1	0000	1
+Simulation complete via $finish(1) at time 70 NS + 0
+./rca_tb.v:69     $finish;
+ncsim> ^C
+ncsim> exit
+...Regained control from SimVision
+-------------------------------------
+ncsim: Memory Usage - 38.6M program + 277.6M data = 316.3M total (319.8M Peak)
+ncsim: CPU Usage - 1.4s system + 0.4s user = 1.8s total (953.8s, 0.2% cpu)

@@ -1,0 +1,242 @@
+$date
+    Oct 21, 2026  13:15:46
+$end
+$version
+    TOOL:	xmsim(64)	22.09-s003
+$end
+$timescale
+    1 ps
+$end
+
+$scope module tb_power_fsm $end
+$var reg       1 !    clk $end
+$var reg       1 "    rst_n $end
+$var reg       1 #    active $end
+$var reg       8 $    idle_count [7:0] $end
+$var wire      2 %    state [1:0] $end
+$var wire      1 &    clk_gate  $end
+$var wire      1 '    power_gate  $end
+
+$scope module dut $end
+$var wire      1 (    clk  $end
+$var wire      1 )    rst_n  $end
+$var wire      1 *    active  $end
+$var wire      8 +    idle_count [7:0] $end
+$var reg       2 ,    state [1:0] $end
+$var reg       1 -    clk_gate $end
+$var reg       1 .    power_gate $end
+$var parameter  2 /    ACTIVE $end
+$var parameter  2 0    SLEEP $end
+$var parameter  2 1    DEEP_SLEEP $end
+$var parameter  8 2    SLEEP_THRESH $end
+$var parameter  8 3    DEEP_SLEEP_THRESH $end
+$var reg       2 4    current_state [1:0] $end
+$var reg       2 5    next_state [1:0] $end
+$upscope $end
+
+$upscope $end
+
+$enddefinitions $end
+$dumpvars
+b110010 3
+b1010 2
+b10 1
+b1 0
+b0 /
+0!
+0"
+1#
+b0 $
+b0 %
+0&
+0'
+0(
+0)
+1*
+b0 +
+b0 ,
+0-
+0.
+b0 4
+b0 5
+$end
+#5000
+1!
+1(
+#10000
+0!
+0(
+#15000
+1"
+1!
+1(
+1)
+#20000
+0!
+0(
+#25000
+1!
+1(
+#30000
+0!
+0(
+#35000
+0#
+b1100 $
+1!
+1(
+b1100 +
+0*
+b1 5
+#40000
+0!
+0(
+#45000
+1!
+1(
+b1 4
+1-
+b1 ,
+b1 %
+1&
+#50000
+0!
+0(
+#55000
+b110111 $
+1!
+1(
+b110111 +
+b10 5
+#60000
+0!
+0(
+#65000
+1!
+1(
+b10 4
+0-
+b0 ,
+1-
+1.
+b10 ,
+1'
+b10 %
+#70000
+0!
+0(
+#75000
+b11111111 $
+1!
+1(
+b11111111 +
+#80000
+0!
+0(
+#85000
+1!
+1(
+#90000
+0!
+0(
+#95000
+1#
+b0 $
+1!
+1(
+b0 +
+1*
+b0 5
+#100000
+0!
+0(
+#105000
+1!
+1(
+b0 4
+0-
+0.
+b0 ,
+b0 %
+0'
+0&
+#110000
+0!
+0(
+#115000
+0#
+b1111 $
+1!
+1(
+b1111 +
+0*
+b1 5
+#120000
+0!
+0(
+#125000
+1!
+1(
+b1 4
+1-
+b1 ,
+b1 %
+1&
+#130000
+0!
+0(
+#135000
+1#
+b0 $
+1!
+1(
+b0 +
+1*
+b0 5
+#140000
+0!
+0(
+#145000
+1!
+1(
+b0 4
+0-
+b0 ,
+b0 %
+0&
+#150000
+0!
+0(
+#155000
+b11 4
+1!
+b11 5
+b0 5
+1(
+#160000
+0!
+0(
+#165000
+0"
+1!
+1(
+0)
+b0 4
+#170000
+0!
+0(
+#175000
+1"
+1!
+1(
+1)
+#180000
+0!
+0(
+#185000
+1!
+1(
+#190000
+0!
+0(
+#195000

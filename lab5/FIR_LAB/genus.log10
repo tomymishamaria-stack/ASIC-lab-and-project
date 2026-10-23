@@ -1,0 +1,147 @@
+Cadence Genus(TM) Synthesis Solution.
+Copyright 2022 Cadence Design Systems, Inc. All rights reserved worldwide.
+Cadence and the Cadence logo are registered trademarks and Genus is a trademark
+of Cadence Design Systems, Inc. in the United States and other countries.
+
+[18:32:47.328650] Configured Lic search path (21.01-s002): 5281@14.139.1.126:1717@14.139.1.126
+
+Version: 21.14-s082_1, built Thu Jun 23 02:02:08 PDT 2022
+Options: -files fir_4tapss.tcl 
+Date:    Thu Sep 10 18:32:47 2026
+Host:    cad312vitcc.vit.ac.in (x86_64 w/Linux 4.18.0-553.150.1.el8_10.x86_64) (16cores*64cpus*2physical cpus*INTEL(R) XEON(R) GOLD 6526Y 38400KB) (2112776988KB)
+PID:     3145854
+OS:      Red Hat Enterprise Linux release 8.10 (Ootpa)
+
+Checkout succeeded: Genus_Synthesis/3FFB3787901511A9760E
+	License file: 5281@14.139.1.126
+	License Server: 5281@14.139.1.126
+
+[18:32:48.117177] Periodic Lic check successful
+[18:32:48.117178] Feature usage summary:
+[18:32:48.117179] Genus_Synthesis
+Checking out license: Genus_Synthesis
+
+
+***********************************************************************************************************
+***********************************************************************************************************
+
+
+
+Loading tool scripts...
+Finished loading tool scripts (6 seconds elapsed).
+
+#@ Processing -files option
+@genus 1> source fir_4tapss.tcl
+#@ Begin verbose source ./fir_4tapss.tcl
+@file(fir_4tapss.tcl) 1: set TOP_MODULE "fir_4tap"
+@file(fir_4tapss.tcl) 4: set nodes {180nm 90nm 45nm}
+@file(fir_4tapss.tcl) 5: set corners {slow typical fast}
+@file(fir_4tapss.tcl) 8: array set lib_search_path {
+    180nm /home/install/FOUNDRY/digital/180nm/dig/lib
+    90nm  /home/install/FOUNDRY/digital/90nm/dig/lib
+    45nm  /home/install/FOUNDRY/digital/45nm/dig/lib
+}
+@file(fir_4tapss.tcl) 15: array set lib_files {
+    180nm,slow    slow.lib
+    180nm,typical typical.lib
+    180nm,fast    fast.lib
+    90nm,slow     slow.lib
+    90nm,typical  typical.lib
+    90nm,fast     fast.lib
+    45nm,slow     slow.lib
+    45nm,typical  typical.lib
+    45nm,fast     fast.lib
+}
+@file(fir_4tapss.tcl) 28: foreach node $nodes {
+    # Inner loop: Operating Corners
+    foreach corner $corners {
+        
+        puts "=================================================="
+        puts " Starting Synthesis for Node: $node | Corner: $corner"
+        puts "=================================================="
+
+        # Clear design database and clear loaded library attributes
+        catch { rm designs/* }
+        catch { set_db library {} }
+
+        # Define dynamic output directory
+        set outdir "output/${node}/${corner}"
+        file mkdir "${outdir}/netlist"
+        file mkdir "${outdir}/constraints"
+        file mkdir "${outdir}/reports"
+
+        # Load specific technology libraries for current loop iteration
+        set_db init_lib_search_path $lib_search_path($node)
+        read_libs $lib_files($node,$corner)
+
+        # Read Design Files and Elaborate
+        read_hdl {DFF.v fir_4tap.v}
+        elaborate $TOP_MODULE
+        read_sdc fir_4tap.sdc
+
+        # Set Synthesis Efforts
+        set_db syn_generic_effort medium
+        set_db syn_map_effort medium
+        set_db syn_opt_effort medium
+
+        # Run Synthesis Steps
+        syn_generic
+        write_hdl > ${outdir}/netlist/${TOP_MODULE}_generic.v
+
+        syn_map
+        write_hdl > ${outdir}/netlist/${TOP_MODULE}_mapped.v
+
+        syn_opt
+        write_hdl > ${outdir}/netlist/${TOP_MODULE}_opt.v
+
+        # Export Constraints and Corner-Specific Reports
+        write_sdc > ${outdir}/constraints/${TOP_MODULE}_synth.sdc
+
+        report_timing > ${outdir}/reports/${TOP_MODULE}_timing.rpt
+        report_power  > ${outdir}/reports/${TOP_MODULE}_power.rpt
+        report_area   > ${outdir}/reports/${TOP_MODULE}_area.rpt
+        report_gates  > ${outdir}/reports/${TOP_MODULE}_gates.rpt
+        report_qor    > ${outdir}/reports/${TOP_MODULE}_qor.rpt
+
+        puts "Completed run for: $node / $corner"
+    }
+}
+==================================================
+ Starting Synthesis for Node: 180nm | Corner: slow
+==================================================
+  Setting attribute of root '/': 'library' = 
+  Setting attribute of root '/': 'init_lib_search_path' = /home/install/FOUNDRY/digital/180nm/dig/lib
+
+Threads Configured:3
+
+  Message Summary for Library slow.lib:
+  *************************************
+  Missing a function attribute in the output pin definition. [LBR-518]: 1
+  An unsupported construct was detected in this library. [LBR-40]: 1
+  *************************************
+ 
+Info    : Created nominal operating condition. [LBR-412]
+        : Operating condition '_nominal_' was created for the PVT values (1.000000, 1.620000, 125.000000) in library 'slow.lib'.
+        : The nominal operating condition is represented, either by the nominal PVT values specified in the library source (via nom_process,nom_voltage and nom_temperature respectively), or by the default PVT values (1.0,1.0,1.0).
+Warning : Cannot open file. [VLOGPT-650]
+        : File 'DFF.v'.
+        : The specified file could not be opened.  Check the value of the init_hdl_search_path attribute.
+Warning : Cannot open file. [VLOGPT-650]
+        : File 'fir_4tap.v'.
+Error   : Could not find an HDL design. [CDFG-210] [elaborate]
+        : The design is 'fir_4tap'.
+        : This error may happen if you read a set of files, and you try to elaborate a design which description is not part of the files read. To fix this, check the name of the design you want to elaborate, or check if you have read all the expected RTL files.
+UM:   flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+UM:*                                                                   elaborate
+#@ End verbose source ./fir_4tapss.tcl
+1
+Encountered problems processing file: fir_4tapss.tcl
+WARNING: This version of the tool is 1540 days old.
+@genus:root: 2> exit
+
+Lic Summary:
+[18:32:57.055074] Cdslmd servers: cadence-c2s
+[18:32:57.055081] Feature usage summary:
+[18:32:57.055082] Genus_Synthesis
+
+Normal exit.

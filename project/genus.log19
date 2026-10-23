@@ -1,0 +1,725 @@
+Cadence Genus(TM) Synthesis Solution.
+Copyright 2022 Cadence Design Systems, Inc. All rights reserved worldwide.
+Cadence and the Cadence logo are registered trademarks and Genus is a trademark
+of Cadence Design Systems, Inc. in the United States and other countries.
+
+[19:09:12.328626] Configured Lic search path (21.01-s002): 5281@14.139.1.126:1717@14.139.1.126
+
+Version: 21.14-s082_1, built Thu Jun 23 02:02:08 PDT 2022
+Options: -files scripts/run_vcd_reports.tcl 
+Date:    Thu Oct 22 19:09:12 2026
+Host:    cad312vitcc.vit.ac.in (x86_64 w/Linux 4.18.0-553.150.1.el8_10.x86_64) (16cores*64cpus*2physical cpus*INTEL(R) XEON(R) GOLD 6526Y 38400KB) (2112776972KB)
+PID:     55324
+OS:      Red Hat Enterprise Linux release 8.10 (Ootpa)
+
+Checkout succeeded: Genus_Synthesis/3FFB3787901511A9760E
+	License file: 5281@14.139.1.126
+	License Server: 5281@14.139.1.126
+
+[19:09:14.024504] Periodic Lic check successful
+[19:09:14.024513] Feature usage summary:
+[19:09:14.024513] Genus_Synthesis
+Checking out license: Genus_Synthesis
+
+
+***********************************************************************************************************
+***********************************************************************************************************
+
+
+
+Loading tool scripts...
+Finished loading tool scripts (6 seconds elapsed).
+
+#@ Processing -files option
+@genus 1> source scripts/run_vcd_reports.tcl
+#@ Begin verbose source ./scripts/run_vcd_reports.tcl
+@file(run_vcd_reports.tcl) 1: set TOP_MODULE "top"
+@file(run_vcd_reports.tcl) 4: set_db init_lib_search_path /home/install/FOUNDRY/digital/90nm/dig/lib
+  Setting attribute of root '/': 'init_lib_search_path' = /home/install/FOUNDRY/digital/90nm/dig/lib
+@file(run_vcd_reports.tcl) 5: read_libs slow.lib
+
+Threads Configured:3
+
+  Message Summary for Library slow.lib:
+  *************************************
+  Missing a function attribute in the output pin definition. [LBR-518]: 1
+  Missing library level attribute. [LBR-516]: 1
+  *************************************
+ 
+Info    : Created nominal operating condition. [LBR-412]
+        : Operating condition '_nominal_' was created for the PVT values (1.000000, 0.900000, 125.000000) in library 'slow.lib'.
+        : The nominal operating condition is represented, either by the nominal PVT values specified in the library source (via nom_process,nom_voltage and nom_temperature respectively), or by the default PVT values (1.0,1.0,1.0).
+@file(run_vcd_reports.tcl) 8: read_netlist output/netlist/${TOP_MODULE}_opt.v
+  Library has 324 usable logic and 128 usable sequential lib-cells.
+  Done reading and elaborating the structural design 'top'.
+Checking for analog nets...
+Check completed for analog nets.
+Checking for source RTL...
+Check completed for source RTL.
+@file(run_vcd_reports.tcl) 11: read_sdc constraints/top.sdc
+Statistics for commands executed by read_sdc:
+ "all_inputs"               - successful      1 , failed      0 (runtime  0.00)
+ "all_outputs"              - successful      2 , failed      0 (runtime  0.00)
+ "create_clock"             - successful      1 , failed      0 (runtime  0.00)
+ "get_clocks"               - successful      1 , failed      0 (runtime  0.00)
+ "get_ports"                - successful      2 , failed      0 (runtime  0.00)
+ "remove_from_collection"   - successful      1 , failed      0 (runtime  0.00)
+ "set_clock_uncertainty"    - successful      1 , failed      0 (runtime  0.00)
+ "set_input_delay"          - successful      1 , failed      0 (runtime  0.00)
+ "set_load"                 - successful      1 , failed      0 (runtime  0.00)
+ "set_output_delay"         - successful      1 , failed      0 (runtime  0.00)
+read_sdc completed in 00:00:01 (hh:mm:ss)
+@file(run_vcd_reports.tcl) 14: file mkdir output/reports
+@file(run_vcd_reports.tcl) 16: puts "--------------------------------------------------------------------"
+--------------------------------------------------------------------
+@file(run_vcd_reports.tcl) 17: puts "INFO: Loading Top-Level VCD for Complete Chip Annotation..."
+INFO: Loading Top-Level VCD for Complete Chip Annotation...
+@file(run_vcd_reports.tcl) 18: puts "--------------------------------------------------------------------"
+--------------------------------------------------------------------
+@file(run_vcd_reports.tcl) 21: if {[catch {read_vcd vcd/tb_top.vcd} err]} {
+    puts "ERROR: Failed to read top-level VCD. Reason: $err"
+    exit 1
+}
+Warning : None of '-static' or '-activity_profile' options given. [VCD-4]
+        : Static analysis will be done on the VCD file 'vcd/tb_top.vcd'.
+        : The '-static' option has been selected by default. To specify explicitly, use at least one of '-static' or '-activity_profile' options.
+Info    : Joules engine is used. [RPT-16]
+        : Joules parser is being used for the command read_vcd.
+Info   : STIM-0001 [StimInfo] read_stimulus effective options 
+       : -file : vcd/tb_top.vcd
+       : -design_root : design:top
+       : -format : vcd
+Info   : STIM-0001 Design top is top
+Info   : STIM-0014 [StimInfo] Auto determined DUT instance /tb_top/uut for
+       : design root design:top.
+Info   : STIM-0001 Started reading input stimulus file vcd/tb_top.vcd
+Info   : STIM-0001 Found top instance /tb_top/uut
+Info   : STIM-0002 [StimInfo] Finished design hierarchy parsing.
+Info   : STIM-0010 [StimInfo] Total number of frames '1'
+Info   : STIM-0002 Started value change section parsing.
+Info   : STIM-0012 [StimInfo] Simulation start = 0 ps, end = 10555000 ps.
+Info   : STIM-0002 Finished processing value changes, started storage.
+Info   : STIM-0007 [StimInfo] Stored stimulus information '/stim#1' in SDB.
+Warning : The asserted TCF on an undriven hierarchical pin will not be used for TCF propagation. [TUI-94]
+        : Asserting probability 0.48980 on undriven hierarchical pin paddr.
+Warning : The asserted TCF on an undriven hierarchical pin will not be used for TCF propagation. [TUI-94]
+        : Asserting toggle rate 0.00009 on undriven hierarchical pin paddr.
+Warning : The asserted TCF on an undriven hierarchical pin will not be used for TCF propagation. [TUI-94]
+        : Asserting probability 0.48980 on undriven hierarchical pin paddr.
+Warning : The asserted TCF on an undriven hierarchical pin will not be used for TCF propagation. [TUI-94]
+        : Asserting toggle rate 0.00028 on undriven hierarchical pin paddr.
+Warning : The asserted TCF on an undriven hierarchical pin will not be used for TCF propagation. [TUI-94]
+        : Asserting probability 0.48980 on undriven hierarchical pin paddr.
+Warning : The asserted TCF on an undriven hierarchical pin will not be used for TCF propagation. [TUI-94]
+        : Asserting toggle rate 0.00066 on undriven hierarchical pin paddr.
+Warning : The asserted TCF on an undriven hierarchical pin will not be used for TCF propagation. [TUI-94]
+        : Asserting probability 0.48980 on undriven hierarchical pin paddr.
+Warning : The asserted TCF on an undriven hierarchical pin will not be used for TCF propagation. [TUI-94]
+        : Asserting toggle rate 0.00142 on undriven hierarchical pin paddr.
+Warning : The asserted TCF on an undriven hierarchical pin will not be used for TCF propagation. [TUI-94]
+        : Asserting probability 0.49550 on undriven hierarchical pin paddr.
+Warning : The asserted TCF on an undriven hierarchical pin will not be used for TCF propagation. [TUI-94]
+        : Asserting toggle rate 0.00313 on undriven hierarchical pin paddr.
+Warning : The asserted TCF on an undriven hierarchical pin will not be used for TCF propagation. [TUI-94]
+        : Asserting probability 0.49550 on undriven hierarchical pin paddr.
+Warning : The asserted TCF on an undriven hierarchical pin will not be used for TCF propagation. [TUI-94]
+        : Asserting toggle rate 0.00616 on undriven hierarchical pin paddr.
+Warning : The asserted TCF on an undriven hierarchical pin will not be used for TCF propagation. [TUI-94]
+        : Asserting probability 0.48980 on undriven hierarchical pin paddr.
+Warning : The asserted TCF on an undriven hierarchical pin will not be used for TCF propagation. [TUI-94]
+        : Asserting toggle rate 0.01203 on undriven hierarchical pin paddr.
+Warning : The asserted TCF on an undriven hierarchical pin will not be used for TCF propagation. [TUI-94]
+        : Asserting probability 0.48980 on undriven hierarchical pin paddr.
+Warning : The asserted TCF on an undriven hierarchical pin will not be used for TCF propagation. [TUI-94]
+        : Asserting toggle rate 0.02416 on undriven hierarchical pin paddr.
+Warning : The asserted TCF on an undriven hierarchical pin will not be used for TCF propagation. [TUI-94]
+        : Asserting probability 0.49550 on undriven hierarchical pin current_state.
+Warning : The asserted TCF on an undriven hierarchical pin will not be used for TCF propagation. [TUI-94]
+        : Asserting toggle rate 0.00616 on undriven hierarchical pin current_state.
+Warning : The asserted TCF on an undriven hierarchical pin will not be used for TCF propagation. [TUI-94]
+        : Asserting probability 0.48980 on undriven hierarchical pin current_state.
+Warning : The asserted TCF on an undriven hierarchical pin will not be used for TCF propagation. [TUI-94]
+        : Asserting toggle rate 0.01203 on undriven hierarchical pin current_state.
+Warning : Maximum message print count reached. [MESG-11]
+        : Maximum print count of '20' reached for message 'TUI-94'.
+--------------------------- Annotation Report ---------------------------
+Object Type         Asserted  UnAsserted  Unconnected  Total  Asserted% 
+                                           + Constant                   
+-------------------------------------------------------------------------
+Primary Ports                                                           
+  Inputs                  45           0            0     45    100.00% 
+  Outputs                210           0            0    210    100.00% 
+  I/O                      0           0            0      0        N/A 
+Sequential Outputs                                                      
+  Memory                   0           0            0      0        N/A 
+  Flop                   268           0            0    268    100.00% 
+  Latch                    0           0            0      0        N/A 
+  Arch ICGC                0           0            0      0        N/A 
+  Inferred ICGC            0           0            0      0        N/A 
+  Total ICGC               0           0            0      0        N/A 
+Drivers                                                                 
+  Driver nets            345         889            0   1234     27.95% 
+  RTL Driver nets        300         889            0   1189     25.23% 
+DFT                                                                     
+  Input Ports              0           0            0      0        N/A 
+  Flop Outputs             0           0            0      0        N/A 
+  Memory Outputs           0           0            0      0        N/A 
+-------------------------------------------------------------------------
+Info   : STIM-0013 [StimInfo] Completed successfully.
+       : Info=11, Warn=0, Error=0, Fatal=0
+Info: Removing all stims from SDB
+@file(run_vcd_reports.tcl) 27: report_power > output/reports/tb_top_vcd_power.rpt
+Info    : Joules engine is used. [RPT-16]
+        : Joules engine is being used for the command report_power.
+Info   : ACTP-0001 [ACTPInfo] Activity propagation started for stim#0 netlist
+       : top
+Info   : ACTP-0009 [ACTPInfo] Activity Propagation Progress Report :   0%   1%   2%   3%   4%   5%   6%   7%   8%   9%  10%  11%  12%  13%  14%  15%  16%  17%  18%  19%  20%  21%  22%  23%  24%  25%  26%  27%  28%  29%  30%  31%  32%  33%  34%  35%  36%  37%  38%  39%  40%  41%  42%  43%  44%  45%  46%  47%  48%  49%  50%  51%  52%  53%  54%  55%  56%  57%  58%  59%  60%  61%  62%  63%  64%  65%  66%  67%  68%  69%  70%  71%  72%  73%  74%  75%  76%  77%  78%  79%  80%  81%  82%  83%  84%  85%  86%  87%  88%  89%  90%  91%  92%  93%  94%  95%  96%  97%  98%  99% 100%
+Info   : ACTP-0001 Activity propagation ended for stim#0
+Info   : PWRA-0001 [PwrInfo] compute_power effective options 
+       : -mode : lp_asserted
+       : -skip_propagation : 1
+       : -frequency_scaling_factor : 1.0
+       : -use_clock_freq : stim
+       : -stim :/stim#0
+       : -fromGenus : 1
+Info   : ACTP-0001 Timing initialization started
+Info   : ACTP-0001 Timing initialization ended
+Info   : PWRA-0002 [PwrInfo] Skipping activity propagation due to -skip_ap
+       : option....
+Info   : PWRA-0002 Started 'average' power computation from attr values.
+Info   : PWRA-0009 [PwrInfo] Power Computation Progress Report :   0%   1%   2%   3%   4%   5%   6%   7%   8%   9%  10%  11%  12%  13%  14%  15%  16%  17%  18%  19%  20%  21%  22%  23%  24%  25%  26%  27%  28%  29%  30%  31%  32%  33%  34%  35%  36%  37%  38%  39%  40%  41%  42%  43%  44%  45%  46%  47%  48%  49%  50%  51%  52%  53%  54%  55%  56%  57%  58%  59%  60%  61%  62%  63%  64%  65%  66%  67%  68%  69%  70%  71%  72%  73%  74%  75%  76%  77%  78%  79%  80%  81%  82%  83%  84%  85%  86%  87%  88%  89%  90%  91%  92%  93%  94%  95%  96%  97%  98%  99% 100%
+Info   : PWRA-0002 Finished power computation.
+Info   : PWRA-0007 [PwrInfo] Completed successfully.
+       : Info=6, Warn=0, Error=0, Fatal=0
+Output file: output/reports/tb_top_vcd_power.rpt
+@file(run_vcd_reports.tcl) 28: puts "--> Generated top-level report: output/reports/tb_top_vcd_power.rpt"
+--> Generated top-level report: output/reports/tb_top_vcd_power.rpt
+@file(run_vcd_reports.tcl) 31: set sub_modules {
+    activity_monitor
+    adaptive_threshold
+    clock_divider
+    clock_gate
+    csr
+    idle_counter
+    power_fsm
+    power_gate_ctrl
+    predictor
+    retention_ctrl
+    statistics
+}
+@file(run_vcd_reports.tcl) 45: puts "\n--------------------------------------------------------------------"
+
+--------------------------------------------------------------------
+@file(run_vcd_reports.tcl) 46: puts "INFO: Generating Unique Sub-Module Power Reports..."
+INFO: Generating Unique Sub-Module Power Reports...
+@file(run_vcd_reports.tcl) 47: puts "--------------------------------------------------------------------"
+--------------------------------------------------------------------
+@file(run_vcd_reports.tcl) 49: foreach mod $sub_modules {
+    set report_file "output/reports/${mod}_vcd_power.rpt"
+    
+    # Query the power report directly for each specific submodule instance
+    if {[catch {report_power -inst $mod > $report_file} err]} {
+        puts "WARNING: Could not generate report for instance '$mod': $err"
+    } else {
+        puts "--> Successfully generated: $report_file"
+    }
+}
+Info    : Joules engine is used. [RPT-16]
+        : Joules engine is being used for the command report_power.
+Error   : A required object parameter could not be found. [TUI-61] [get_category_power__tui]
+        : An object of type 'design|inst|hinst' named 'activity_monitor' could not be found.
+        : Check to make sure that the object exists and is of the correct type.  The 'what_is' command can be used to determine the type of an object.
+  get_category_power__tui: get leakage, internal, and net power by category 
+
+Usage: get_category_power__tui -inst <design|inst|hinst> -type <string> -category <string> [-no_glitch_flow <string>] [-glitch_power <string>] [-new_power_engine] [-frames <string>] [-power_mode <string>]
+           [-power_rail <string>] [-clock_domain <pin|hpin|port>] [-power_domain <power_domain>] [-library <library>] [-skip_port_switching_power] [-assignPad2Clock] [-voltus] [-debug] [-silent]
+
+    -inst <design|inst|hinst>:
+        top design/instance vdir path 
+    -type <string>:
+        power types(leakage|internal|net|clkpin|all) 
+    -category <string>:
+        category(memory|flop|latch|macro|bufinv|mux|othercombo|logic|bbox|clock|pad|pm|tot|all) 
+    [-no_glitch_flow <string>]:
+        Disable given glitch flow TG|IG|Both 
+    [-glitch_power <string>]:
+        Returns the given glitch power TG|IG for the given category, type of given instance 
+    [-new_power_engine]:
+        Calculates power using new power engine 
+    [-frames <string>]:
+        Frame names 
+    [-power_mode <string>]:
+        Power mode 
+    [-power_rail <string>]:
+        Power rail 
+    [-clock_domain <pin|hpin|port>]:
+        Clock Domain 
+    [-power_domain <power_domain>]:
+        Power Domain 
+    [-library <library>]:
+        Library vdir 
+    [-skip_port_switching_power]:
+        Dont add port switching power. 
+    [-assignPad2Clock]:
+        Add PAD on clock path to clock category. 
+    [-voltus]:
+        Voltus style reporting 
+    [-debug]:
+        Print debug messages 
+    [-silent]:
+        Dont give out warnings 
+WARNING: Could not generate report for instance 'activity_monitor': 1
+Info    : Joules engine is used. [RPT-16]
+        : Joules engine is being used for the command report_power.
+Error   : A required object parameter could not be found. [TUI-61] [get_category_power__tui]
+        : An object of type 'design|inst|hinst' named 'adaptive_threshold' could not be found.
+  get_category_power__tui: get leakage, internal, and net power by category 
+
+Usage: get_category_power__tui -inst <design|inst|hinst> -type <string> -category <string> [-no_glitch_flow <string>] [-glitch_power <string>] [-new_power_engine] [-frames <string>] [-power_mode <string>]
+           [-power_rail <string>] [-clock_domain <pin|hpin|port>] [-power_domain <power_domain>] [-library <library>] [-skip_port_switching_power] [-assignPad2Clock] [-voltus] [-debug] [-silent]
+
+    -inst <design|inst|hinst>:
+        top design/instance vdir path 
+    -type <string>:
+        power types(leakage|internal|net|clkpin|all) 
+    -category <string>:
+        category(memory|flop|latch|macro|bufinv|mux|othercombo|logic|bbox|clock|pad|pm|tot|all) 
+    [-no_glitch_flow <string>]:
+        Disable given glitch flow TG|IG|Both 
+    [-glitch_power <string>]:
+        Returns the given glitch power TG|IG for the given category, type of given instance 
+    [-new_power_engine]:
+        Calculates power using new power engine 
+    [-frames <string>]:
+        Frame names 
+    [-power_mode <string>]:
+        Power mode 
+    [-power_rail <string>]:
+        Power rail 
+    [-clock_domain <pin|hpin|port>]:
+        Clock Domain 
+    [-power_domain <power_domain>]:
+        Power Domain 
+    [-library <library>]:
+        Library vdir 
+    [-skip_port_switching_power]:
+        Dont add port switching power. 
+    [-assignPad2Clock]:
+        Add PAD on clock path to clock category. 
+    [-voltus]:
+        Voltus style reporting 
+    [-debug]:
+        Print debug messages 
+    [-silent]:
+        Dont give out warnings 
+WARNING: Could not generate report for instance 'adaptive_threshold': 1
+Info    : Joules engine is used. [RPT-16]
+        : Joules engine is being used for the command report_power.
+Error   : A required object parameter could not be found. [TUI-61] [get_category_power__tui]
+        : An object of type 'design|inst|hinst' named 'clock_divider' could not be found.
+  get_category_power__tui: get leakage, internal, and net power by category 
+
+Usage: get_category_power__tui -inst <design|inst|hinst> -type <string> -category <string> [-no_glitch_flow <string>] [-glitch_power <string>] [-new_power_engine] [-frames <string>] [-power_mode <string>]
+           [-power_rail <string>] [-clock_domain <pin|hpin|port>] [-power_domain <power_domain>] [-library <library>] [-skip_port_switching_power] [-assignPad2Clock] [-voltus] [-debug] [-silent]
+
+    -inst <design|inst|hinst>:
+        top design/instance vdir path 
+    -type <string>:
+        power types(leakage|internal|net|clkpin|all) 
+    -category <string>:
+        category(memory|flop|latch|macro|bufinv|mux|othercombo|logic|bbox|clock|pad|pm|tot|all) 
+    [-no_glitch_flow <string>]:
+        Disable given glitch flow TG|IG|Both 
+    [-glitch_power <string>]:
+        Returns the given glitch power TG|IG for the given category, type of given instance 
+    [-new_power_engine]:
+        Calculates power using new power engine 
+    [-frames <string>]:
+        Frame names 
+    [-power_mode <string>]:
+        Power mode 
+    [-power_rail <string>]:
+        Power rail 
+    [-clock_domain <pin|hpin|port>]:
+        Clock Domain 
+    [-power_domain <power_domain>]:
+        Power Domain 
+    [-library <library>]:
+        Library vdir 
+    [-skip_port_switching_power]:
+        Dont add port switching power. 
+    [-assignPad2Clock]:
+        Add PAD on clock path to clock category. 
+    [-voltus]:
+        Voltus style reporting 
+    [-debug]:
+        Print debug messages 
+    [-silent]:
+        Dont give out warnings 
+WARNING: Could not generate report for instance 'clock_divider': 1
+Info    : Joules engine is used. [RPT-16]
+        : Joules engine is being used for the command report_power.
+Error   : A required object parameter could not be found. [TUI-61] [get_category_power__tui]
+        : An object of type 'design|inst|hinst' named 'clock_gate' could not be found.
+  get_category_power__tui: get leakage, internal, and net power by category 
+
+Usage: get_category_power__tui -inst <design|inst|hinst> -type <string> -category <string> [-no_glitch_flow <string>] [-glitch_power <string>] [-new_power_engine] [-frames <string>] [-power_mode <string>]
+           [-power_rail <string>] [-clock_domain <pin|hpin|port>] [-power_domain <power_domain>] [-library <library>] [-skip_port_switching_power] [-assignPad2Clock] [-voltus] [-debug] [-silent]
+
+    -inst <design|inst|hinst>:
+        top design/instance vdir path 
+    -type <string>:
+        power types(leakage|internal|net|clkpin|all) 
+    -category <string>:
+        category(memory|flop|latch|macro|bufinv|mux|othercombo|logic|bbox|clock|pad|pm|tot|all) 
+    [-no_glitch_flow <string>]:
+        Disable given glitch flow TG|IG|Both 
+    [-glitch_power <string>]:
+        Returns the given glitch power TG|IG for the given category, type of given instance 
+    [-new_power_engine]:
+        Calculates power using new power engine 
+    [-frames <string>]:
+        Frame names 
+    [-power_mode <string>]:
+        Power mode 
+    [-power_rail <string>]:
+        Power rail 
+    [-clock_domain <pin|hpin|port>]:
+        Clock Domain 
+    [-power_domain <power_domain>]:
+        Power Domain 
+    [-library <library>]:
+        Library vdir 
+    [-skip_port_switching_power]:
+        Dont add port switching power. 
+    [-assignPad2Clock]:
+        Add PAD on clock path to clock category. 
+    [-voltus]:
+        Voltus style reporting 
+    [-debug]:
+        Print debug messages 
+    [-silent]:
+        Dont give out warnings 
+WARNING: Could not generate report for instance 'clock_gate': 1
+Info    : Joules engine is used. [RPT-16]
+        : Joules engine is being used for the command report_power.
+Error   : A required object parameter could not be found. [TUI-61] [get_category_power__tui]
+        : An object of type 'design|inst|hinst' named 'csr' could not be found.
+  get_category_power__tui: get leakage, internal, and net power by category 
+
+Usage: get_category_power__tui -inst <design|inst|hinst> -type <string> -category <string> [-no_glitch_flow <string>] [-glitch_power <string>] [-new_power_engine] [-frames <string>] [-power_mode <string>]
+           [-power_rail <string>] [-clock_domain <pin|hpin|port>] [-power_domain <power_domain>] [-library <library>] [-skip_port_switching_power] [-assignPad2Clock] [-voltus] [-debug] [-silent]
+
+    -inst <design|inst|hinst>:
+        top design/instance vdir path 
+    -type <string>:
+        power types(leakage|internal|net|clkpin|all) 
+    -category <string>:
+        category(memory|flop|latch|macro|bufinv|mux|othercombo|logic|bbox|clock|pad|pm|tot|all) 
+    [-no_glitch_flow <string>]:
+        Disable given glitch flow TG|IG|Both 
+    [-glitch_power <string>]:
+        Returns the given glitch power TG|IG for the given category, type of given instance 
+    [-new_power_engine]:
+        Calculates power using new power engine 
+    [-frames <string>]:
+        Frame names 
+    [-power_mode <string>]:
+        Power mode 
+    [-power_rail <string>]:
+        Power rail 
+    [-clock_domain <pin|hpin|port>]:
+        Clock Domain 
+    [-power_domain <power_domain>]:
+        Power Domain 
+    [-library <library>]:
+        Library vdir 
+    [-skip_port_switching_power]:
+        Dont add port switching power. 
+    [-assignPad2Clock]:
+        Add PAD on clock path to clock category. 
+    [-voltus]:
+        Voltus style reporting 
+    [-debug]:
+        Print debug messages 
+    [-silent]:
+        Dont give out warnings 
+WARNING: Could not generate report for instance 'csr': 1
+Info    : Joules engine is used. [RPT-16]
+        : Joules engine is being used for the command report_power.
+Error   : A required object parameter could not be found. [TUI-61] [get_category_power__tui]
+        : An object of type 'design|inst|hinst' named 'idle_counter' could not be found.
+  get_category_power__tui: get leakage, internal, and net power by category 
+
+Usage: get_category_power__tui -inst <design|inst|hinst> -type <string> -category <string> [-no_glitch_flow <string>] [-glitch_power <string>] [-new_power_engine] [-frames <string>] [-power_mode <string>]
+           [-power_rail <string>] [-clock_domain <pin|hpin|port>] [-power_domain <power_domain>] [-library <library>] [-skip_port_switching_power] [-assignPad2Clock] [-voltus] [-debug] [-silent]
+
+    -inst <design|inst|hinst>:
+        top design/instance vdir path 
+    -type <string>:
+        power types(leakage|internal|net|clkpin|all) 
+    -category <string>:
+        category(memory|flop|latch|macro|bufinv|mux|othercombo|logic|bbox|clock|pad|pm|tot|all) 
+    [-no_glitch_flow <string>]:
+        Disable given glitch flow TG|IG|Both 
+    [-glitch_power <string>]:
+        Returns the given glitch power TG|IG for the given category, type of given instance 
+    [-new_power_engine]:
+        Calculates power using new power engine 
+    [-frames <string>]:
+        Frame names 
+    [-power_mode <string>]:
+        Power mode 
+    [-power_rail <string>]:
+        Power rail 
+    [-clock_domain <pin|hpin|port>]:
+        Clock Domain 
+    [-power_domain <power_domain>]:
+        Power Domain 
+    [-library <library>]:
+        Library vdir 
+    [-skip_port_switching_power]:
+        Dont add port switching power. 
+    [-assignPad2Clock]:
+        Add PAD on clock path to clock category. 
+    [-voltus]:
+        Voltus style reporting 
+    [-debug]:
+        Print debug messages 
+    [-silent]:
+        Dont give out warnings 
+WARNING: Could not generate report for instance 'idle_counter': 1
+Info    : Joules engine is used. [RPT-16]
+        : Joules engine is being used for the command report_power.
+Error   : A required object parameter could not be found. [TUI-61] [get_category_power__tui]
+        : An object of type 'design|inst|hinst' named 'power_fsm' could not be found.
+  get_category_power__tui: get leakage, internal, and net power by category 
+
+Usage: get_category_power__tui -inst <design|inst|hinst> -type <string> -category <string> [-no_glitch_flow <string>] [-glitch_power <string>] [-new_power_engine] [-frames <string>] [-power_mode <string>]
+           [-power_rail <string>] [-clock_domain <pin|hpin|port>] [-power_domain <power_domain>] [-library <library>] [-skip_port_switching_power] [-assignPad2Clock] [-voltus] [-debug] [-silent]
+
+    -inst <design|inst|hinst>:
+        top design/instance vdir path 
+    -type <string>:
+        power types(leakage|internal|net|clkpin|all) 
+    -category <string>:
+        category(memory|flop|latch|macro|bufinv|mux|othercombo|logic|bbox|clock|pad|pm|tot|all) 
+    [-no_glitch_flow <string>]:
+        Disable given glitch flow TG|IG|Both 
+    [-glitch_power <string>]:
+        Returns the given glitch power TG|IG for the given category, type of given instance 
+    [-new_power_engine]:
+        Calculates power using new power engine 
+    [-frames <string>]:
+        Frame names 
+    [-power_mode <string>]:
+        Power mode 
+    [-power_rail <string>]:
+        Power rail 
+    [-clock_domain <pin|hpin|port>]:
+        Clock Domain 
+    [-power_domain <power_domain>]:
+        Power Domain 
+    [-library <library>]:
+        Library vdir 
+    [-skip_port_switching_power]:
+        Dont add port switching power. 
+    [-assignPad2Clock]:
+        Add PAD on clock path to clock category. 
+    [-voltus]:
+        Voltus style reporting 
+    [-debug]:
+        Print debug messages 
+    [-silent]:
+        Dont give out warnings 
+WARNING: Could not generate report for instance 'power_fsm': 1
+Info    : Joules engine is used. [RPT-16]
+        : Joules engine is being used for the command report_power.
+Error   : A required object parameter could not be found. [TUI-61] [get_category_power__tui]
+        : An object of type 'design|inst|hinst' named 'power_gate_ctrl' could not be found.
+  get_category_power__tui: get leakage, internal, and net power by category 
+
+Usage: get_category_power__tui -inst <design|inst|hinst> -type <string> -category <string> [-no_glitch_flow <string>] [-glitch_power <string>] [-new_power_engine] [-frames <string>] [-power_mode <string>]
+           [-power_rail <string>] [-clock_domain <pin|hpin|port>] [-power_domain <power_domain>] [-library <library>] [-skip_port_switching_power] [-assignPad2Clock] [-voltus] [-debug] [-silent]
+
+    -inst <design|inst|hinst>:
+        top design/instance vdir path 
+    -type <string>:
+        power types(leakage|internal|net|clkpin|all) 
+    -category <string>:
+        category(memory|flop|latch|macro|bufinv|mux|othercombo|logic|bbox|clock|pad|pm|tot|all) 
+    [-no_glitch_flow <string>]:
+        Disable given glitch flow TG|IG|Both 
+    [-glitch_power <string>]:
+        Returns the given glitch power TG|IG for the given category, type of given instance 
+    [-new_power_engine]:
+        Calculates power using new power engine 
+    [-frames <string>]:
+        Frame names 
+    [-power_mode <string>]:
+        Power mode 
+    [-power_rail <string>]:
+        Power rail 
+    [-clock_domain <pin|hpin|port>]:
+        Clock Domain 
+    [-power_domain <power_domain>]:
+        Power Domain 
+    [-library <library>]:
+        Library vdir 
+    [-skip_port_switching_power]:
+        Dont add port switching power. 
+    [-assignPad2Clock]:
+        Add PAD on clock path to clock category. 
+    [-voltus]:
+        Voltus style reporting 
+    [-debug]:
+        Print debug messages 
+    [-silent]:
+        Dont give out warnings 
+WARNING: Could not generate report for instance 'power_gate_ctrl': 1
+Info    : Joules engine is used. [RPT-16]
+        : Joules engine is being used for the command report_power.
+Error   : A required object parameter could not be found. [TUI-61] [get_category_power__tui]
+        : An object of type 'design|inst|hinst' named 'predictor' could not be found.
+  get_category_power__tui: get leakage, internal, and net power by category 
+
+Usage: get_category_power__tui -inst <design|inst|hinst> -type <string> -category <string> [-no_glitch_flow <string>] [-glitch_power <string>] [-new_power_engine] [-frames <string>] [-power_mode <string>]
+           [-power_rail <string>] [-clock_domain <pin|hpin|port>] [-power_domain <power_domain>] [-library <library>] [-skip_port_switching_power] [-assignPad2Clock] [-voltus] [-debug] [-silent]
+
+    -inst <design|inst|hinst>:
+        top design/instance vdir path 
+    -type <string>:
+        power types(leakage|internal|net|clkpin|all) 
+    -category <string>:
+        category(memory|flop|latch|macro|bufinv|mux|othercombo|logic|bbox|clock|pad|pm|tot|all) 
+    [-no_glitch_flow <string>]:
+        Disable given glitch flow TG|IG|Both 
+    [-glitch_power <string>]:
+        Returns the given glitch power TG|IG for the given category, type of given instance 
+    [-new_power_engine]:
+        Calculates power using new power engine 
+    [-frames <string>]:
+        Frame names 
+    [-power_mode <string>]:
+        Power mode 
+    [-power_rail <string>]:
+        Power rail 
+    [-clock_domain <pin|hpin|port>]:
+        Clock Domain 
+    [-power_domain <power_domain>]:
+        Power Domain 
+    [-library <library>]:
+        Library vdir 
+    [-skip_port_switching_power]:
+        Dont add port switching power. 
+    [-assignPad2Clock]:
+        Add PAD on clock path to clock category. 
+    [-voltus]:
+        Voltus style reporting 
+    [-debug]:
+        Print debug messages 
+    [-silent]:
+        Dont give out warnings 
+WARNING: Could not generate report for instance 'predictor': 1
+Info    : Joules engine is used. [RPT-16]
+        : Joules engine is being used for the command report_power.
+Error   : A required object parameter could not be found. [TUI-61] [get_category_power__tui]
+        : An object of type 'design|inst|hinst' named 'retention_ctrl' could not be found.
+  get_category_power__tui: get leakage, internal, and net power by category 
+
+Usage: get_category_power__tui -inst <design|inst|hinst> -type <string> -category <string> [-no_glitch_flow <string>] [-glitch_power <string>] [-new_power_engine] [-frames <string>] [-power_mode <string>]
+           [-power_rail <string>] [-clock_domain <pin|hpin|port>] [-power_domain <power_domain>] [-library <library>] [-skip_port_switching_power] [-assignPad2Clock] [-voltus] [-debug] [-silent]
+
+    -inst <design|inst|hinst>:
+        top design/instance vdir path 
+    -type <string>:
+        power types(leakage|internal|net|clkpin|all) 
+    -category <string>:
+        category(memory|flop|latch|macro|bufinv|mux|othercombo|logic|bbox|clock|pad|pm|tot|all) 
+    [-no_glitch_flow <string>]:
+        Disable given glitch flow TG|IG|Both 
+    [-glitch_power <string>]:
+        Returns the given glitch power TG|IG for the given category, type of given instance 
+    [-new_power_engine]:
+        Calculates power using new power engine 
+    [-frames <string>]:
+        Frame names 
+    [-power_mode <string>]:
+        Power mode 
+    [-power_rail <string>]:
+        Power rail 
+    [-clock_domain <pin|hpin|port>]:
+        Clock Domain 
+    [-power_domain <power_domain>]:
+        Power Domain 
+    [-library <library>]:
+        Library vdir 
+    [-skip_port_switching_power]:
+        Dont add port switching power. 
+    [-assignPad2Clock]:
+        Add PAD on clock path to clock category. 
+    [-voltus]:
+        Voltus style reporting 
+    [-debug]:
+        Print debug messages 
+    [-silent]:
+        Dont give out warnings 
+WARNING: Could not generate report for instance 'retention_ctrl': 1
+Info    : Joules engine is used. [RPT-16]
+        : Joules engine is being used for the command report_power.
+Error   : A required object parameter could not be found. [TUI-61] [get_category_power__tui]
+        : An object of type 'design|inst|hinst' named 'statistics' could not be found.
+  get_category_power__tui: get leakage, internal, and net power by category 
+
+Usage: get_category_power__tui -inst <design|inst|hinst> -type <string> -category <string> [-no_glitch_flow <string>] [-glitch_power <string>] [-new_power_engine] [-frames <string>] [-power_mode <string>]
+           [-power_rail <string>] [-clock_domain <pin|hpin|port>] [-power_domain <power_domain>] [-library <library>] [-skip_port_switching_power] [-assignPad2Clock] [-voltus] [-debug] [-silent]
+
+    -inst <design|inst|hinst>:
+        top design/instance vdir path 
+    -type <string>:
+        power types(leakage|internal|net|clkpin|all) 
+    -category <string>:
+        category(memory|flop|latch|macro|bufinv|mux|othercombo|logic|bbox|clock|pad|pm|tot|all) 
+    [-no_glitch_flow <string>]:
+        Disable given glitch flow TG|IG|Both 
+    [-glitch_power <string>]:
+        Returns the given glitch power TG|IG for the given category, type of given instance 
+    [-new_power_engine]:
+        Calculates power using new power engine 
+    [-frames <string>]:
+        Frame names 
+    [-power_mode <string>]:
+        Power mode 
+    [-power_rail <string>]:
+        Power rail 
+    [-clock_domain <pin|hpin|port>]:
+        Clock Domain 
+    [-power_domain <power_domain>]:
+        Power Domain 
+    [-library <library>]:
+        Library vdir 
+    [-skip_port_switching_power]:
+        Dont add port switching power. 
+    [-assignPad2Clock]:
+        Add PAD on clock path to clock category. 
+    [-voltus]:
+        Voltus style reporting 
+    [-debug]:
+        Print debug messages 
+    [-silent]:
+        Dont give out warnings 
+WARNING: Could not generate report for instance 'statistics': 1
+@file(run_vcd_reports.tcl) 60: puts "--------------------------------------------------------------------"
+--------------------------------------------------------------------
+@file(run_vcd_reports.tcl) 61: puts "INFO: All Power Reports Generated Successfully under output/reports/!"
+INFO: All Power Reports Generated Successfully under output/reports/!
+@file(run_vcd_reports.tcl) 62: puts "--------------------------------------------------------------------"
+--------------------------------------------------------------------
+@file(run_vcd_reports.tcl) 63: exit
+
+Lic Summary:
+[19:09:25.432442] Cdslmd servers:5281@14.139.1.126:1717@14.139.1.126
+[19:09:25.432457] Feature usage summary:
+[19:09:25.432457] Genus_Synthesis
+
+Normal exit.

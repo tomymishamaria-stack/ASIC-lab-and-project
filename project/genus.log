@@ -1,0 +1,116 @@
+Cadence Genus(TM) Synthesis Solution.
+Copyright 2022 Cadence Design Systems, Inc. All rights reserved worldwide.
+Cadence and the Cadence logo are registered trademarks and Genus is a trademark
+of Cadence Design Systems, Inc. in the United States and other countries.
+
+[18:31:03.328578] Configured Lic search path (21.01-s002): 5281@14.139.1.126:1717@14.139.1.126
+
+Version: 21.14-s082_1, built Thu Jun 23 02:02:08 PDT 2022
+Options: -files scripts/run_synth.tcl 
+Date:    Tue Oct 13 18:31:03 2026
+Host:    cad312vitcc.vit.ac.in (x86_64 w/Linux 4.18.0-553.150.1.el8_10.x86_64) (16cores*64cpus*2physical cpus*INTEL(R) XEON(R) GOLD 6526Y 38400KB) (2112776972KB)
+PID:     836900
+OS:      Red Hat Enterprise Linux release 8.10 (Ootpa)
+
+Checkout succeeded: Genus_Synthesis/3FFB3787901511A9760E
+	License file: 5281@14.139.1.126
+	License Server: 5281@14.139.1.126
+
+[18:31:05.145099] Periodic Lic check successful
+[18:31:05.145104] Feature usage summary:
+[18:31:05.145105] Genus_Synthesis
+Checking out license: Genus_Synthesis
+
+
+***********************************************************************************************************
+***********************************************************************************************************
+
+
+
+Loading tool scripts...
+Finished loading tool scripts (6 seconds elapsed).
+
+#@ Processing -files option
+@genus 1> source scripts/run_synth.tcl
+#@ Begin verbose source ./scripts/run_synth.tcl
+@file(run_synth.tcl) 1: set TOP_MODULE "top"
+@file(run_synth.tcl) 4: set_db init_lib_search_path /home/install/FOUNDRY/digital/90nm/dig/lib
+  Setting attribute of root '/': 'init_lib_search_path' = /home/install/FOUNDRY/digital/90nm/dig/lib
+@file(run_synth.tcl) 5: read_libs slow.lib
+
+Threads Configured:3
+
+  Message Summary for Library slow.lib:
+  *************************************
+  Missing a function attribute in the output pin definition. [LBR-518]: 1
+  Missing library level attribute. [LBR-516]: 1
+  *************************************
+ 
+Info    : Created nominal operating condition. [LBR-412]
+        : Operating condition '_nominal_' was created for the PVT values (1.000000, 0.900000, 125.000000) in library 'slow.lib'.
+        : The nominal operating condition is represented, either by the nominal PVT values specified in the library source (via nom_process,nom_voltage and nom_temperature respectively), or by the default PVT values (1.0,1.0,1.0).
+@file(run_synth.tcl) 8: read_hdl -sv {
+    ../rtl/activity_monitor.v
+    ../rtl/adaptive_threshold.v
+    ../rtl/clock_divider.v
+    ../rtl/clock_gate.v
+    ../rtl/csr.v
+    ../rtl/idle_counter.v
+    ../rtl/power_fsm.v
+    ../rtl/power_gate_ctrl.v
+    ../rtl/predictor.v
+    ../rtl/retention_ctrl.v
+    ../rtl/statistics.v
+    ../rtl/top.v
+}
+Warning : Cannot open file. [VLOGPT-650]
+        : File '../rtl/activity_monitor.v'.
+        : The specified file could not be opened.  Check the value of the init_hdl_search_path attribute.
+Warning : Cannot open file. [VLOGPT-650]
+        : File '../rtl/adaptive_threshold.v'.
+Warning : Cannot open file. [VLOGPT-650]
+        : File '../rtl/clock_divider.v'.
+Warning : Cannot open file. [VLOGPT-650]
+        : File '../rtl/clock_gate.v'.
+Warning : Cannot open file. [VLOGPT-650]
+        : File '../rtl/csr.v'.
+Warning : Cannot open file. [VLOGPT-650]
+        : File '../rtl/idle_counter.v'.
+Warning : Cannot open file. [VLOGPT-650]
+        : File '../rtl/power_fsm.v'.
+Warning : Cannot open file. [VLOGPT-650]
+        : File '../rtl/power_gate_ctrl.v'.
+Warning : Cannot open file. [VLOGPT-650]
+        : File '../rtl/predictor.v'.
+Warning : Cannot open file. [VLOGPT-650]
+        : File '../rtl/retention_ctrl.v'.
+Warning : Cannot open file. [VLOGPT-650]
+        : File '../rtl/statistics.v'.
+Warning : Cannot open file. [VLOGPT-650]
+        : File '../rtl/top.v'.
+@file(run_synth.tcl) 22: elaborate $TOP_MODULE
+  Library has 324 usable logic and 128 usable sequential lib-cells.
+Error   : Could not find an HDL design. [CDFG-210] [elaborate]
+        : The design is 'top'.
+        : This error may happen if you read a set of files, and you try to elaborate a design which description is not part of the files read. To fix this, check the name of the design you want to elaborate, or check if you have read all the expected RTL files.
+UM:   flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+UM:*                                                                   elaborate
+#@ End verbose source ./scripts/run_synth.tcl
+1
+Encountered problems processing file: scripts/run_synth.tcl
+WARNING: This version of the tool is 1573 days old.
+
+Another Ctrl-C within 1 second will terminate the tool.
+CURRENT RESOURCES: RT {elapsed: 536s, ST: 10s, FG: 10s, CPU: 2.2%}, MEM {curr: 1.1G, peak: 1.2G, phys curr: 0.3G, phys peak: 0.3G}, SYS {load: 7.5, cpu: 64, total: 2014.9G, free: 1645.6G}
+
+Another Ctrl-C within 1 second will terminate the tool.
+CURRENT RESOURCES: RT {elapsed: 539s, ST: 10s, FG: 10s, CPU: 2.2%}, MEM {curr: 1.1G, peak: 1.2G, phys curr: 0.3G, phys peak: 0.3G}, SYS {load: 7.5, cpu: 64, total: 2014.9G, free: 1645.7G}
+@genus:root: 2> 
+@genus:root: 2> exit
+
+Lic Summary:
+[18:40:16.243275] Cdslmd servers: cadence-c2s
+[18:40:16.243282] Feature usage summary:
+[18:40:16.243283] Genus_Synthesis
+
+Normal exit.

@@ -1,0 +1,90 @@
+*** Message Type: info ***
+When: Fri Jul 24 01:02:35 PM IST 2026
+SimVision started.
+Version: TOOL:  simvision(64)   15.20-s086
+User: vlsi12
+Host: cad312vitcc.vit.ac.in
+Platform: Linux/x86_64/4.18.0-553.89.1.el8_10.x86_64
+Started: Fri Jul 24 01:02:35 PM IST 2026
+Command: /home/install/INCISIVE152/tools.lnx86/simvision/bin/64bit/simvision.exe -connect dc:cad312vitcc.vit.ac.in:59069 -64BIT
+Work Directory: /home/vlsi12/24BVD1041/lab2/lab/seq_detector
+ 
+*** Message Type: info ***
+When: Fri Jul 24 01:02:35 PM IST 2026
+Create browser window: "Design Browser 1"
+ 
+*** Message Type: info ***
+When: Fri Jul 24 01:02:36 PM IST 2026
+Create console window: "Console"
+ 
+*** Message Type: info ***
+When: Fri Jul 24 01:02:37 PM IST 2026
+Exit Simulator: abnormal
+      Design: Unknown
+   Languages: Unknown
+   Simulator: Unknown
+     Version: Unknown
+        User: Unknown
+        Host: Unknown
+Time Started: Unknown
+  Process ID: Unknown
+   Directory: Unknown
+     Command: Unknown
+
+ 
+*** Message Type: error ***
+When: Fri Jul 24 01:02:37 PM IST 2026
+Simulator Crashed:
+      Design: Unknown
+   Languages: Unknown
+   Simulator: Unknown
+     Version: Unknown
+        User: Unknown
+        Host: Unknown
+Time Started: Unknown
+  Process ID: Unknown
+   Directory: Unknown
+     Command: Unknown
+      Design: Unknown
+   Languages: Unknown
+   Simulator: Unknown
+     Version: Unknown
+        User: Unknown
+        Host: Unknown
+Time Started: Unknown
+  Process ID: Unknown
+   Directory: Unknown
+     Command: Unknown
+
+Outstanding STRAP Requests:
+        strap::get g . -ck
+        strap::get g . -sa
+        strap::get g . -xu
+ 
+*** Message Type: info ***
+When: Fri Jul 24 01:02:37 PM IST 2026
+Connect to Simulator
+      Design: Unknown
+   Languages: Unknown
+   Simulator: Unknown
+     Version: Unknown
+        User: Unknown
+        Host: Unknown
+Time Started: Unknown
+  Process ID: Unknown
+   Directory: Unknown
+     Command: Unknown
+
+ 
+*** Message Type: info ***
+When: Fri Jul 24 01:02:37 PM IST 2026
+Create utility window: "Properties"
+ 
+*** Message Type: info ***
+When: Fri Jul 24 01:02:39 PM IST 2026
+Delete browser window: "Design Browser 1"
+ 
+*** Message Type: info ***
+When: Fri Jul 24 01:02:41 PM IST 2026
+SimVision Exit.
+ 

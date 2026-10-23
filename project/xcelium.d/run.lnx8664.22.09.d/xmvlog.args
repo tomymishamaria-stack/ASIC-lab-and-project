@@ -1,0 +1,31 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+-XLMODE
+./xcelium.d/run.lnx8664.22.09.d
+-RUNMODE
+rtl/activity_monitor.v
+rtl/adaptive_threshold.v
+rtl/clock_divider.v
+rtl/clock_gate.v
+rtl/csr.v
+rtl/idle_counter.v
+rtl/power_fsm.v
+rtl/power_gate_ctrl.v
+rtl/predictor.v
+rtl/retention_ctrl.v
+rtl/statistics.v
+rtl/top.v
+tb/tb_top.v
+-CDSLIB
+./xcelium.d/run.lnx8664.22.09.d/cdsrun.lib
+-HDLVAR
+./xcelium.d/run.lnx8664.22.09.d/hdlrun.var
+-no_analogsolver
+-MESSAGES
+-UPDATE
+-XLLIBSTORE
+./xcelium.d/run.lnx8664.22.09.d/xllibs
+-ALLOWUNBOUND
+-hastop

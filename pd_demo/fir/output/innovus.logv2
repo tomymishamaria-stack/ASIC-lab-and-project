@@ -1,0 +1,546 @@
+[08/23 16:25:50      0s] 
+[08/23 16:25:50      0s] Cadence Innovus(TM) Implementation System.
+[08/23 16:25:50      0s] Copyright 2021 Cadence Design Systems, Inc. All rights reserved worldwide.
+[08/23 16:25:50      0s] 
+[08/23 16:25:50      0s] Version:	v21.15-s110_1, built Fri Sep 23 13:08:12 PDT 2022
+[08/23 16:25:50      0s] Options:	
+[08/23 16:25:50      0s] Date:		Sun Aug 23 16:25:50 2026
+[08/23 16:25:50      0s] Host:		cad312vitcc.vit.ac.in (x86_64 w/Linux 4.18.0-553.150.1.el8_10.x86_64) (16cores*64cpus*INTEL(R) XEON(R) GOLD 6526Y 38400KB)
+[08/23 16:25:50      0s] OS:		Red Hat Enterprise Linux release 8.10 (Ootpa)
+[08/23 16:25:50      0s] 
+[08/23 16:25:50      0s] License:
+[08/23 16:25:50      0s] 		[16:25:50.328602] Configured Lic search path (21.01-s002): 5281@14.139.1.126:1717@14.139.1.126
+
+[08/23 16:25:53      0s] 		invs	Innovus Implementation System	21.1	checkout succeeded
+[08/23 16:25:53      0s] 		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+[08/23 16:26:02      9s] Reset Parastics called with the command setExtractRCMode -reset@(#)CDS: Innovus v21.15-s110_1 (64bit) 09/23/2022 13:08 (Linux 3.10.0-693.el7.x86_64)
+[08/23 16:26:04     11s] @(#)CDS: NanoRoute 21.15-s110_1 NR220912-2004/21_15-UB (database version 18.20.592) {superthreading v2.17}
+[08/23 16:26:04     11s] @(#)CDS: AAE 21.15-s039 (64bit) 09/23/2022 (Linux 3.10.0-693.el7.x86_64)
+[08/23 16:26:04     11s] @(#)CDS: CTE 21.15-s038_1 () Sep 20 2022 11:42:13 ( )
+[08/23 16:26:04     11s] @(#)CDS: SYNTECH 21.15-s012_1 () Sep  5 2022 10:25:51 ( )
+[08/23 16:26:04     11s] @(#)CDS: CPE v21.15-s076
+[08/23 16:26:04     11s] @(#)CDS: IQuantus/TQuantus 21.1.1-s867 (64bit) Sun Jun 26 22:12:54 PDT 2022 (Linux 3.10.0-693.el7.x86_64)
+[08/23 16:26:04     11s] @(#)CDS: OA 22.60-p076 Wed May 18 13:45:29 2022
+[08/23 16:26:04     11s] @(#)CDS: SGN 20.10-d001 (01-Jun-2020) (64 bit executable, Qt5.9.0)
+[08/23 16:26:04     11s] @(#)CDS: RCDB 11.15.0
+[08/23 16:26:04     11s] @(#)CDS: STYLUS 21.12-s013_1 (08/15/2022 08:25 PDT)
+[08/23 16:26:04     11s] @(#)CDS: SystemPlanner-21.15Rel-8720 (21.15) (2022-08-22 18:31:54+0800)
+[08/23 16:26:04     11s] Create and set the environment variable TMPDIR to /tmp/innovus_temp_3729489_cad312vitcc.vit.ac.in_vlsi12_BUuqV2.
+
+[08/23 16:26:04     11s] Change the soft stacksize limit to 0.2%RAM (4126 mbytes). Set global soft_stack_size_limit to change the value.
+[08/23 16:26:05     12s] 
+[08/23 16:26:05     12s] **INFO:  MMMC transition support version v31-84 
+[08/23 16:26:05     12s] 
+[08/23 16:26:05     12s] <CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+[08/23 16:26:05     12s] <CMD> suppressMessage ENCEXT-2799
+[08/23 16:26:05     12s] <CMD> getVersion
+[08/23 16:26:05     12s] <CMD> getVersion
+[08/23 16:26:05     12s] <CMD> getVersion
+[08/23 16:26:06     12s] [INFO] Loading PVS 22.20 fill procedures
+[08/23 16:26:06     12s] <CMD> win
+[08/23 16:26:52     13s] <CMD> encMessage warning 0
+[08/23 16:26:52     13s] Suppress "**WARN ..." messages.
+[08/23 16:26:52     13s] <CMD> encMessage debug 0
+[08/23 16:26:52     13s] <CMD> is_common_ui_mode
+[08/23 16:26:52     13s] <CMD> restoreDesign /home/vlsi12/24BVD1041/pd_demo/fir/output/fir_4tap_post_route.enc.dat fir_4tap
+[08/23 16:26:52     13s] #% Begin load design ... (date=08/23 16:26:52, mem=1021.1M)
+[08/23 16:26:52     13s] Set Default Input Pin Transition as 0.1 ps.
+[08/23 16:26:52     14s] Loading design 'fir_4tap' saved by 'Innovus' '21.15-s110_1' on 'Fri Aug 21 13:28:09 2026'.
+[08/23 16:26:52     14s] % Begin Load MMMC data ... (date=08/23 16:26:52, mem=1023.8M)
+[08/23 16:26:52     14s] % End Load MMMC data ... (date=08/23 16:26:52, total cpu=0:00:00.0, real=0:00:00.0, peak res=1024.5M, current mem=1024.5M)
+[08/23 16:26:52     14s] 
+[08/23 16:26:52     14s] Loading LEF file /home/vlsi12/24BVD1041/pd_demo/fir/output/fir_4tap_post_route.enc.dat/libs/lef/gsclib090_translated.lef ...
+[08/23 16:26:52     14s] **WARN: (IMPLF-105):	The layer 'Oxide' specified in SAMENET spacing
+[08/23 16:26:52     14s] rule is neither a routing layer nor a cut layer. The rule is ignored.
+[08/23 16:26:52     14s] **WARN: (IMPLF-105):	The layer 'Poly' specified in SAMENET spacing
+[08/23 16:26:52     14s] rule is neither a routing layer nor a cut layer. The rule is ignored.
+[08/23 16:26:52     14s] Set DBUPerIGU to M2 pitch 580.
+[08/23 16:26:52     14s] **WARN: (IMPLF-200):	Pin 'A' in macro 'ANTENNA' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[08/23 16:26:52     14s] Type 'man IMPLF-200' for more detail.
+[08/23 16:26:52     14s] 
+##  Check design process and node:  
+##  Both design process and tech node are not set.
+
+[08/23 16:26:52     14s] Loading view definition file from /home/vlsi12/24BVD1041/pd_demo/fir/output/fir_4tap_post_route.enc.dat/viewDefinition.tcl
+[08/23 16:26:52     14s] Reading max_timing timing library '/home/install/FOUNDRY/digital/90nm/dig/lib/slow.lib' ...
+[08/23 16:26:52     14s] Read 479 cells in library 'slow' 
+[08/23 16:26:52     14s] Reading min_timing timing library '/home/install/FOUNDRY/digital/90nm/dig/lib/fast.lib' ...
+[08/23 16:26:53     14s] Read 479 cells in library 'fast' 
+[08/23 16:26:53     14s] Ending "PreSetAnalysisView" (total cpu=0:00:00.6, real=0:00:01.0, peak res=1104.1M, current mem=1046.4M)
+[08/23 16:26:53     14s] *** End library_loading (cpu=0.01min, real=0.02min, mem=32.0M, fe_cpu=0.25min, fe_real=1.05min, fe_mem=1130.1M) ***
+[08/23 16:26:53     14s] % Begin Load netlist data ... (date=08/23 16:26:53, mem=1046.5M)
+[08/23 16:26:53     14s] *** Begin netlist parsing (mem=1130.1M) ***
+[08/23 16:26:53     14s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR3XL' is defined in LEF but not in the timing library.
+[08/23 16:26:53     14s] Type 'man IMPVL-159' for more detail.
+[08/23 16:26:53     14s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR3XL' is defined in LEF but not in the timing library.
+[08/23 16:26:53     14s] Type 'man IMPVL-159' for more detail.
+[08/23 16:26:53     14s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR3X1' is defined in LEF but not in the timing library.
+[08/23 16:26:53     14s] Type 'man IMPVL-159' for more detail.
+[08/23 16:26:53     14s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR3X1' is defined in LEF but not in the timing library.
+[08/23 16:26:53     14s] Type 'man IMPVL-159' for more detail.
+[08/23 16:26:53     14s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR2XL' is defined in LEF but not in the timing library.
+[08/23 16:26:53     14s] Type 'man IMPVL-159' for more detail.
+[08/23 16:26:53     14s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR2XL' is defined in LEF but not in the timing library.
+[08/23 16:26:53     14s] Type 'man IMPVL-159' for more detail.
+[08/23 16:26:53     14s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR2X4' is defined in LEF but not in the timing library.
+[08/23 16:26:53     14s] Type 'man IMPVL-159' for more detail.
+[08/23 16:26:53     14s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR2X4' is defined in LEF but not in the timing library.
+[08/23 16:26:53     14s] Type 'man IMPVL-159' for more detail.
+[08/23 16:26:53     14s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR2X2' is defined in LEF but not in the timing library.
+[08/23 16:26:53     14s] Type 'man IMPVL-159' for more detail.
+[08/23 16:26:53     14s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR2X2' is defined in LEF but not in the timing library.
+[08/23 16:26:53     14s] Type 'man IMPVL-159' for more detail.
+[08/23 16:26:53     14s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR2X1' is defined in LEF but not in the timing library.
+[08/23 16:26:53     14s] Type 'man IMPVL-159' for more detail.
+[08/23 16:26:53     14s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR2X1' is defined in LEF but not in the timing library.
+[08/23 16:26:53     14s] Type 'man IMPVL-159' for more detail.
+[08/23 16:26:53     14s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XNOR3XL' is defined in LEF but not in the timing library.
+[08/23 16:26:53     14s] Type 'man IMPVL-159' for more detail.
+[08/23 16:26:53     14s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XNOR3XL' is defined in LEF but not in the timing library.
+[08/23 16:26:53     14s] Type 'man IMPVL-159' for more detail.
+[08/23 16:26:53     14s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XNOR3X1' is defined in LEF but not in the timing library.
+[08/23 16:26:53     14s] Type 'man IMPVL-159' for more detail.
+[08/23 16:26:53     14s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XNOR3X1' is defined in LEF but not in the timing library.
+[08/23 16:26:53     14s] Type 'man IMPVL-159' for more detail.
+[08/23 16:26:53     14s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XNOR2XL' is defined in LEF but not in the timing library.
+[08/23 16:26:53     14s] Type 'man IMPVL-159' for more detail.
+[08/23 16:26:53     14s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XNOR2XL' is defined in LEF but not in the timing library.
+[08/23 16:26:53     14s] Type 'man IMPVL-159' for more detail.
+[08/23 16:26:53     14s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XNOR2X4' is defined in LEF but not in the timing library.
+[08/23 16:26:53     14s] Type 'man IMPVL-159' for more detail.
+[08/23 16:26:53     14s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XNOR2X4' is defined in LEF but not in the timing library.
+[08/23 16:26:53     14s] Type 'man IMPVL-159' for more detail.
+[08/23 16:26:53     14s] **WARN: (EMS-27):	Message (IMPVL-159) has exceeded the current message display limit of 20.
+[08/23 16:26:53     14s] To increase the message display limit, refer to the product command reference manual.
+[08/23 16:26:53     14s] Created 479 new cells from 2 timing libraries.
+[08/23 16:26:53     14s] Reading netlist ...
+[08/23 16:26:53     14s] Backslashed names will retain backslash and a trailing blank character.
+[08/23 16:26:53     14s] Reading verilogBinary netlist '/home/vlsi12/24BVD1041/pd_demo/fir/output/fir_4tap_post_route.enc.dat/fir_4tap.v.bin'
+[08/23 16:26:53     14s] 
+[08/23 16:26:53     14s] *** Memory Usage v#1 (Current mem = 1137.121M, initial mem = 483.887M) ***
+[08/23 16:26:53     14s] *** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=1137.1M) ***
+[08/23 16:26:53     14s] % End Load netlist data ... (date=08/23 16:26:53, total cpu=0:00:00.0, real=0:00:00.0, peak res=1060.4M, current mem=1060.4M)
+[08/23 16:26:53     14s] Top level cell is fir_4tap.
+[08/23 16:26:53     14s] Hooked 958 DB cells to tlib cells.
+[08/23 16:26:53     14s] Ending "BindLib:" (total cpu=0:00:00.1, real=0:00:00.0, peak res=1070.1M, current mem=1070.1M)
+[08/23 16:26:53     14s] Starting recursive module instantiation check.
+[08/23 16:26:53     14s] No recursion found.
+[08/23 16:26:53     14s] Building hierarchical netlist for Cell fir_4tap ...
+[08/23 16:26:53     14s] *** Netlist is unique.
+[08/23 16:26:53     15s] Setting Std. cell height to 5220 DBU (smallest netlist inst).
+[08/23 16:26:53     15s] ** info: there are 967 modules.
+[08/23 16:26:53     15s] ** info: there are 139 stdCell insts.
+[08/23 16:26:53     15s] 
+[08/23 16:26:53     15s] *** Memory Usage v#1 (Current mem = 1184.535M, initial mem = 483.887M) ***
+[08/23 16:26:53     15s] *info: set bottom ioPad orient R0
+[08/23 16:26:53     15s] **WARN: (IMPFP-3961):	The techSite 'pad' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+[08/23 16:26:53     15s] Type 'man IMPFP-3961' for more detail.
+[08/23 16:26:53     15s] **WARN: (IMPFP-3961):	The techSite 'corner' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+[08/23 16:26:53     15s] Type 'man IMPFP-3961' for more detail.
+[08/23 16:26:53     15s] Horizontal Layer M1 offset = 290 (derived)
+[08/23 16:26:53     15s] Vertical Layer M2 offset = 290 (derived)
+[08/23 16:26:53     15s] Start create_tracks
+[08/23 16:26:53     15s] Generated pitch 0.29 in Metal8 is different from 0.87 defined in technology file in unpreferred direction.
+[08/23 16:26:53     15s] Loading preference file /home/vlsi12/24BVD1041/pd_demo/fir/output/fir_4tap_post_route.enc.dat/gui.pref.tcl ...
+[08/23 16:26:53     15s] **WARN: (IMPOPT-3602):	The specified path group name reg2reg is not defined.
+[08/23 16:26:53     15s] Type 'man IMPOPT-3602' for more detail.
+[08/23 16:26:53     15s] Effort level <high> specified for reg2reg path_group
+[08/23 16:26:53     15s] #WARNING (NRIF-90) Option setNanoRouteMode -routeBottomRoutingLayer is obsolete. It will continue to work for the current release. To ensure compatibility with future releases, use option setDesignMode -bottomRoutingLayer instead.
+[08/23 16:26:53     15s] #WARNING (NRIF-91) Option setNanoRouteMode -routeTopRoutingLayer is obsolete. It will continue to work for the current release. To ensure compatibility with future releases, use option setDesignMode -topRoutingLayer instead.
+[08/23 16:26:53     15s] AAE_INFO: switching -siAware from false to true ...
+[08/23 16:26:53     15s] AAE_INFO: The setting is changed from false to true in setDelayCalMode -SIAware
+[08/23 16:26:53     15s] addRing command will ignore shorts while creating rings.
+[08/23 16:26:53     15s] addRing command will disallow rings to go over rows.
+[08/23 16:26:53     15s] addRing command will consider rows while creating rings.
+[08/23 16:26:53     15s] The ring targets are set to core/block ring wires.
+[08/23 16:26:53     15s] addStripe will allow jog to connect padcore ring and block ring.
+[08/23 16:26:53     15s] 
+[08/23 16:26:53     15s] Stripes will not extend to closest target.
+[08/23 16:26:53     15s] When breaking rings, the power planner will consider the existence of blocks.
+[08/23 16:26:53     15s] addStripe will break automatically at non-default domains when generating global stripes over the core area or default domain.
+[08/23 16:26:53     15s] The entire stripe set will break at the domain if one of the nets is not in the domain.
+[08/23 16:26:53     15s] Stripes will not be created over regions without power planning wires.
+[08/23 16:26:53     15s] Offset for stripe breaking is set to 0.
+[08/23 16:26:53     15s] Stripes will stop at the boundary of the specified area.
+[08/23 16:26:53     15s] The power planner will set stripe antenna targets to none (no trimming allowed).
+[08/23 16:26:53     15s] Change floorplan default-technical-site to 'gsclib090site'.
+[08/23 16:26:53     15s] Extraction setup Delayed 
+[08/23 16:26:53     15s] *Info: initialize multi-corner CTS.
+[08/23 16:26:53     15s] Ending "SetAnalysisView" (total cpu=0:00:00.0, real=0:00:00.0, peak res=1341.2M, current mem=1100.5M)
+[08/23 16:26:53     15s] Tech dependent Parameter, Build TLibAnalyzer for: cellAreaConsiderPadding
+[08/23 16:26:53     15s] 
+[08/23 16:26:53     15s] TimeStamp Creating Cell Server ...(0, 1, 1, 1) in restoreDesign Begin ...
+[08/23 16:26:53     15s] Summary for sequential cells identification: 
+[08/23 16:26:53     15s]   Identified SBFF number: 112
+[08/23 16:26:53     15s]   Identified MBFF number: 0
+[08/23 16:26:53     15s]   Identified SB Latch number: 0
+[08/23 16:26:53     15s]   Identified MB Latch number: 0
+[08/23 16:26:53     15s]   Not identified SBFF number: 8
+[08/23 16:26:53     15s]   Not identified MBFF number: 0
+[08/23 16:26:53     15s]   Not identified SB Latch number: 0
+[08/23 16:26:53     15s]   Not identified MB Latch number: 0
+[08/23 16:26:53     15s]   Number of sequential cells which are not FFs: 32
+[08/23 16:26:53     15s] Total number of combinational cells: 317
+[08/23 16:26:53     15s] Total number of sequential cells: 152
+[08/23 16:26:53     15s] Total number of tristate cells: 10
+[08/23 16:26:53     15s] Total number of level shifter cells: 0
+[08/23 16:26:53     15s] Total number of power gating cells: 0
+[08/23 16:26:53     15s] Total number of isolation cells: 0
+[08/23 16:26:53     15s] Total number of power switch cells: 0
+[08/23 16:26:53     15s] Total number of pulse generator cells: 0
+[08/23 16:26:53     15s] Total number of always on buffers: 0
+[08/23 16:26:53     15s] Total number of retention cells: 0
+[08/23 16:26:53     15s] List of usable buffers: BUFX2 BUFX12 BUFX16 BUFX20 CLKBUFX2 BUFX3 BUFX4 BUFX6 BUFX8 CLKBUFX12 CLKBUFX16 CLKBUFX20 CLKBUFX3 CLKBUFX4 CLKBUFX6 CLKBUFX8
+[08/23 16:26:53     15s] Total number of usable buffers: 16
+[08/23 16:26:53     15s] List of unusable buffers:
+[08/23 16:26:53     15s] Total number of unusable buffers: 0
+[08/23 16:26:53     15s] List of usable inverters: CLKINVX1 CLKINVX2 CLKINVX12 CLKINVX16 CLKINVX20 CLKINVX3 CLKINVX4 CLKINVX6 CLKINVX8 INVX1 INVX2 INVX12 INVX16 INVX20 INVXL INVX3 INVX4 INVX6 INVX8
+[08/23 16:26:53     15s] Total number of usable inverters: 19
+[08/23 16:26:53     15s] List of unusable inverters:
+[08/23 16:26:53     15s] Total number of unusable inverters: 0
+[08/23 16:26:53     15s] List of identified usable delay cells: DLY1X1 DLY1X4 DLY2X1 DLY2X4 DLY3X1 DLY3X4 DLY4X1 DLY4X4
+[08/23 16:26:53     15s] Total number of identified usable delay cells: 8
+[08/23 16:26:53     15s] List of identified unusable delay cells:
+[08/23 16:26:53     15s] Total number of identified unusable delay cells: 0
+[08/23 16:26:53     15s] 
+[08/23 16:26:53     15s] TimeStamp Creating Cell Server ...(0, 1, 1, 1) in restoreDesign End ...
+[08/23 16:26:53     15s] 
+[08/23 16:26:53     15s] TimeStamp Deleting Cell Server Begin ...
+[08/23 16:26:53     15s] 
+[08/23 16:26:53     15s] TimeStamp Deleting Cell Server End ...
+[08/23 16:26:53     15s] Ending "Cell type marking" (total cpu=0:00:00.0, real=0:00:00.0, peak res=1351.0M, current mem=1351.0M)
+[08/23 16:26:53     15s] 
+[08/23 16:26:53     15s] TimeStamp Creating Cell Server ...(0, 0, 0, 0) in restoreDesign Begin ...
+[08/23 16:26:53     15s] Summary for sequential cells identification: 
+[08/23 16:26:53     15s]   Identified SBFF number: 112
+[08/23 16:26:53     15s]   Identified MBFF number: 0
+[08/23 16:26:53     15s]   Identified SB Latch number: 0
+[08/23 16:26:53     15s]   Identified MB Latch number: 0
+[08/23 16:26:53     15s]   Not identified SBFF number: 8
+[08/23 16:26:53     15s]   Not identified MBFF number: 0
+[08/23 16:26:53     15s]   Not identified SB Latch number: 0
+[08/23 16:26:53     15s]   Not identified MB Latch number: 0
+[08/23 16:26:53     15s]   Number of sequential cells which are not FFs: 32
+[08/23 16:26:53     15s] 
+[08/23 16:26:53     15s] Trim Metal Layers:
+[08/23 16:26:53     15s]  Visiting view : worst_case
+[08/23 16:26:53     15s]    : PowerDomain = none : Weighted F : unweighted  = 35.90 (1.000) with rcCorner = 0
+[08/23 16:26:53     15s]    : PowerDomain = none : Weighted F : unweighted  = 33.00 (1.000) with rcCorner = -1
+[08/23 16:26:53     15s]  Visiting view : best_case
+[08/23 16:26:53     15s]    : PowerDomain = none : Weighted F : unweighted  = 12.10 (1.000) with rcCorner = 0
+[08/23 16:26:53     15s]    : PowerDomain = none : Weighted F : unweighted  = 11.00 (1.000) with rcCorner = -1
+[08/23 16:26:53     15s] 
+[08/23 16:26:53     15s] TimeStamp Creating Cell Server ...(0, 0, 0, 0) in restoreDesign End ...
+[08/23 16:26:53     15s] 
+[08/23 16:26:53     15s] TimeStamp Deleting Cell Server Begin ...
+[08/23 16:26:53     15s] 
+[08/23 16:26:53     15s] TimeStamp Deleting Cell Server End ...
+[08/23 16:26:53     15s] Reading floorplan file - /home/vlsi12/24BVD1041/pd_demo/fir/output/fir_4tap_post_route.enc.dat/fir_4tap.fp.gz (mem = 1434.6M).
+[08/23 16:26:53     15s] % Begin Load floorplan data ... (date=08/23 16:26:53, mem=1353.0M)
+[08/23 16:26:53     15s] *info: reset 199 existing net BottomPreferredLayer and AvoidDetour
+[08/23 16:26:53     15s] Deleting old partition specification.
+[08/23 16:26:53     15s] Set FPlanBox to (0 0 129340 116000)
+[08/23 16:26:53     15s] **WARN: (IMPFP-3961):	The techSite 'pad' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+[08/23 16:26:53     15s] Type 'man IMPFP-3961' for more detail.
+[08/23 16:26:53     15s] **WARN: (IMPFP-3961):	The techSite 'corner' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+[08/23 16:26:53     15s] Type 'man IMPFP-3961' for more detail.
+[08/23 16:26:53     15s] Horizontal Layer M1 offset = 290 (derived)
+[08/23 16:26:53     15s] Vertical Layer M2 offset = 290 (derived)
+[08/23 16:26:53     15s] Start create_tracks
+[08/23 16:26:53     15s] Generated pitch 0.29 in Metal8 is different from 0.87 defined in technology file in unpreferred direction.
+[08/23 16:26:53     15s]  ... processed partition successfully.
+[08/23 16:26:53     15s] Reading binary special route file /home/vlsi12/24BVD1041/pd_demo/fir/output/fir_4tap_post_route.enc.dat/fir_4tap.fp.spr.gz (Created by Innovus v21.15-s110_1 on Fri Aug 21 13:28:09 2026, version: 1)
+[08/23 16:26:53     15s] Convert 0 swires and 0 svias from compressed groups
+[08/23 16:26:53     15s] 24 swires and 64 svias were compressed
+[08/23 16:26:53     15s] 71 swires and 288 svias were decompressed from small or sparse groups
+[08/23 16:26:53     15s] Ending "Read special route file" (total cpu=0:00:00.0, real=0:00:00.0, peak res=1354.1M, current mem=1354.1M)
+[08/23 16:26:53     15s] Extracting standard cell pins and blockage ...... 
+[08/23 16:26:53     15s] Pin and blockage extraction finished
+[08/23 16:26:53     15s] % End Load floorplan data ... (date=08/23 16:26:53, total cpu=0:00:00.0, real=0:00:00.0, peak res=1355.7M, current mem=1355.7M)
+[08/23 16:26:53     15s] Reading congestion map file /home/vlsi12/24BVD1041/pd_demo/fir/output/fir_4tap_post_route.enc.dat/fir_4tap.route.congmap.gz ...
+[08/23 16:26:53     15s] % Begin Load SymbolTable ... (date=08/23 16:26:53, mem=1356.0M)
+[08/23 16:26:54     15s] routingBox: (0 0) (129340 116000)
+[08/23 16:26:54     15s] coreBox:    (16240 16240) (113100 99760)
+[08/23 16:26:54     15s] Un-suppress "**WARN ..." messages.
+[08/23 16:26:54     15s] % End Load SymbolTable ... (date=08/23 16:26:54, total cpu=0:00:00.0, real=0:00:01.0, peak res=1356.8M, current mem=1356.8M)
+[08/23 16:26:54     15s] Loading place ...
+[08/23 16:26:54     15s] % Begin Load placement data ... (date=08/23 16:26:54, mem=1356.8M)
+[08/23 16:26:54     15s] Reading placement file - /home/vlsi12/24BVD1041/pd_demo/fir/output/fir_4tap_post_route.enc.dat/fir_4tap.place.gz.
+[08/23 16:26:54     15s] ** Reading stdCellPlacement_binary (Created by Innovus v21.15-s110_1 on Fri Aug 21 13:28:09 2026, version# 2) ...
+[08/23 16:26:54     15s] Read Views for adaptive view pruning ...
+[08/23 16:26:54     15s] Read 0 views from Binary DB for adaptive view pruning
+[08/23 16:26:54     15s] *** Completed restorePlace (cpu=0:00:00.0 real=0:00:00.0 mem=1435.7M) ***
+[08/23 16:26:54     15s] Total net length = 2.584e+03 (1.317e+03 1.266e+03) (ext = 4.289e+02)
+[08/23 16:26:54     15s] % End Load placement data ... (date=08/23 16:26:54, total cpu=0:00:00.0, real=0:00:00.0, peak res=1357.6M, current mem=1357.6M)
+[08/23 16:26:54     15s] % Begin Load routing data ... (date=08/23 16:26:54, mem=1357.6M)
+[08/23 16:26:54     15s] Reading routing file - /home/vlsi12/24BVD1041/pd_demo/fir/output/fir_4tap_post_route.enc.dat/fir_4tap.route.gz.
+[08/23 16:26:54     15s] Reading Innovus routing data (Created by Innovus v21.15-s110_1 on Fri Aug 21 13:28:09 2026 Format: 20.1) ...
+[08/23 16:26:54     15s] *** Total 193 nets are successfully restored.
+[08/23 16:26:54     15s] *** Completed restoreRoute (cpu=0:00:00.0 real=0:00:00.0 mem=1432.7M) ***
+[08/23 16:26:54     15s] % End Load routing data ... (date=08/23 16:26:54, total cpu=0:00:00.0, real=0:00:00.0, peak res=1359.0M, current mem=1358.4M)
+[08/23 16:26:54     15s] TAT_INFO: restoreCongMap REAL = 1 : CPU = 0 : MEM = 0.
+[08/23 16:26:54     15s] Reading property file /home/vlsi12/24BVD1041/pd_demo/fir/output/fir_4tap_post_route.enc.dat/fir_4tap.prop
+[08/23 16:26:54     15s] *** Completed restoreProperty (cpu=0:00:00.0 real=0:00:00.0 mem=1436.7M) ***
+[08/23 16:26:54     15s] Reading dirtyarea snapshot file /home/vlsi12/24BVD1041/pd_demo/fir/output/fir_4tap_post_route.enc.dat/fir_4tap.db.da.gz (Create by Innovus v21.15-s110_1 on Fri Aug 21 13:28:09 2026, version: 4).
+[08/23 16:26:54     15s] Set Default Input Pin Transition as 0.1 ps.
+[08/23 16:26:54     15s] eee: readRCCornerMetaData, file read unsuccessful: /home/vlsi12/24BVD1041/pd_demo/fir/output/fir_4tap_post_route.enc.dat/extraction/extractionMetaData.gz
+[08/23 16:26:54     15s] Extraction setup Started 
+[08/23 16:26:54     15s] 
+[08/23 16:26:54     15s] Trim Metal Layers:
+[08/23 16:26:54     15s] Initializing multi-corner RC extraction with 1 active RC Corners ...
+[08/23 16:26:54     15s] **WARN: (IMPEXT-2773):	The via resistance between layers M0 and M1 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+[08/23 16:26:54     15s] Type 'man IMPEXT-2773' for more detail.
+[08/23 16:26:54     15s] **WARN: (IMPEXT-2776):	The via resistance between layers M1 and M2 is not defined in the capacitance table file. The via resistance of 1.4 Ohms defined in the LEF technology file will be used as via resistance between these layers.
+[08/23 16:26:54     15s] Type 'man IMPEXT-2776' for more detail.
+[08/23 16:26:54     15s] **WARN: (IMPEXT-2776):	The via resistance between layers M2 and M3 is not defined in the capacitance table file. The via resistance of 1.4 Ohms defined in the LEF technology file will be used as via resistance between these layers.
+[08/23 16:26:54     15s] Type 'man IMPEXT-2776' for more detail.
+[08/23 16:26:54     15s] **WARN: (IMPEXT-2776):	The via resistance between layers M3 and M4 is not defined in the capacitance table file. The via resistance of 1.4 Ohms defined in the LEF technology file will be used as via resistance between these layers.
+[08/23 16:26:54     15s] Type 'man IMPEXT-2776' for more detail.
+[08/23 16:26:54     15s] **WARN: (IMPEXT-2776):	The via resistance between layers M4 and M5 is not defined in the capacitance table file. The via resistance of 1.4 Ohms defined in the LEF technology file will be used as via resistance between these layers.
+[08/23 16:26:54     15s] Type 'man IMPEXT-2776' for more detail.
+[08/23 16:26:54     15s] **WARN: (IMPEXT-2776):	The via resistance between layers M5 and M6 is not defined in the capacitance table file. The via resistance of 1.4 Ohms defined in the LEF technology file will be used as via resistance between these layers.
+[08/23 16:26:54     15s] Type 'man IMPEXT-2776' for more detail.
+[08/23 16:26:54     15s] **WARN: (IMPEXT-2776):	The via resistance between layers M6 and M7 is not defined in the capacitance table file. The via resistance of 1.4 Ohms defined in the LEF technology file will be used as via resistance between these layers.
+[08/23 16:26:54     15s] Type 'man IMPEXT-2776' for more detail.
+[08/23 16:26:54     15s] **WARN: (IMPEXT-2776):	The via resistance between layers M7 and M8 is not defined in the capacitance table file. The via resistance of 0.35 Ohms defined in the LEF technology file will be used as via resistance between these layers.
+[08/23 16:26:54     15s] Type 'man IMPEXT-2776' for more detail.
+[08/23 16:26:54     15s] **WARN: (IMPEXT-2776):	The via resistance between layers M8 and M9 is not defined in the capacitance table file. The via resistance of 0.35 Ohms defined in the LEF technology file will be used as via resistance between these layers.
+[08/23 16:26:54     15s] Type 'man IMPEXT-2776' for more detail.
+[08/23 16:26:54     15s] **WARN: (IMPEXT-2766):	The sheet resistance for layer M1 is not defined in the cap table. Therefore, the LEF value 0.08 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+[08/23 16:26:54     15s] **WARN: (IMPEXT-2766):	The sheet resistance for layer M2 is not defined in the cap table. Therefore, the LEF value 0.06 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+[08/23 16:26:54     15s] **WARN: (IMPEXT-2766):	The sheet resistance for layer M3 is not defined in the cap table. Therefore, the LEF value 0.06 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+[08/23 16:26:54     15s] **WARN: (IMPEXT-2766):	The sheet resistance for layer M4 is not defined in the cap table. Therefore, the LEF value 0.06 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+[08/23 16:26:54     15s] **WARN: (IMPEXT-2766):	The sheet resistance for layer M5 is not defined in the cap table. Therefore, the LEF value 0.06 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+[08/23 16:26:54     15s] **WARN: (IMPEXT-2766):	The sheet resistance for layer M6 is not defined in the cap table. Therefore, the LEF value 0.06 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+[08/23 16:26:54     15s] **WARN: (IMPEXT-2766):	The sheet resistance for layer M7 is not defined in the cap table. Therefore, the LEF value 0.06 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+[08/23 16:26:54     15s] **WARN: (IMPEXT-2766):	The sheet resistance for layer M8 is not defined in the cap table. Therefore, the LEF value 0.02 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+[08/23 16:26:54     15s] **WARN: (IMPEXT-2766):	The sheet resistance for layer M9 is not defined in the cap table. Therefore, the LEF value 0.02 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+[08/23 16:26:54     15s] Summary of Active RC-Corners : 
+[08/23 16:26:54     15s]  
+[08/23 16:26:54     15s]  Analysis View: worst_case
+[08/23 16:26:54     15s]     RC-Corner Name        : default_rc_corner
+[08/23 16:26:54     15s]     RC-Corner Index       : 0
+[08/23 16:26:54     15s]     RC-Corner Temperature : 25 Celsius
+[08/23 16:26:54     15s]     RC-Corner Cap Table   : ''
+[08/23 16:26:54     15s]     RC-Corner PreRoute Res Factor         : 1
+[08/23 16:26:54     15s]     RC-Corner PreRoute Cap Factor         : 1
+[08/23 16:26:54     15s]     RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+[08/23 16:26:54     15s]     RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+[08/23 16:26:54     15s]     RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+[08/23 16:26:54     15s]     RC-Corner PreRoute Clock Res Factor   : 1	[Derived from Cap Table]
+[08/23 16:26:54     15s]     RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from Cap Table]
+[08/23 16:26:54     15s]     RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 	[Derived from postRoute_cap (effortLevel low)]
+[08/23 16:26:54     15s]     RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 	[Derived from postRoute_res (effortLevel low)]
+[08/23 16:26:54     15s]     RC-Corner PostRoute Clock coupling capacitance Factor : 1 {1 1 1} 
+[08/23 16:26:54     15s]  
+[08/23 16:26:54     15s]  Analysis View: best_case
+[08/23 16:26:54     15s]     RC-Corner Name        : default_rc_corner
+[08/23 16:26:54     15s]     RC-Corner Index       : 0
+[08/23 16:26:54     15s]     RC-Corner Temperature : 25 Celsius
+[08/23 16:26:54     15s]     RC-Corner Cap Table   : ''
+[08/23 16:26:54     15s]     RC-Corner PreRoute Res Factor         : 1
+[08/23 16:26:54     15s]     RC-Corner PreRoute Cap Factor         : 1
+[08/23 16:26:54     15s]     RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+[08/23 16:26:54     15s]     RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+[08/23 16:26:54     15s]     RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+[08/23 16:26:54     15s]     RC-Corner PreRoute Clock Res Factor   : 1	[Derived from Cap Table]
+[08/23 16:26:54     15s]     RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from Cap Table]
+[08/23 16:26:54     15s]     RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 	[Derived from postRoute_cap (effortLevel low)]
+[08/23 16:26:54     15s]     RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 	[Derived from postRoute_res (effortLevel low)]
+[08/23 16:26:54     15s]     RC-Corner PostRoute Clock coupling capacitance Factor : 1 {1 1 1} 
+[08/23 16:26:54     15s] 
+[08/23 16:26:54     15s] Trim Metal Layers:
+[08/23 16:26:54     15s] LayerId::1 widthSet size::1
+[08/23 16:26:54     15s] LayerId::2 widthSet size::1
+[08/23 16:26:54     15s] LayerId::3 widthSet size::1
+[08/23 16:26:54     15s] LayerId::4 widthSet size::1
+[08/23 16:26:54     15s] LayerId::5 widthSet size::1
+[08/23 16:26:54     15s] LayerId::6 widthSet size::1
+[08/23 16:26:54     15s] LayerId::7 widthSet size::1
+[08/23 16:26:54     15s] LayerId::8 widthSet size::1
+[08/23 16:26:54     15s] LayerId::9 widthSet size::1
+[08/23 16:26:54     15s] eee: pegSigSF::1.070000
+[08/23 16:26:54     15s] Initializing multi-corner resistance tables ...
+[08/23 16:26:54     15s] eee: l::1 avDens::0.081262 usedTrk::43.881361 availTrk::540.000000 sigTrk::43.881361
+[08/23 16:26:54     15s] eee: l::2 avDens::0.085942 usedTrk::61.877951 availTrk::720.000000 sigTrk::61.877951
+[08/23 16:26:54     15s] eee: l::3 avDens::0.106882 usedTrk::57.716284 availTrk::540.000000 sigTrk::57.716284
+[08/23 16:26:54     15s] eee: l::4 avDens::0.014290 usedTrk::5.144445 availTrk::360.000000 sigTrk::5.144445
+[08/23 16:26:54     15s] eee: l::5 avDens::0.000000 usedTrk::0.000000 availTrk::0.000000 sigTrk::0.000000
+[08/23 16:26:54     15s] eee: l::6 avDens::0.000000 usedTrk::0.000000 availTrk::0.000000 sigTrk::0.000000
+[08/23 16:26:54     15s] eee: l::7 avDens::0.000000 usedTrk::0.000000 availTrk::0.000000 sigTrk::0.000000
+[08/23 16:26:54     15s] eee: l::8 avDens::0.099899 usedTrk::26.972663 availTrk::270.000000 sigTrk::26.972663
+[08/23 16:26:54     15s] eee: l::9 avDens::0.123723 usedTrk::33.405115 availTrk::270.000000 sigTrk::33.405115
+[08/23 16:26:54     15s] eee: LAM: n=40 LLS=2-3 HLS=3-5 rDens=0.289535 uaWl=1.000000 uaWlH=0.043378 aWlH=0.000000 lMod=0 pMax=0.807200 pMod=83 wcR=0.700000 newSi=0.001600 wHLS=1.750000 siPrev=0 viaL=0.000000
+[08/23 16:26:54     15s] Start generating vias ..
+[08/23 16:26:54     15s] #create default rule from bind_ndr_rule rule=0x7ff8d1ecd3a0 0x7ff8ba77aff0
+[08/23 16:26:54     15s] ### import design signature (1): route=1 fixed_route=1 flt_obj=0 vio=1905142130 swire=1 shield_wire=1 net_attr=1 dirty_area=0 del_dirty_area=0 cell=0 placement=0 pin_access=1 inst_pattern=1
+[08/23 16:26:54     15s] #Skip building auto via since it is not turned on.
+[08/23 16:26:54     15s] Extracting standard cell pins and blockage ...... 
+[08/23 16:26:54     15s] Pin and blockage extraction finished
+[08/23 16:26:54     15s] Via generation completed.
+[08/23 16:26:54     15s] % Begin Load power constraints ... (date=08/23 16:26:54, mem=1366.7M)
+[08/23 16:26:54     15s] % End Load power constraints ... (date=08/23 16:26:54, total cpu=0:00:00.0, real=0:00:00.0, peak res=1373.8M, current mem=1373.8M)
+[08/23 16:26:54     15s] % Begin load AAE data ... (date=08/23 16:26:54, mem=1418.2M)
+[08/23 16:26:55     16s] AAE DB initialization (MEM=1526.89 CPU=0:00:00.0 REAL=0:00:00.0) 
+[08/23 16:26:55     16s] % End load AAE data ... (date=08/23 16:26:55, total cpu=0:00:00.5, real=0:00:01.0, peak res=1424.6M, current mem=1424.6M)
+[08/23 16:26:55     16s] Restoring CCOpt config...
+[08/23 16:26:55     16s] 
+[08/23 16:26:55     16s] TimeStamp Creating Cell Server ...(0, 0, 0, 0) in restoreDesign Begin ...
+[08/23 16:26:55     16s] Summary for sequential cells identification: 
+[08/23 16:26:55     16s]   Identified SBFF number: 112
+[08/23 16:26:55     16s]   Identified MBFF number: 0
+[08/23 16:26:55     16s]   Identified SB Latch number: 0
+[08/23 16:26:55     16s]   Identified MB Latch number: 0
+[08/23 16:26:55     16s]   Not identified SBFF number: 8
+[08/23 16:26:55     16s]   Not identified MBFF number: 0
+[08/23 16:26:55     16s]   Not identified SB Latch number: 0
+[08/23 16:26:55     16s]   Not identified MB Latch number: 0
+[08/23 16:26:55     16s]   Number of sequential cells which are not FFs: 32
+[08/23 16:26:55     16s]  Visiting view : worst_case
+[08/23 16:26:55     16s]    : PowerDomain = none : Weighted F : unweighted  = 35.90 (1.000) with rcCorner = 0
+[08/23 16:26:55     16s]    : PowerDomain = none : Weighted F : unweighted  = 33.00 (1.000) with rcCorner = -1
+[08/23 16:26:55     16s]  Visiting view : best_case
+[08/23 16:26:55     16s]    : PowerDomain = none : Weighted F : unweighted  = 12.10 (1.000) with rcCorner = 0
+[08/23 16:26:55     16s]    : PowerDomain = none : Weighted F : unweighted  = 11.00 (1.000) with rcCorner = -1
+[08/23 16:26:55     16s] 
+[08/23 16:26:55     16s] TimeStamp Creating Cell Server ...(0, 0, 0, 0) in restoreDesign End ...
+[08/23 16:26:55     16s]   Extracting original clock gating for CLK...
+[08/23 16:26:55     16s]     clock_tree CLK contains 36 sinks and 0 clock gates.
+[08/23 16:26:55     16s]   Extracting original clock gating for CLK done.
+[08/23 16:26:55     16s]   The skew group CLK/fir_const was created. It contains 36 sinks and 1 sources.
+[08/23 16:26:55     16s] Restoring CCOpt config done.
+[08/23 16:26:55     16s] 
+[08/23 16:26:55     16s] TimeStamp Deleting Cell Server Begin ...
+[08/23 16:26:55     16s] 
+[08/23 16:26:55     16s] TimeStamp Deleting Cell Server End ...
+[08/23 16:26:55     16s] 
+[08/23 16:26:55     16s] TimeStamp Creating Cell Server ...(0, 1, 1, 1) in restoreDesign Begin ...
+[08/23 16:26:55     16s] Summary for sequential cells identification: 
+[08/23 16:26:55     16s]   Identified SBFF number: 112
+[08/23 16:26:55     16s]   Identified MBFF number: 0
+[08/23 16:26:55     16s]   Identified SB Latch number: 0
+[08/23 16:26:55     16s]   Identified MB Latch number: 0
+[08/23 16:26:55     16s]   Not identified SBFF number: 8
+[08/23 16:26:55     16s]   Not identified MBFF number: 0
+[08/23 16:26:55     16s]   Not identified SB Latch number: 0
+[08/23 16:26:55     16s]   Not identified MB Latch number: 0
+[08/23 16:26:55     16s]   Number of sequential cells which are not FFs: 32
+[08/23 16:26:55     16s] Total number of combinational cells: 317
+[08/23 16:26:55     16s] Total number of sequential cells: 152
+[08/23 16:26:55     16s] Total number of tristate cells: 10
+[08/23 16:26:55     16s] Total number of level shifter cells: 0
+[08/23 16:26:55     16s] Total number of power gating cells: 0
+[08/23 16:26:55     16s] Total number of isolation cells: 0
+[08/23 16:26:55     16s] Total number of power switch cells: 0
+[08/23 16:26:55     16s] Total number of pulse generator cells: 0
+[08/23 16:26:55     16s] Total number of always on buffers: 0
+[08/23 16:26:55     16s] Total number of retention cells: 0
+[08/23 16:26:55     16s] List of usable buffers: BUFX2 BUFX12 BUFX16 BUFX20 CLKBUFX2 BUFX3 BUFX4 BUFX6 BUFX8 CLKBUFX12 CLKBUFX16 CLKBUFX20 CLKBUFX3 CLKBUFX4 CLKBUFX6 CLKBUFX8
+[08/23 16:26:55     16s] Total number of usable buffers: 16
+[08/23 16:26:55     16s] List of unusable buffers:
+[08/23 16:26:55     16s] Total number of unusable buffers: 0
+[08/23 16:26:55     16s] List of usable inverters: CLKINVX1 CLKINVX2 CLKINVX12 CLKINVX16 CLKINVX20 CLKINVX3 CLKINVX4 CLKINVX6 CLKINVX8 INVX1 INVX2 INVX12 INVX16 INVX20 INVXL INVX3 INVX4 INVX6 INVX8
+[08/23 16:26:55     16s] Total number of usable inverters: 19
+[08/23 16:26:55     16s] List of unusable inverters:
+[08/23 16:26:55     16s] Total number of unusable inverters: 0
+[08/23 16:26:55     16s] List of identified usable delay cells: DLY1X1 DLY1X4 DLY2X1 DLY2X4 DLY3X1 DLY3X4 DLY4X1 DLY4X4
+[08/23 16:26:55     16s] Total number of identified usable delay cells: 8
+[08/23 16:26:55     16s] List of identified unusable delay cells:
+[08/23 16:26:55     16s] Total number of identified unusable delay cells: 0
+[08/23 16:26:55     16s] 
+[08/23 16:26:55     16s] TimeStamp Creating Cell Server ...(0, 1, 1, 1) in restoreDesign End ...
+[08/23 16:26:55     16s] 
+[08/23 16:26:55     16s] TimeStamp Deleting Cell Server Begin ...
+[08/23 16:26:55     16s] 
+[08/23 16:26:55     16s] TimeStamp Deleting Cell Server End ...
+[08/23 16:26:55     16s] **WARN: (IMPCTE-107):	The following globals have been obsoleted since version . They will be removed in the next release. 
+[08/23 16:26:55     16s] timing_enable_separate_device_slew_effect_sensitivities
+[08/23 16:26:55     16s] #% End load design ... (date=08/23 16:26:55, total cpu=0:00:02.6, real=0:00:03.0, peak res=1448.7M, current mem=1430.0M)
+[08/23 16:26:55     16s] 
+[08/23 16:26:55     16s] *** Summary of all messages that are not suppressed in this session:
+[08/23 16:26:55     16s] Severity  ID               Count  Summary                                  
+[08/23 16:26:55     16s] WARNING   IMPLF-200            1  Pin '%s' in macro '%s' has no ANTENNAGAT...
+[08/23 16:26:55     16s] WARNING   IMPLF-105            2  The layer '%s' specified in SAMENET spac...
+[08/23 16:26:55     16s] WARNING   IMPFP-3961           4  The techSite '%s' has no related standar...
+[08/23 16:26:55     16s] WARNING   IMPEXT-2766          9  The sheet resistance for layer %s is not...
+[08/23 16:26:55     16s] WARNING   IMPEXT-2773          1  The via resistance between layers %s and...
+[08/23 16:26:55     16s] WARNING   IMPEXT-2776          8  The via resistance between layers %s and...
+[08/23 16:26:55     16s] WARNING   IMPVL-159          958  Pin '%s' of cell '%s' is defined in LEF ...
+[08/23 16:26:55     16s] WARNING   IMPOPT-3602          1  The specified path group name %s is not ...
+[08/23 16:26:55     16s] WARNING   IMPCTE-107           1  The following globals have been obsolete...
+[08/23 16:26:55     16s] *** Message Summary: 985 warning(s), 0 error(s)
+[08/23 16:26:55     16s] 
+[08/23 16:26:55     16s] <CMD> setDrawView fplan
+[08/23 16:26:55     16s] <CMD> encMessage warning 1
+[08/23 16:26:55     16s] <CMD> encMessage debug 0
+[08/23 16:26:59     16s] <CMD> encMessage warning 0
+[08/23 16:26:59     16s] Suppress "**WARN ..." messages.
+[08/23 16:26:59     16s] <CMD> encMessage debug 0
+[08/23 16:26:59     16s] <CMD> is_common_ui_mode
+[08/23 16:26:59     16s] <CMD> restoreDesign /home/vlsi12/24BVD1041/pd_demo/fir/output/fir_4tap_post_route.enc.dat fir_4tap
+[08/23 16:26:59     16s] #% Begin load design ... (date=08/23 16:26:59, mem=1832.5M)
+[08/23 16:26:59     16s] 
+[08/23 16:26:59     16s] 
+[08/23 16:26:59     16s] ERROR: **ERROR: (IMPIMEX-7031):	#CUI#restoreDesign#read_db# more than once in the same Innovus session is dangerous and not recommended. Some internal state of applications or global settings cannot be reset, so it's not reliable enough in real flow. If you are just experimenting and/or debugging and accept the risks, you can set the global restore_db_stop_at_design_in_memory to 0 and try again.
+[08/23 16:26:59     16s] 
+[08/23 16:26:59     16s] 
+[08/23 16:26:59     16s] **ERROR: (IMPIMEX-7031):	#CUI#restoreDesign#read_db# more than once in the same Innovus session is dangerous and not recommended. Some internal state of applications or global settings cannot be reset, so it's not reliable enough in real flow. If you are just experimenting and/or debugging and accept the risks, you can set the global restore_db_stop_at_design_in_memory to 0 and try again.
+[08/23 16:26:59     16s] 
+[08/23 16:26:59     16s]     while executing
+[08/23 16:26:59     16s] "error $catchMsg"
+[08/23 16:26:59     16s]     (procedure "restoreDesign" line 33)
+[08/23 16:26:59     16s] 
+[08/23 16:26:59     16s] **ERROR: (IMPSYT-6300):	Failed to execute command 'source'. For more details, refer to error message: **ERROR: (IMPIMEX-7031):	restoreDesign more than once in the same Innovus session is dangerous and not recommended. Some internal state of applications or global settings cannot be reset, so it's not reliable enough in real flow. If you are just experimenting and/or debugging and accept the risks, you can set the global restore_db_stop_at_design_in_memory to 0 and try again.
+[08/23 16:26:59     16s] 
+[08/23 16:27:07     17s] <CMD> encMessage warning 1
+[08/23 16:27:07     17s] Un-suppress "**WARN ..." messages.
+[08/23 16:27:07     17s] <CMD> encMessage debug 0
+[08/23 16:27:09     17s] <CMD> encMessage warning 0
+[08/23 16:27:09     17s] Suppress "**WARN ..." messages.
+[08/23 16:27:09     17s] <CMD> encMessage debug 0
+[08/23 16:27:09     17s] <CMD> is_common_ui_mode
+[08/23 16:27:09     17s] <CMD> restoreDesign /home/vlsi12/24BVD1041/pd_demo/fir/output/fir_4tap_post_route.enc.dat fir_4tap
+[08/23 16:27:09     17s] report_message: '-start_cmd/-end_cmd' can not be nested. Interior calls do nothing. Ignore.
+[08/23 16:27:09     17s] % Begin load design ... (date=08/23 16:27:09, mem=1832.6M)
+[08/23 16:27:09     17s] 
+[08/23 16:27:09     17s] 
+[08/23 16:27:09     17s] ERROR: **ERROR: (IMPIMEX-7031):	#CUI#restoreDesign#read_db# more than once in the same Innovus session is dangerous and not recommended. Some internal state of applications or global settings cannot be reset, so it's not reliable enough in real flow. If you are just experimenting and/or debugging and accept the risks, you can set the global restore_db_stop_at_design_in_memory to 0 and try again.
+[08/23 16:27:09     17s] 
+[08/23 16:27:09     17s] 
+[08/23 16:27:09     17s] **ERROR: (IMPIMEX-7031):	#CUI#restoreDesign#read_db# more than once in the same Innovus session is dangerous and not recommended. Some internal state of applications or global settings cannot be reset, so it's not reliable enough in real flow. If you are just experimenting and/or debugging and accept the risks, you can set the global restore_db_stop_at_design_in_memory to 0 and try again.
+[08/23 16:27:09     17s] 
+[08/23 16:27:09     17s]     while executing
+[08/23 16:27:09     17s] "error $catchMsg"
+[08/23 16:27:09     17s]     (procedure "restoreDesign" line 33)
+[08/23 16:27:09     17s] 
+[08/23 16:27:09     17s] **ERROR: (IMPSYT-6300):	Failed to execute command 'source'. For more details, refer to error message: **ERROR: (IMPIMEX-7031):	restoreDesign more than once in the same Innovus session is dangerous and not recommended. Some internal state of applications or global settings cannot be reset, so it's not reliable enough in real flow. If you are just experimenting and/or debugging and accept the risks, you can set the global restore_db_stop_at_design_in_memory to 0 and try again.
+[08/23 16:27:09     17s] 
+[08/23 16:27:10     17s] <CMD> encMessage warning 1
+[08/23 16:27:10     17s] Un-suppress "**WARN ..." messages.
+[08/23 16:27:10     17s] <CMD> encMessage debug 0
+[08/23 16:27:22     17s] 
+--------------------------------------------------------------------------------
+Exiting Innovus on Sun Aug 23 16:27:22 2026
+  Total CPU time:     0:00:19
+  Total real time:    0:01:33
+  Peak memory (main): 1844.19MB
+
+[08/23 16:27:22     17s] 
+[08/23 16:27:22     17s] *** Memory Usage v#1 (Current mem = 1941.301M, initial mem = 483.887M) ***
+[08/23 16:27:22     17s] 
+[08/23 16:27:22     17s] *** Summary of all messages that are not suppressed in this session:
+[08/23 16:27:22     17s] Severity  ID               Count  Summary                                  
+[08/23 16:27:22     17s] WARNING   IMPLF-200            1  Pin '%s' in macro '%s' has no ANTENNAGAT...
+[08/23 16:27:22     17s] WARNING   IMPLF-105            2  The layer '%s' specified in SAMENET spac...
+[08/23 16:27:22     17s] WARNING   IMPFP-3961           4  The techSite '%s' has no related standar...
+[08/23 16:27:22     17s] WARNING   IMPEXT-2766          9  The sheet resistance for layer %s is not...
+[08/23 16:27:22     17s] WARNING   IMPEXT-2773          1  The via resistance between layers %s and...
+[08/23 16:27:22     17s] WARNING   IMPEXT-2776          8  The via resistance between layers %s and...
+[08/23 16:27:22     17s] ERROR     IMPSYT-6300          4  Failed to execute command '%s'. For more...
+[08/23 16:27:22     17s] WARNING   IMPVL-159          958  Pin '%s' of cell '%s' is defined in LEF ...
+[08/23 16:27:22     17s] WARNING   IMPOPT-3602          1  The specified path group name %s is not ...
+[08/23 16:27:22     17s] WARNING   IMPCTE-107           1  The following globals have been obsolete...
+[08/23 16:27:22     17s] ERROR     IMPIMEX-7031         2  %s more than once in the same Innovus se...
+[08/23 16:27:22     17s] *** Message Summary: 985 warning(s), 6 error(s)
+[08/23 16:27:22     17s] 
+[08/23 16:27:22     17s] --- Ending "Innovus" (totcpu=0:00:17.7, real=0:01:32, mem=1941.3M) ---

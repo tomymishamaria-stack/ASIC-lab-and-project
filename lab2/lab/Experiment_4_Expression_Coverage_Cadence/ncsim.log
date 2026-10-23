@@ -1,0 +1,57 @@
+ncsim(64): 15.20-s086: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+
+-------------------------------------
+Relinquished control to SimVision...
+ncsim> 
+ncsim> run
+ncsim: *E,C58EXE: Coverage database file already exists in the test output directory './cov_work/scope/test', and will not be overwritten. Specify a different name for the test output directory or use the '-covoverwrite' option to overwrite the existing test output directory, and rerun the simulation.
+Simulation complete via $finish(1) at time 90 NS + 0
+./tb_expression_full.v:45     $finish;
+ncsim> coverage -analyze
+coverage model statistics (approx):
+  covergroup instances  :  n/a
+  covergroup types  :  n/a
+  covergroup bins (types + instances)  :  n/a
+  blocks :  20
+  expressions :  0
+  toggle signals :  20
+  fsm states :  0
+  fsm transitions :  0
+
+coverage setup:
+  workdir  :  ./cov_work
+  dutinst  :  tb_expression_full(tb_expression_full)
+  scope    :  scope
+  testname :  test
+
+coverage files:
+  model(design data) :  ./cov_work/scope/icc_419753d0_00000000.ucm
+  data               :  ./cov_work/scope/test/icc_419753d0_00000000.ucd
+  cpu                :  0.0s system + 0.0s user = 0.0s total
+
+Launching IMC...
+
+ncsim> ^C
+ncsim> exit
+coverage model statistics (approx):
+  covergroup instances  :  n/a
+  covergroup types  :  n/a
+  covergroup bins (types + instances)  :  n/a
+  blocks :  20
+  expressions :  0
+  toggle signals :  20
+  fsm states :  0
+  fsm transitions :  0
+
+coverage setup:
+  workdir  :  ./cov_work
+  dutinst  :  tb_expression_full(tb_expression_full)
+  scope    :  scope
+  testname :  test
+
+coverage files:
+  model(design data) :  ./cov_work/scope/icc_419753d0_00000000.ucm
+  data               :  ./cov_work/scope/test/icc_419753d0_00000000.ucd
+  cpu                :  0.0s system + 0.0s user = 0.0s total
+ncsim: Memory Usage - 38.6M program + 291.2M data = 329.8M total (337.8M Peak)
+ncsim: CPU Usage - 0.1s system + 0.0s user = 0.2s total (92.1s, 0.2% cpu)

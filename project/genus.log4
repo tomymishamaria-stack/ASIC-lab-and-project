@@ -1,0 +1,53 @@
+Cadence Genus(TM) Synthesis Solution.
+Copyright 2022 Cadence Design Systems, Inc. All rights reserved worldwide.
+Cadence and the Cadence logo are registered trademarks and Genus is a trademark
+of Cadence Design Systems, Inc. in the United States and other countries.
+
+[17:09:49.328690] Configured Lic search path (21.01-s002): 5281@14.139.1.126:1717@14.139.1.126
+
+Version: 21.14-s082_1, built Thu Jun 23 02:02:08 PDT 2022
+Options: -files scripts/run_vcd_reports.tcl 
+Date:    Thu Oct 22 17:09:49 2026
+Host:    cad312vitcc.vit.ac.in (x86_64 w/Linux 4.18.0-553.150.1.el8_10.x86_64) (16cores*64cpus*2physical cpus*INTEL(R) XEON(R) GOLD 6526Y 38400KB) (2112776972KB)
+PID:     3819150
+OS:      Red Hat Enterprise Linux release 8.10 (Ootpa)
+
+Checkout succeeded: Genus_Synthesis/3FFB3787901511A9760E
+	License file: 5281@14.139.1.126
+	License Server: 5281@14.139.1.126
+
+[17:09:50.225105] Periodic Lic check successful
+[17:09:50.225114] Feature usage summary:
+[17:09:50.225115] Genus_Synthesis
+Checking out license: Genus_Synthesis
+
+
+***********************************************************************************************************
+***********************************************************************************************************
+
+
+
+Loading tool scripts...
+Finished loading tool scripts (6 seconds elapsed).
+
+#@ Processing -files option
+@genus 1> source scripts/run_vcd_reports.tcl
+#@ Begin verbose source ./scripts/run_vcd_reports.tcl
+@file(run_vcd_reports.tcl) 7: set_db lib_search_path "lib"
+  Setting attribute of root '/': 'lib_search_path' = lib
+@file(run_vcd_reports.tcl) 8: set_db init_lib_spec "slow.lib"
+Error   : <Start> word is not recognized. [TUI-182] [set_db]
+        : 'init_lib_spec' is not a recognized object/attribute. Type 'help root:' to get a list of all supported objects and attributes.
+        : Check if the given <Start> word is a valid object_type, object or attribute.
+#@ End verbose source ./scripts/run_vcd_reports.tcl
+1
+Encountered problems processing file: scripts/run_vcd_reports.tcl
+WARNING: This version of the tool is 1582 days old.
+@genus:root: 2> exit
+
+Lic Summary:
+[17:13:07.297961] Cdslmd servers: cadence-c2s
+[17:13:07.297968] Feature usage summary:
+[17:13:07.297969] Genus_Synthesis
+
+Normal exit.

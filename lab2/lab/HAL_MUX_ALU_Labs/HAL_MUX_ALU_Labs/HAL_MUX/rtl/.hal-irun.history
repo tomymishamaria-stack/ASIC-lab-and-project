@@ -1,0 +1,9 @@
+s1(24Jul2026:13:18:35):  irun -c -q -nostdout -access +rwc -ncelabargs -partialdesign -log ./.hal-irun.log /home/vlsi12/24BVD1041/lab2/lab/HAL_MUX_ALU_Labs/HAL_MUX_ALU_Labs/HAL_MUX/rtl/mux_bad.v 
+s2(24Jul2026:13:20:08):  irun -c -q -nostdout -access +rwc -ncelabargs -partialdesign -log ./.hal-irun.log /home/vlsi12/24BVD1041/lab2/lab/HAL_MUX_ALU_Labs/HAL_MUX_ALU_Labs/HAL_MUX/rtl/mux_good.v 
+s3(24Jul2026:13:20:34):  irun -c -q -nostdout -access +rwc -ncelabargs -partialdesign -log ./.hal-irun.log /home/vlsi12/24BVD1041/lab2/lab/HAL_MUX_ALU_Labs/HAL_MUX_ALU_Labs/HAL_MUX/rtl/mux_bad.v 
+s4(24Jul2026:13:22:20):  irun -c -q -nostdout -access +rwc -ncelabargs -partialdesign -log ./.hal-irun.log /home/vlsi12/24BVD1041/lab2/lab/HAL_MUX_ALU_Labs/HAL_MUX_ALU_Labs/HAL_MUX/rtl/mux_good.v 
+s5(24Jul2026:13:24:19):  irun -c -q -nostdout -access +rwc -ncelabargs -partialdesign -log ./.hal-irun.log /home/vlsi12/24BVD1041/lab2/lab/HAL_MUX_ALU_Labs/HAL_MUX_ALU_Labs/HAL_MUX/rtl/mux_good.v 
+s6(24Jul2026:13:25:33):  irun -c -q -nostdout -access +rwc -ncelabargs -partialdesign -log ./.hal-irun.log /home/vlsi12/24BVD1041/lab2/lab/HAL_MUX_ALU_Labs/HAL_MUX_ALU_Labs/HAL_MUX/rtl/mux_good.v 
+s7(24Jul2026:13:26:43):  irun -c -q -nostdout -access +rwc -ncelabargs -partialdesign -log ./.hal-irun.log /home/vlsi12/24BVD1041/lab2/lab/HAL_MUX_ALU_Labs/HAL_MUX_ALU_Labs/HAL_MUX/rtl/mux_good.v 
+s8(24Jul2026:13:27:43):  irun -c -q -nostdout -access +rwc -ncelabargs -partialdesign -log ./.hal-irun.log /home/vlsi12/24BVD1041/lab2/lab/HAL_MUX_ALU_Labs/HAL_MUX_ALU_Labs/HAL_MUX/rtl/mux_good.v 
+s9(24Jul2026:13:28:34):  irun -c -q -nostdout -access +rwc -ncelabargs -partialdesign -log ./.hal-irun.log /home/vlsi12/24BVD1041/lab2/lab/HAL_MUX_ALU_Labs/HAL_MUX_ALU_Labs/HAL_MUX/rtl/mux_good.v 

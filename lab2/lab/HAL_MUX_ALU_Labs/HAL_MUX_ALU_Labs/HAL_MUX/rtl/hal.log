@@ -1,0 +1,109 @@
+hal(64): 15.20-s086: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+hal: Options:   -cdslib /home/vlsi12/24BVD1041/lab2/lab/HAL_MUX_ALU_Labs/HAL_MUX_ALU_Labs/HAL_MUX/rtl/cds.lib -logfile hal.log /home/vlsi12/24BVD1041/lab2/lab/HAL_MUX_ALU_Labs/HAL_MUX_ALU_Labs/HAL_MUX/rtl/mux_good.v.
+hal: Workspace: /home/vlsi12/24BVD1041/lab2/lab/HAL_MUX_ALU_Labs/HAL_MUX_ALU_Labs/HAL_MUX/rtl.
+hal: Date: Fri Jul 24 13:28:31 IST 2026.
+
+hal: Running on design source files.....
+hal: Snapshot:  worklib.mux_good:v.
+
+  ==========================================================================
+Compiling design 
+
+
+	Top level design units:
+		mux_good
+
+  ==========================================================================
+Performing lint checks 
+
+halcheck(64): 15.20-s086: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+visadev(64): 15.20-s086: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+module mux_good (
+|
+halcheck: *N,PRTCNT (./mux_good.v,1|0): Module/Entity 'mux_good' contains '4' ports.
+halcheck: (./mux_good.v,1): Number of Input ports: 3.
+halcheck: (./mux_good.v,1): Number of Output ports: 1.
+    input  [3:0] a,
+|
+halcheck: *W,STYVAL (./mux_good.v,2|0): Numeric value '3' used for identifier 'a'. Use constants to avoid portability issues.
+    input  [3:0] b,
+|
+halcheck: *W,STYVAL (./mux_good.v,3|0): Numeric value '3' used for identifier 'b'. Use constants to avoid portability issues.
+    output [3:0] y
+|
+halcheck: *W,STYVAL (./mux_good.v,5|0): Numeric value '3' used for identifier 'y'. Use constants to avoid portability issues.
+    wire [3:0] sel_a;
+|
+halcheck: *W,STYVAL (./mux_good.v,8|0): Numeric value '3' used for identifier 'sel_a'. Use constants to avoid portability issues.
+    wire [3:0] sel_b;
+|
+halcheck: *W,STYVAL (./mux_good.v,9|0): Numeric value '3' used for identifier 'sel_b'. Use constants to avoid portability issues.
+    wire [3:0] sel_n;
+|
+halcheck: *W,STYVAL (./mux_good.v,10|0): Numeric value '3' used for identifier 'sel_n'. Use constants to avoid portability issues.
+halcheck: Total errors   = 0.
+halcheck: Total warnings = 6.
+
+  ==========================================================================
+Performing synthesizability checks 
+
+cfe64: 15.20.s086..-(): (c) Copyright 1995 - 2020 Cadence Design Systems, Inc.
+cfe64 Build : Mon Dec  7 22:53:08 IST 2020 ldvopt223
+halsynth: Loading design snapshot....
+halsynth: Traversing design hierarchy....
+halsynth: Total errors   = 0.
+halsynth: Total warnings = 0.
+
+  ==========================================================================
+Performing structural checks 
+
+halstruct(64): 15.20-s086: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+visadev(64): 15.20-s086: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+    assign y = sel_a | sel_b;
+|
+halstruct: *W,TPOUNR (./mux_good.v,17|0): Output 'y' of top-level module is not a register.
+module mux_good (
+|
+halstruct: *W,IOCOMB (./mux_good.v,1|0): Combinational path detected between top-level input 'mux_good.sel' and top-level output 'mux_good.y'.
+module mux_good (
+|
+halstruct: *W,IOCOMB (./mux_good.v,1|0): Combinational path detected between top-level input 'mux_good.a' and top-level output 'mux_good.y'.
+module mux_good (
+|
+halstruct: *W,IOCOMB (./mux_good.v,1|0): Combinational path detected between top-level input 'mux_good.b' and top-level output 'mux_good.y'.
+    assign sel_n = {4{~sel}};
+|
+halstruct: *W,DALIAS (./mux_good.v,12|0): Aliased constructs found. Wires 'sel_n[1]' and 'sel_n[0]' have same drivers.
+halstruct: (./mux_good.v,12): sel_n[0].
+    assign sel_n = {4{~sel}};
+|
+halstruct: *W,DALIAS (./mux_good.v,12|0): Aliased constructs found. Wires 'sel_n[2]' and 'sel_n[0]' have same drivers.
+halstruct: (./mux_good.v,12): sel_n[0].
+    assign sel_n = {4{~sel}};
+|
+halstruct: *W,DALIAS (./mux_good.v,12|0): Aliased constructs found. Wires 'sel_n[3]' and 'sel_n[0]' have same drivers.
+halstruct: (./mux_good.v,12): sel_n[0].
+module mux_good (
+|
+halstruct: *N,NUMDFF (./mux_good.v,1|0): Number of single-bit D flip-flops present in the hierarchy is 0.
+halstruct: Design facts generated in 'hal.design_facts'.
+halstruct: Total errors   = 0.
+halstruct: Total warnings = 7.
+
+  ==========================================================================
+
+Analysis summary :
+
+ Warnings : (13)
+  DALIAS (3)      IOCOMB (3)      STYVAL (6)      TPOUNR (1)     
+
+ Notes    : (2)
+  NUMDFF (1)      PRTCNT (1)     
+
+Analysis complete.
+
+ ==========================================================================
+
+To analyze results, run following command :
+    ncbrowse -64bit -cdslib ./INCA_libs/irun.nc/cds.lib -hdlvar ./INCA_libs/irun.nc/hdl.var -sortby severity -sortby category -sortby tag hal.log
+

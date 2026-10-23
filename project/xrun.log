@@ -1,0 +1,49 @@
+xrun(64): 22.09-s003: (c) Copyright 1995-2022 Cadence Design Systems, Inc.
+TOOL:	xrun(64)	22.09-s003: Started on Oct 21, 2026 at 13:16:00 IST
+xrun
+	-access +rwc
+	rtl/activity_monitor.v
+	rtl/adaptive_threshold.v
+	rtl/clock_divider.v
+	rtl/clock_gate.v
+	rtl/csr.v
+	rtl/idle_counter.v
+	rtl/power_fsm.v
+	rtl/power_gate_ctrl.v
+	rtl/predictor.v
+	rtl/retention_ctrl.v
+	rtl/statistics.v
+	rtl/top.v
+	tb/tb_top.v
+	-top tb_top
+	Elaborating the design hierarchy:
+		Caching library 'worklib' ....... Done
+	Top level design units:
+		tb_top
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.top:v <0x77b0d6ea>
+			streams:   1, words:   214
+		worklib.tb_top:v <0x1fa0bc56>
+			streams:  11, words: 11878
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                 Instances  Unique
+		Modules:                 4       4
+		Registers:              24      24
+		Scalar wires:            7       -
+		Vectored wires:         12       -
+		Always blocks:           4       4
+		Initial blocks:          1       1
+		Cont. assignments:       1       2
+		Pseudo assignments:      7       7
+		Simulation timescale:  1ps
+	Writing initial simulation snapshot: worklib.tb_top:v
+Loading snapshot worklib.tb_top:v .................... Done
+xcelium> source /home/install/XCELIUM2209/tools/xcelium/files/xmsimrc
+xcelium> run
+Simulation complete via $finish(1) at time 10555 NS + 0
+./tb/tb_top.v:90         $finish;
+xcelium> exit
+TOOL:	xrun(64)	22.09-s003: Exiting on Oct 21, 2026 at 13:16:05 IST  (total: 00:00:05)

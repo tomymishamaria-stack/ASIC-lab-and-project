@@ -1,0 +1,640 @@
+[09/11 10:19:58      0s] 
+[09/11 10:19:58      0s] Cadence Innovus(TM) Implementation System.
+[09/11 10:19:58      0s] Copyright 2021 Cadence Design Systems, Inc. All rights reserved worldwide.
+[09/11 10:19:58      0s] 
+[09/11 10:19:58      0s] Version:	v21.15-s110_1, built Fri Sep 23 13:08:12 PDT 2022
+[09/11 10:19:58      0s] Options:	
+[09/11 10:19:58      0s] Date:		Fri Sep 11 10:19:58 2026
+[09/11 10:19:58      0s] Host:		cad312vitcc.vit.ac.in (x86_64 w/Linux 4.18.0-553.150.1.el8_10.x86_64) (16cores*64cpus*INTEL(R) XEON(R) GOLD 6526Y 38400KB)
+[09/11 10:19:58      0s] OS:		Red Hat Enterprise Linux release 8.10 (Ootpa)
+[09/11 10:19:58      0s] 
+[09/11 10:19:58      0s] License:
+[09/11 10:19:58      0s] 		[10:19:58.328642] Configured Lic search path (21.01-s002): 5281@14.139.1.126:1717@14.139.1.126
+
+[09/11 10:20:00      0s] 		invs	Innovus Implementation System	21.1	checkout succeeded
+[09/11 10:20:00      0s] 		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+[09/11 10:20:10      9s] Reset Parastics called with the command setExtractRCMode -reset@(#)CDS: Innovus v21.15-s110_1 (64bit) 09/23/2022 13:08 (Linux 3.10.0-693.el7.x86_64)
+[09/11 10:20:11     11s] @(#)CDS: NanoRoute 21.15-s110_1 NR220912-2004/21_15-UB (database version 18.20.592) {superthreading v2.17}
+[09/11 10:20:11     11s] @(#)CDS: AAE 21.15-s039 (64bit) 09/23/2022 (Linux 3.10.0-693.el7.x86_64)
+[09/11 10:20:11     11s] @(#)CDS: CTE 21.15-s038_1 () Sep 20 2022 11:42:13 ( )
+[09/11 10:20:11     11s] @(#)CDS: SYNTECH 21.15-s012_1 () Sep  5 2022 10:25:51 ( )
+[09/11 10:20:11     11s] @(#)CDS: CPE v21.15-s076
+[09/11 10:20:11     11s] @(#)CDS: IQuantus/TQuantus 21.1.1-s867 (64bit) Sun Jun 26 22:12:54 PDT 2022 (Linux 3.10.0-693.el7.x86_64)
+[09/11 10:20:11     11s] @(#)CDS: OA 22.60-p076 Wed May 18 13:45:29 2022
+[09/11 10:20:11     11s] @(#)CDS: SGN 20.10-d001 (01-Jun-2020) (64 bit executable, Qt5.9.0)
+[09/11 10:20:11     11s] @(#)CDS: RCDB 11.15.0
+[09/11 10:20:11     11s] @(#)CDS: STYLUS 21.12-s013_1 (08/15/2022 08:25 PDT)
+[09/11 10:20:11     11s] @(#)CDS: SystemPlanner-21.15Rel-8720 (21.15) (2022-08-22 18:31:54+0800)
+[09/11 10:20:11     11s] Create and set the environment variable TMPDIR to /tmp/innovus_temp_3944425_cad312vitcc.vit.ac.in_vlsi12_Oeb8QB.
+
+[09/11 10:20:11     11s] Change the soft stacksize limit to 0.2%RAM (4126 mbytes). Set global soft_stack_size_limit to change the value.
+[09/11 10:20:13     12s] 
+[09/11 10:20:13     12s] **INFO:  MMMC transition support version v31-84 
+[09/11 10:20:13     12s] 
+[09/11 10:20:13     12s] <CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+[09/11 10:20:13     12s] <CMD> suppressMessage ENCEXT-2799
+[09/11 10:20:13     12s] <CMD> getVersion
+[09/11 10:20:13     12s] <CMD> getVersion
+[09/11 10:20:13     12s] <CMD> getVersion
+[09/11 10:20:13     12s] [INFO] Loading PVS 22.20 fill procedures
+[09/11 10:20:13     12s] <CMD> win
+[09/11 10:21:46     19s] **ERROR: (IMPSYT-6299):	Cannot find restore design file.
+[09/11 10:26:43     46s] <CMD> encMessage warning 0
+[09/11 10:26:43     46s] Suppress "**WARN ..." messages.
+[09/11 10:26:43     46s] <CMD> encMessage debug 0
+[09/11 10:26:43     46s] <CMD> is_common_ui_mode
+[09/11 10:26:43     46s] <CMD> restoreDesign /home/vlsi12/24BVD1041/pd_demo/fir/fir_4tap_post_route_1.enc.dat fir_4tap
+[09/11 10:26:43     46s] #% Begin load design ... (date=09/11 10:26:43, mem=1032.2M)
+[09/11 10:26:43     47s] Set Default Input Pin Transition as 0.1 ps.
+[09/11 10:26:43     47s] Loading design 'fir_4tap' saved by 'Innovus' '21.15-s110_1' on 'Fri Aug 28 12:29:00 2026'.
+[09/11 10:26:43     47s] % Begin Load MMMC data ... (date=09/11 10:26:43, mem=1034.1M)
+[09/11 10:26:43     47s] % End Load MMMC data ... (date=09/11 10:26:43, total cpu=0:00:00.0, real=0:00:00.0, peak res=1034.5M, current mem=1034.5M)
+[09/11 10:26:43     47s] 
+[09/11 10:26:43     47s] Loading LEF file /home/vlsi12/24BVD1041/pd_demo/fir/fir_4tap_post_route_1.enc.dat/libs/lef/gsclib090_translated.lef ...
+[09/11 10:26:43     47s] **WARN: (IMPLF-105):	The layer 'Oxide' specified in SAMENET spacing
+[09/11 10:26:43     47s] rule is neither a routing layer nor a cut layer. The rule is ignored.
+[09/11 10:26:43     47s] **WARN: (IMPLF-105):	The layer 'Poly' specified in SAMENET spacing
+[09/11 10:26:43     47s] rule is neither a routing layer nor a cut layer. The rule is ignored.
+[09/11 10:26:43     47s] Set DBUPerIGU to M2 pitch 580.
+[09/11 10:26:43     47s] **WARN: (IMPLF-200):	Pin 'A' in macro 'ANTENNA' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[09/11 10:26:43     47s] Type 'man IMPLF-200' for more detail.
+[09/11 10:26:43     47s] 
+##  Check design process and node:  
+##  Both design process and tech node are not set.
+
+[09/11 10:26:43     47s] Loading view definition file from /home/vlsi12/24BVD1041/pd_demo/fir/fir_4tap_post_route_1.enc.dat/viewDefinition.tcl
+[09/11 10:26:43     47s] Reading max_timing timing library '/home/install/FOUNDRY/digital/90nm/dig/lib/slow.lib' ...
+[09/11 10:26:43     47s] Read 479 cells in library 'slow' 
+[09/11 10:26:43     47s] Reading min_timing timing library '/home/install/FOUNDRY/digital/90nm/dig/lib/fast.lib' ...
+[09/11 10:26:44     47s] Read 479 cells in library 'fast' 
+[09/11 10:26:44     47s] Ending "PreSetAnalysisView" (total cpu=0:00:00.6, real=0:00:01.0, peak res=1112.2M, current mem=1055.5M)
+[09/11 10:26:44     47s] *** End library_loading (cpu=0.01min, real=0.02min, mem=30.0M, fe_cpu=0.80min, fe_real=6.77min, fe_mem=1134.7M) ***
+[09/11 10:26:44     47s] % Begin Load netlist data ... (date=09/11 10:26:44, mem=1055.5M)
+[09/11 10:26:44     47s] *** Begin netlist parsing (mem=1134.7M) ***
+[09/11 10:26:44     47s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR3XL' is defined in LEF but not in the timing library.
+[09/11 10:26:44     47s] Type 'man IMPVL-159' for more detail.
+[09/11 10:26:44     47s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR3XL' is defined in LEF but not in the timing library.
+[09/11 10:26:44     47s] Type 'man IMPVL-159' for more detail.
+[09/11 10:26:44     47s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR3X1' is defined in LEF but not in the timing library.
+[09/11 10:26:44     47s] Type 'man IMPVL-159' for more detail.
+[09/11 10:26:44     47s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR3X1' is defined in LEF but not in the timing library.
+[09/11 10:26:44     47s] Type 'man IMPVL-159' for more detail.
+[09/11 10:26:44     47s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR2XL' is defined in LEF but not in the timing library.
+[09/11 10:26:44     47s] Type 'man IMPVL-159' for more detail.
+[09/11 10:26:44     47s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR2XL' is defined in LEF but not in the timing library.
+[09/11 10:26:44     47s] Type 'man IMPVL-159' for more detail.
+[09/11 10:26:44     47s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR2X4' is defined in LEF but not in the timing library.
+[09/11 10:26:44     47s] Type 'man IMPVL-159' for more detail.
+[09/11 10:26:44     47s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR2X4' is defined in LEF but not in the timing library.
+[09/11 10:26:44     47s] Type 'man IMPVL-159' for more detail.
+[09/11 10:26:44     47s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR2X2' is defined in LEF but not in the timing library.
+[09/11 10:26:44     47s] Type 'man IMPVL-159' for more detail.
+[09/11 10:26:44     47s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR2X2' is defined in LEF but not in the timing library.
+[09/11 10:26:44     47s] Type 'man IMPVL-159' for more detail.
+[09/11 10:26:44     47s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR2X1' is defined in LEF but not in the timing library.
+[09/11 10:26:44     47s] Type 'man IMPVL-159' for more detail.
+[09/11 10:26:44     47s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR2X1' is defined in LEF but not in the timing library.
+[09/11 10:26:44     47s] Type 'man IMPVL-159' for more detail.
+[09/11 10:26:44     47s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XNOR3XL' is defined in LEF but not in the timing library.
+[09/11 10:26:44     47s] Type 'man IMPVL-159' for more detail.
+[09/11 10:26:44     47s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XNOR3XL' is defined in LEF but not in the timing library.
+[09/11 10:26:44     47s] Type 'man IMPVL-159' for more detail.
+[09/11 10:26:44     47s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XNOR3X1' is defined in LEF but not in the timing library.
+[09/11 10:26:44     47s] Type 'man IMPVL-159' for more detail.
+[09/11 10:26:44     47s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XNOR3X1' is defined in LEF but not in the timing library.
+[09/11 10:26:44     47s] Type 'man IMPVL-159' for more detail.
+[09/11 10:26:44     47s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XNOR2XL' is defined in LEF but not in the timing library.
+[09/11 10:26:44     47s] Type 'man IMPVL-159' for more detail.
+[09/11 10:26:44     47s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XNOR2XL' is defined in LEF but not in the timing library.
+[09/11 10:26:44     47s] Type 'man IMPVL-159' for more detail.
+[09/11 10:26:44     47s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XNOR2X4' is defined in LEF but not in the timing library.
+[09/11 10:26:44     47s] Type 'man IMPVL-159' for more detail.
+[09/11 10:26:44     47s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XNOR2X4' is defined in LEF but not in the timing library.
+[09/11 10:26:44     47s] Type 'man IMPVL-159' for more detail.
+[09/11 10:26:44     47s] **WARN: (EMS-27):	Message (IMPVL-159) has exceeded the current message display limit of 20.
+[09/11 10:26:44     47s] To increase the message display limit, refer to the product command reference manual.
+[09/11 10:26:44     47s] Created 479 new cells from 2 timing libraries.
+[09/11 10:26:44     47s] Reading netlist ...
+[09/11 10:26:44     47s] Backslashed names will retain backslash and a trailing blank character.
+[09/11 10:26:44     47s] Reading verilogBinary netlist '/home/vlsi12/24BVD1041/pd_demo/fir/fir_4tap_post_route_1.enc.dat/fir_4tap.v.bin'
+[09/11 10:26:44     47s] 
+[09/11 10:26:44     47s] *** Memory Usage v#1 (Current mem = 1142.715M, initial mem = 483.887M) ***
+[09/11 10:26:44     47s] *** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=1142.7M) ***
+[09/11 10:26:44     47s] % End Load netlist data ... (date=09/11 10:26:44, total cpu=0:00:00.0, real=0:00:00.0, peak res=1069.5M, current mem=1069.5M)
+[09/11 10:26:44     47s] Top level cell is fir_4tap.
+[09/11 10:26:44     48s] Hooked 958 DB cells to tlib cells.
+[09/11 10:26:44     48s] Ending "BindLib:" (total cpu=0:00:00.0, real=0:00:00.0, peak res=1078.8M, current mem=1078.8M)
+[09/11 10:26:44     48s] Starting recursive module instantiation check.
+[09/11 10:26:44     48s] No recursion found.
+[09/11 10:26:44     48s] Building hierarchical netlist for Cell fir_4tap ...
+[09/11 10:26:44     48s] *** Netlist is unique.
+[09/11 10:26:44     48s] Setting Std. cell height to 5220 DBU (smallest netlist inst).
+[09/11 10:26:44     48s] ** info: there are 967 modules.
+[09/11 10:26:44     48s] ** info: there are 140 stdCell insts.
+[09/11 10:26:44     48s] 
+[09/11 10:26:44     48s] *** Memory Usage v#1 (Current mem = 1190.129M, initial mem = 483.887M) ***
+[09/11 10:26:44     48s] *info: set bottom ioPad orient R0
+[09/11 10:26:44     48s] **WARN: (IMPFP-3961):	The techSite 'pad' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+[09/11 10:26:44     48s] Type 'man IMPFP-3961' for more detail.
+[09/11 10:26:44     48s] **WARN: (IMPFP-3961):	The techSite 'corner' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+[09/11 10:26:44     48s] Type 'man IMPFP-3961' for more detail.
+[09/11 10:26:44     48s] Horizontal Layer M1 offset = 290 (derived)
+[09/11 10:26:44     48s] Vertical Layer M2 offset = 290 (derived)
+[09/11 10:26:44     48s] Start create_tracks
+[09/11 10:26:44     48s] Generated pitch 0.29 in Metal8 is different from 0.87 defined in technology file in unpreferred direction.
+[09/11 10:26:44     48s] Loading preference file /home/vlsi12/24BVD1041/pd_demo/fir/fir_4tap_post_route_1.enc.dat/gui.pref.tcl ...
+[09/11 10:26:44     48s] **WARN: (IMPOPT-3602):	The specified path group name reg2reg is not defined.
+[09/11 10:26:44     48s] Type 'man IMPOPT-3602' for more detail.
+[09/11 10:26:44     48s] Effort level <high> specified for reg2reg path_group
+[09/11 10:26:44     48s] #WARNING (NRIF-90) Option setNanoRouteMode -routeBottomRoutingLayer is obsolete. It will continue to work for the current release. To ensure compatibility with future releases, use option setDesignMode -bottomRoutingLayer instead.
+[09/11 10:26:44     48s] #WARNING (NRIF-91) Option setNanoRouteMode -routeTopRoutingLayer is obsolete. It will continue to work for the current release. To ensure compatibility with future releases, use option setDesignMode -topRoutingLayer instead.
+[09/11 10:26:44     48s] AAE_INFO: switching -siAware from false to true ...
+[09/11 10:26:44     48s] AAE_INFO: The setting is changed from false to true in setDelayCalMode -SIAware
+[09/11 10:26:44     48s] addRing command will ignore shorts while creating rings.
+[09/11 10:26:44     48s] addRing command will disallow rings to go over rows.
+[09/11 10:26:44     48s] addRing command will consider rows while creating rings.
+[09/11 10:26:44     48s] The ring targets are set to core/block ring wires.
+[09/11 10:26:44     48s] addStripe will allow jog to connect padcore ring and block ring.
+[09/11 10:26:44     48s] 
+[09/11 10:26:44     48s] Stripes will not extend to closest target.
+[09/11 10:26:44     48s] When breaking rings, the power planner will consider the existence of blocks.
+[09/11 10:26:44     48s] addStripe will break automatically at non-default domains when generating global stripes over the core area or default domain.
+[09/11 10:26:44     48s] The entire stripe set will break at the domain if one of the nets is not in the domain.
+[09/11 10:26:44     48s] Stripes will not be created over regions without power planning wires.
+[09/11 10:26:44     48s] Offset for stripe breaking is set to 0.
+[09/11 10:26:44     48s] Stripes will stop at the boundary of the specified area.
+[09/11 10:26:44     48s] The power planner will set stripe antenna targets to none (no trimming allowed).
+[09/11 10:26:44     48s] Change floorplan default-technical-site to 'gsclib090site'.
+[09/11 10:26:44     48s] Extraction setup Delayed 
+[09/11 10:26:44     48s] *Info: initialize multi-corner CTS.
+[09/11 10:26:44     48s] Ending "SetAnalysisView" (total cpu=0:00:00.0, real=0:00:00.0, peak res=1346.9M, current mem=1104.9M)
+[09/11 10:26:44     48s] Tech dependent Parameter, Build TLibAnalyzer for: cellAreaConsiderPadding
+[09/11 10:26:44     48s] 
+[09/11 10:26:44     48s] TimeStamp Creating Cell Server ...(0, 1, 1, 1) in restoreDesign Begin ...
+[09/11 10:26:44     48s] Summary for sequential cells identification: 
+[09/11 10:26:44     48s]   Identified SBFF number: 112
+[09/11 10:26:44     48s]   Identified MBFF number: 0
+[09/11 10:26:44     48s]   Identified SB Latch number: 0
+[09/11 10:26:44     48s]   Identified MB Latch number: 0
+[09/11 10:26:44     48s]   Not identified SBFF number: 8
+[09/11 10:26:44     48s]   Not identified MBFF number: 0
+[09/11 10:26:44     48s]   Not identified SB Latch number: 0
+[09/11 10:26:44     48s]   Not identified MB Latch number: 0
+[09/11 10:26:44     48s]   Number of sequential cells which are not FFs: 32
+[09/11 10:26:44     48s] Total number of combinational cells: 317
+[09/11 10:26:44     48s] Total number of sequential cells: 152
+[09/11 10:26:44     48s] Total number of tristate cells: 10
+[09/11 10:26:44     48s] Total number of level shifter cells: 0
+[09/11 10:26:44     48s] Total number of power gating cells: 0
+[09/11 10:26:44     48s] Total number of isolation cells: 0
+[09/11 10:26:44     48s] Total number of power switch cells: 0
+[09/11 10:26:44     48s] Total number of pulse generator cells: 0
+[09/11 10:26:44     48s] Total number of always on buffers: 0
+[09/11 10:26:44     48s] Total number of retention cells: 0
+[09/11 10:26:44     48s] List of usable buffers: BUFX2 BUFX12 BUFX16 BUFX20 CLKBUFX2 BUFX3 BUFX4 BUFX6 BUFX8 CLKBUFX12 CLKBUFX16 CLKBUFX20 CLKBUFX3 CLKBUFX4 CLKBUFX6 CLKBUFX8
+[09/11 10:26:44     48s] Total number of usable buffers: 16
+[09/11 10:26:44     48s] List of unusable buffers:
+[09/11 10:26:44     48s] Total number of unusable buffers: 0
+[09/11 10:26:44     48s] List of usable inverters: CLKINVX1 CLKINVX2 CLKINVX12 CLKINVX16 CLKINVX20 CLKINVX3 CLKINVX4 CLKINVX6 CLKINVX8 INVX1 INVX2 INVX12 INVX16 INVX20 INVXL INVX3 INVX4 INVX6 INVX8
+[09/11 10:26:44     48s] Total number of usable inverters: 19
+[09/11 10:26:44     48s] List of unusable inverters:
+[09/11 10:26:44     48s] Total number of unusable inverters: 0
+[09/11 10:26:44     48s] List of identified usable delay cells: DLY1X1 DLY1X4 DLY2X1 DLY2X4 DLY3X1 DLY3X4 DLY4X1 DLY4X4
+[09/11 10:26:44     48s] Total number of identified usable delay cells: 8
+[09/11 10:26:44     48s] List of identified unusable delay cells:
+[09/11 10:26:44     48s] Total number of identified unusable delay cells: 0
+[09/11 10:26:44     48s] 
+[09/11 10:26:44     48s] TimeStamp Creating Cell Server ...(0, 1, 1, 1) in restoreDesign End ...
+[09/11 10:26:44     48s] 
+[09/11 10:26:44     48s] TimeStamp Deleting Cell Server Begin ...
+[09/11 10:26:44     48s] 
+[09/11 10:26:44     48s] TimeStamp Deleting Cell Server End ...
+[09/11 10:26:44     48s] Ending "Cell type marking" (total cpu=0:00:00.0, real=0:00:00.0, peak res=1356.1M, current mem=1356.1M)
+[09/11 10:26:44     48s] 
+[09/11 10:26:44     48s] TimeStamp Creating Cell Server ...(0, 0, 0, 0) in restoreDesign Begin ...
+[09/11 10:26:44     48s] Summary for sequential cells identification: 
+[09/11 10:26:44     48s]   Identified SBFF number: 112
+[09/11 10:26:44     48s]   Identified MBFF number: 0
+[09/11 10:26:44     48s]   Identified SB Latch number: 0
+[09/11 10:26:44     48s]   Identified MB Latch number: 0
+[09/11 10:26:44     48s]   Not identified SBFF number: 8
+[09/11 10:26:44     48s]   Not identified MBFF number: 0
+[09/11 10:26:44     48s]   Not identified SB Latch number: 0
+[09/11 10:26:44     48s]   Not identified MB Latch number: 0
+[09/11 10:26:44     48s]   Number of sequential cells which are not FFs: 32
+[09/11 10:26:44     48s] 
+[09/11 10:26:44     48s] Trim Metal Layers:
+[09/11 10:26:44     48s]  Visiting view : worst_case
+[09/11 10:26:44     48s]    : PowerDomain = none : Weighted F : unweighted  = 35.90 (1.000) with rcCorner = 0
+[09/11 10:26:44     48s]    : PowerDomain = none : Weighted F : unweighted  = 33.00 (1.000) with rcCorner = -1
+[09/11 10:26:44     48s]  Visiting view : best_case
+[09/11 10:26:44     48s]    : PowerDomain = none : Weighted F : unweighted  = 12.10 (1.000) with rcCorner = 0
+[09/11 10:26:44     48s]    : PowerDomain = none : Weighted F : unweighted  = 11.00 (1.000) with rcCorner = -1
+[09/11 10:26:44     48s] 
+[09/11 10:26:44     48s] TimeStamp Creating Cell Server ...(0, 0, 0, 0) in restoreDesign End ...
+[09/11 10:26:44     48s] 
+[09/11 10:26:44     48s] TimeStamp Deleting Cell Server Begin ...
+[09/11 10:26:44     48s] 
+[09/11 10:26:44     48s] TimeStamp Deleting Cell Server End ...
+[09/11 10:26:44     48s] Reading floorplan file - /home/vlsi12/24BVD1041/pd_demo/fir/fir_4tap_post_route_1.enc.dat/fir_4tap.fp.gz (mem = 1442.2M).
+[09/11 10:26:44     48s] % Begin Load floorplan data ... (date=09/11 10:26:44, mem=1358.1M)
+[09/11 10:26:44     48s] *info: reset 200 existing net BottomPreferredLayer and AvoidDetour
+[09/11 10:26:44     48s] Deleting old partition specification.
+[09/11 10:26:44     48s] Set FPlanBox to (0 0 129340 116000)
+[09/11 10:26:44     48s] **WARN: (IMPFP-3961):	The techSite 'pad' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+[09/11 10:26:44     48s] Type 'man IMPFP-3961' for more detail.
+[09/11 10:26:44     48s] **WARN: (IMPFP-3961):	The techSite 'corner' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+[09/11 10:26:44     48s] Type 'man IMPFP-3961' for more detail.
+[09/11 10:26:44     48s] Horizontal Layer M1 offset = 290 (derived)
+[09/11 10:26:44     48s] Vertical Layer M2 offset = 290 (derived)
+[09/11 10:26:44     48s] Start create_tracks
+[09/11 10:26:44     48s] Generated pitch 0.29 in Metal8 is different from 0.87 defined in technology file in unpreferred direction.
+[09/11 10:26:44     48s]  ... processed partition successfully.
+[09/11 10:26:44     48s] Reading binary special route file /home/vlsi12/24BVD1041/pd_demo/fir/fir_4tap_post_route_1.enc.dat/fir_4tap.fp.spr.gz (Created by Innovus v21.15-s110_1 on Fri Aug 28 12:28:59 2026, version: 1)
+[09/11 10:26:44     48s] Convert 0 swires and 0 svias from compressed groups
+[09/11 10:26:44     48s] 24 swires and 64 svias were compressed
+[09/11 10:26:44     48s] 71 swires and 288 svias were decompressed from small or sparse groups
+[09/11 10:26:44     48s] Ending "Read special route file" (total cpu=0:00:00.0, real=0:00:00.0, peak res=1360.9M, current mem=1360.9M)
+[09/11 10:26:44     48s] Extracting standard cell pins and blockage ...... 
+[09/11 10:26:44     48s] Pin and blockage extraction finished
+[09/11 10:26:44     48s] % End Load floorplan data ... (date=09/11 10:26:44, total cpu=0:00:00.0, real=0:00:00.0, peak res=1362.6M, current mem=1360.7M)
+[09/11 10:26:44     48s] Reading congestion map file /home/vlsi12/24BVD1041/pd_demo/fir/fir_4tap_post_route_1.enc.dat/fir_4tap.route.congmap.gz ...
+[09/11 10:26:44     48s] % Begin Load SymbolTable ... (date=09/11 10:26:44, mem=1361.0M)
+[09/11 10:26:45     48s] routingBox: (0 0) (129340 116000)
+[09/11 10:26:45     48s] coreBox:    (16240 16240) (113100 99760)
+[09/11 10:26:45     48s] Un-suppress "**WARN ..." messages.
+[09/11 10:26:45     48s] % End Load SymbolTable ... (date=09/11 10:26:45, total cpu=0:00:00.0, real=0:00:01.0, peak res=1362.0M, current mem=1362.0M)
+[09/11 10:26:45     48s] Loading place ...
+[09/11 10:26:45     48s] % Begin Load placement data ... (date=09/11 10:26:45, mem=1362.0M)
+[09/11 10:26:45     48s] Reading placement file - /home/vlsi12/24BVD1041/pd_demo/fir/fir_4tap_post_route_1.enc.dat/fir_4tap.place.gz.
+[09/11 10:26:45     48s] ** Reading stdCellPlacement_binary (Created by Innovus v21.15-s110_1 on Fri Aug 28 12:28:59 2026, version# 2) ...
+[09/11 10:26:45     48s] Read Views for adaptive view pruning ...
+[09/11 10:26:45     48s] Read 0 views from Binary DB for adaptive view pruning
+[09/11 10:26:45     48s] *** Completed restorePlace (cpu=0:00:00.0 real=0:00:00.0 mem=1443.3M) ***
+[09/11 10:26:45     48s] Total net length = 2.687e+03 (1.387e+03 1.300e+03) (ext = 4.222e+02)
+[09/11 10:26:45     48s] % End Load placement data ... (date=09/11 10:26:45, total cpu=0:00:00.0, real=0:00:00.0, peak res=1362.7M, current mem=1362.7M)
+[09/11 10:26:45     48s] % Begin Load routing data ... (date=09/11 10:26:45, mem=1362.7M)
+[09/11 10:26:45     48s] Reading routing file - /home/vlsi12/24BVD1041/pd_demo/fir/fir_4tap_post_route_1.enc.dat/fir_4tap.route.gz.
+[09/11 10:26:45     48s] Reading Innovus routing data (Created by Innovus v21.15-s110_1 on Fri Aug 28 12:28:59 2026 Format: 20.1) ...
+[09/11 10:26:45     48s] *** Total 194 nets are successfully restored.
+[09/11 10:26:45     48s] *** Completed restoreRoute (cpu=0:00:00.0 real=0:00:00.0 mem=1440.3M) ***
+[09/11 10:26:45     48s] % End Load routing data ... (date=09/11 10:26:45, total cpu=0:00:00.0, real=0:00:00.0, peak res=1364.4M, current mem=1363.5M)
+[09/11 10:26:45     48s] TAT_INFO: restoreCongMap REAL = 1 : CPU = 0 : MEM = 0.
+[09/11 10:26:45     48s] Reading property file /home/vlsi12/24BVD1041/pd_demo/fir/fir_4tap_post_route_1.enc.dat/fir_4tap.prop
+[09/11 10:26:45     48s] *** Completed restoreProperty (cpu=0:00:00.0 real=0:00:00.0 mem=1443.3M) ***
+[09/11 10:26:45     48s] Reading dirtyarea snapshot file /home/vlsi12/24BVD1041/pd_demo/fir/fir_4tap_post_route_1.enc.dat/fir_4tap.db.da.gz (Create by Innovus v21.15-s110_1 on Fri Aug 28 12:28:59 2026, version: 4).
+[09/11 10:26:45     48s] Set Default Input Pin Transition as 0.1 ps.
+[09/11 10:26:45     48s] eee: readRCCornerMetaData, file read unsuccessful: /home/vlsi12/24BVD1041/pd_demo/fir/fir_4tap_post_route_1.enc.dat/extraction/extractionMetaData.gz
+[09/11 10:26:45     48s] Extraction setup Started 
+[09/11 10:26:45     48s] 
+[09/11 10:26:45     48s] Trim Metal Layers:
+[09/11 10:26:45     48s] Initializing multi-corner RC extraction with 1 active RC Corners ...
+[09/11 10:26:45     48s] **WARN: (IMPEXT-2773):	The via resistance between layers M0 and M1 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+[09/11 10:26:45     48s] Type 'man IMPEXT-2773' for more detail.
+[09/11 10:26:45     48s] **WARN: (IMPEXT-2776):	The via resistance between layers M1 and M2 is not defined in the capacitance table file. The via resistance of 1.4 Ohms defined in the LEF technology file will be used as via resistance between these layers.
+[09/11 10:26:45     48s] Type 'man IMPEXT-2776' for more detail.
+[09/11 10:26:45     48s] **WARN: (IMPEXT-2776):	The via resistance between layers M2 and M3 is not defined in the capacitance table file. The via resistance of 1.4 Ohms defined in the LEF technology file will be used as via resistance between these layers.
+[09/11 10:26:45     48s] Type 'man IMPEXT-2776' for more detail.
+[09/11 10:26:45     48s] **WARN: (IMPEXT-2776):	The via resistance between layers M3 and M4 is not defined in the capacitance table file. The via resistance of 1.4 Ohms defined in the LEF technology file will be used as via resistance between these layers.
+[09/11 10:26:45     48s] Type 'man IMPEXT-2776' for more detail.
+[09/11 10:26:45     48s] **WARN: (IMPEXT-2776):	The via resistance between layers M4 and M5 is not defined in the capacitance table file. The via resistance of 1.4 Ohms defined in the LEF technology file will be used as via resistance between these layers.
+[09/11 10:26:45     48s] Type 'man IMPEXT-2776' for more detail.
+[09/11 10:26:45     48s] **WARN: (IMPEXT-2776):	The via resistance between layers M5 and M6 is not defined in the capacitance table file. The via resistance of 1.4 Ohms defined in the LEF technology file will be used as via resistance between these layers.
+[09/11 10:26:45     48s] Type 'man IMPEXT-2776' for more detail.
+[09/11 10:26:45     48s] **WARN: (IMPEXT-2776):	The via resistance between layers M6 and M7 is not defined in the capacitance table file. The via resistance of 1.4 Ohms defined in the LEF technology file will be used as via resistance between these layers.
+[09/11 10:26:45     48s] Type 'man IMPEXT-2776' for more detail.
+[09/11 10:26:45     48s] **WARN: (IMPEXT-2776):	The via resistance between layers M7 and M8 is not defined in the capacitance table file. The via resistance of 0.35 Ohms defined in the LEF technology file will be used as via resistance between these layers.
+[09/11 10:26:45     48s] Type 'man IMPEXT-2776' for more detail.
+[09/11 10:26:45     48s] **WARN: (IMPEXT-2776):	The via resistance between layers M8 and M9 is not defined in the capacitance table file. The via resistance of 0.35 Ohms defined in the LEF technology file will be used as via resistance between these layers.
+[09/11 10:26:45     48s] Type 'man IMPEXT-2776' for more detail.
+[09/11 10:26:45     48s] **WARN: (IMPEXT-2766):	The sheet resistance for layer M1 is not defined in the cap table. Therefore, the LEF value 0.08 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+[09/11 10:26:45     48s] **WARN: (IMPEXT-2766):	The sheet resistance for layer M2 is not defined in the cap table. Therefore, the LEF value 0.06 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+[09/11 10:26:45     48s] **WARN: (IMPEXT-2766):	The sheet resistance for layer M3 is not defined in the cap table. Therefore, the LEF value 0.06 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+[09/11 10:26:45     48s] **WARN: (IMPEXT-2766):	The sheet resistance for layer M4 is not defined in the cap table. Therefore, the LEF value 0.06 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+[09/11 10:26:45     48s] **WARN: (IMPEXT-2766):	The sheet resistance for layer M5 is not defined in the cap table. Therefore, the LEF value 0.06 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+[09/11 10:26:45     48s] **WARN: (IMPEXT-2766):	The sheet resistance for layer M6 is not defined in the cap table. Therefore, the LEF value 0.06 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+[09/11 10:26:45     48s] **WARN: (IMPEXT-2766):	The sheet resistance for layer M7 is not defined in the cap table. Therefore, the LEF value 0.06 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+[09/11 10:26:45     48s] **WARN: (IMPEXT-2766):	The sheet resistance for layer M8 is not defined in the cap table. Therefore, the LEF value 0.02 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+[09/11 10:26:45     48s] **WARN: (IMPEXT-2766):	The sheet resistance for layer M9 is not defined in the cap table. Therefore, the LEF value 0.02 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+[09/11 10:26:45     48s] Summary of Active RC-Corners : 
+[09/11 10:26:45     48s]  
+[09/11 10:26:45     48s]  Analysis View: worst_case
+[09/11 10:26:45     48s]     RC-Corner Name        : default_rc_corner
+[09/11 10:26:45     48s]     RC-Corner Index       : 0
+[09/11 10:26:45     48s]     RC-Corner Temperature : 25 Celsius
+[09/11 10:26:45     48s]     RC-Corner Cap Table   : ''
+[09/11 10:26:45     48s]     RC-Corner PreRoute Res Factor         : 1
+[09/11 10:26:45     48s]     RC-Corner PreRoute Cap Factor         : 1
+[09/11 10:26:45     48s]     RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+[09/11 10:26:45     48s]     RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+[09/11 10:26:45     48s]     RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+[09/11 10:26:45     48s]     RC-Corner PreRoute Clock Res Factor   : 1	[Derived from Cap Table]
+[09/11 10:26:45     48s]     RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from Cap Table]
+[09/11 10:26:45     48s]     RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 	[Derived from postRoute_cap (effortLevel low)]
+[09/11 10:26:45     48s]     RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 	[Derived from postRoute_res (effortLevel low)]
+[09/11 10:26:45     48s]     RC-Corner PostRoute Clock coupling capacitance Factor : 1 {1 1 1} 
+[09/11 10:26:45     48s]  
+[09/11 10:26:45     48s]  Analysis View: best_case
+[09/11 10:26:45     48s]     RC-Corner Name        : default_rc_corner
+[09/11 10:26:45     48s]     RC-Corner Index       : 0
+[09/11 10:26:45     48s]     RC-Corner Temperature : 25 Celsius
+[09/11 10:26:45     48s]     RC-Corner Cap Table   : ''
+[09/11 10:26:45     48s]     RC-Corner PreRoute Res Factor         : 1
+[09/11 10:26:45     48s]     RC-Corner PreRoute Cap Factor         : 1
+[09/11 10:26:45     48s]     RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+[09/11 10:26:45     48s]     RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+[09/11 10:26:45     48s]     RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+[09/11 10:26:45     48s]     RC-Corner PreRoute Clock Res Factor   : 1	[Derived from Cap Table]
+[09/11 10:26:45     48s]     RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from Cap Table]
+[09/11 10:26:45     48s]     RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 	[Derived from postRoute_cap (effortLevel low)]
+[09/11 10:26:45     48s]     RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 	[Derived from postRoute_res (effortLevel low)]
+[09/11 10:26:45     48s]     RC-Corner PostRoute Clock coupling capacitance Factor : 1 {1 1 1} 
+[09/11 10:26:45     48s] 
+[09/11 10:26:45     48s] Trim Metal Layers:
+[09/11 10:26:45     48s] LayerId::1 widthSet size::1
+[09/11 10:26:45     48s] LayerId::2 widthSet size::1
+[09/11 10:26:45     48s] LayerId::3 widthSet size::1
+[09/11 10:26:45     48s] LayerId::4 widthSet size::1
+[09/11 10:26:45     48s] LayerId::5 widthSet size::1
+[09/11 10:26:45     48s] LayerId::6 widthSet size::1
+[09/11 10:26:45     48s] LayerId::7 widthSet size::1
+[09/11 10:26:45     48s] LayerId::8 widthSet size::1
+[09/11 10:26:45     48s] LayerId::9 widthSet size::1
+[09/11 10:26:45     48s] eee: pegSigSF::1.070000
+[09/11 10:26:45     48s] Initializing multi-corner resistance tables ...
+[09/11 10:26:45     48s] eee: l::1 avDens::0.086303 usedTrk::46.603831 availTrk::540.000000 sigTrk::46.603831
+[09/11 10:26:45     48s] eee: l::2 avDens::0.096728 usedTrk::69.643909 availTrk::720.000000 sigTrk::69.643909
+[09/11 10:26:45     48s] eee: l::3 avDens::0.112425 usedTrk::60.709311 availTrk::540.000000 sigTrk::60.709311
+[09/11 10:26:45     48s] eee: l::4 avDens::0.000000 usedTrk::0.000000 availTrk::0.000000 sigTrk::0.000000
+[09/11 10:26:45     48s] eee: l::5 avDens::0.000000 usedTrk::0.000000 availTrk::0.000000 sigTrk::0.000000
+[09/11 10:26:45     48s] eee: l::6 avDens::0.000000 usedTrk::0.000000 availTrk::0.000000 sigTrk::0.000000
+[09/11 10:26:45     48s] eee: l::7 avDens::0.000000 usedTrk::0.000000 availTrk::0.000000 sigTrk::0.000000
+[09/11 10:26:45     48s] eee: l::8 avDens::0.099899 usedTrk::26.972663 availTrk::270.000000 sigTrk::26.972663
+[09/11 10:26:45     48s] eee: l::9 avDens::0.123723 usedTrk::33.405115 availTrk::270.000000 sigTrk::33.405115
+[09/11 10:26:45     48s] eee: LAM: n=40 LLS=2-3 HLS=3-5 rDens=0.289535 uaWl=1.000000 uaWlH=0.000000 aWlH=0.000000 lMod=0 pMax=0.850000 pMod=82 wcR=0.700000 newSi=0.001600 wHLS=1.750000 siPrev=0 viaL=0.000000
+[09/11 10:26:45     48s] Start generating vias ..
+[09/11 10:26:45     48s] #create default rule from bind_ndr_rule rule=0x7f35aa9e8ab0 0x7f35820c2ff0
+[09/11 10:26:45     48s] ### import design signature (1): route=1 fixed_route=1 flt_obj=0 vio=1905142130 swire=1 shield_wire=1 net_attr=1 dirty_area=0 del_dirty_area=0 cell=0 placement=0 pin_access=1 inst_pattern=1
+[09/11 10:26:45     48s] #Skip building auto via since it is not turned on.
+[09/11 10:26:45     48s] Extracting standard cell pins and blockage ...... 
+[09/11 10:26:45     48s] Pin and blockage extraction finished
+[09/11 10:26:45     48s] Via generation completed.
+[09/11 10:26:45     48s] % Begin Load power constraints ... (date=09/11 10:26:45, mem=1372.3M)
+[09/11 10:26:45     48s] % End Load power constraints ... (date=09/11 10:26:45, total cpu=0:00:00.0, real=0:00:00.0, peak res=1379.4M, current mem=1379.4M)
+[09/11 10:26:45     48s] % Begin load AAE data ... (date=09/11 10:26:45, mem=1427.8M)
+[09/11 10:26:46     49s] AAE DB initialization (MEM=1534.48 CPU=0:00:00.0 REAL=0:00:00.0) 
+[09/11 10:26:46     49s] % End load AAE data ... (date=09/11 10:26:46, total cpu=0:00:00.5, real=0:00:01.0, peak res=1434.2M, current mem=1434.2M)
+[09/11 10:26:46     49s] Restoring CCOpt config...
+[09/11 10:26:46     49s] 
+[09/11 10:26:46     49s] TimeStamp Creating Cell Server ...(0, 0, 0, 0) in restoreDesign Begin ...
+[09/11 10:26:46     49s] Summary for sequential cells identification: 
+[09/11 10:26:46     49s]   Identified SBFF number: 112
+[09/11 10:26:46     49s]   Identified MBFF number: 0
+[09/11 10:26:46     49s]   Identified SB Latch number: 0
+[09/11 10:26:46     49s]   Identified MB Latch number: 0
+[09/11 10:26:46     49s]   Not identified SBFF number: 8
+[09/11 10:26:46     49s]   Not identified MBFF number: 0
+[09/11 10:26:46     49s]   Not identified SB Latch number: 0
+[09/11 10:26:46     49s]   Not identified MB Latch number: 0
+[09/11 10:26:46     49s]   Number of sequential cells which are not FFs: 32
+[09/11 10:26:46     49s]  Visiting view : worst_case
+[09/11 10:26:46     49s]    : PowerDomain = none : Weighted F : unweighted  = 35.90 (1.000) with rcCorner = 0
+[09/11 10:26:46     49s]    : PowerDomain = none : Weighted F : unweighted  = 33.00 (1.000) with rcCorner = -1
+[09/11 10:26:46     49s]  Visiting view : best_case
+[09/11 10:26:46     49s]    : PowerDomain = none : Weighted F : unweighted  = 12.10 (1.000) with rcCorner = 0
+[09/11 10:26:46     49s]    : PowerDomain = none : Weighted F : unweighted  = 11.00 (1.000) with rcCorner = -1
+[09/11 10:26:46     49s] 
+[09/11 10:26:46     49s] TimeStamp Creating Cell Server ...(0, 0, 0, 0) in restoreDesign End ...
+[09/11 10:26:46     49s]   Extracting original clock gating for CLK...
+[09/11 10:26:46     49s]     clock_tree CLK contains 36 sinks and 0 clock gates.
+[09/11 10:26:46     49s]   Extracting original clock gating for CLK done.
+[09/11 10:26:46     49s]   The skew group CLK/const_fir was created. It contains 36 sinks and 1 sources.
+[09/11 10:26:46     49s] Restoring CCOpt config done.
+[09/11 10:26:46     49s] 
+[09/11 10:26:46     49s] TimeStamp Deleting Cell Server Begin ...
+[09/11 10:26:46     49s] 
+[09/11 10:26:46     49s] TimeStamp Deleting Cell Server End ...
+[09/11 10:26:46     49s] 
+[09/11 10:26:46     49s] TimeStamp Creating Cell Server ...(0, 1, 1, 1) in restoreDesign Begin ...
+[09/11 10:26:46     49s] Summary for sequential cells identification: 
+[09/11 10:26:46     49s]   Identified SBFF number: 112
+[09/11 10:26:46     49s]   Identified MBFF number: 0
+[09/11 10:26:46     49s]   Identified SB Latch number: 0
+[09/11 10:26:46     49s]   Identified MB Latch number: 0
+[09/11 10:26:46     49s]   Not identified SBFF number: 8
+[09/11 10:26:46     49s]   Not identified MBFF number: 0
+[09/11 10:26:46     49s]   Not identified SB Latch number: 0
+[09/11 10:26:46     49s]   Not identified MB Latch number: 0
+[09/11 10:26:46     49s]   Number of sequential cells which are not FFs: 32
+[09/11 10:26:46     49s] Total number of combinational cells: 317
+[09/11 10:26:46     49s] Total number of sequential cells: 152
+[09/11 10:26:46     49s] Total number of tristate cells: 10
+[09/11 10:26:46     49s] Total number of level shifter cells: 0
+[09/11 10:26:46     49s] Total number of power gating cells: 0
+[09/11 10:26:46     49s] Total number of isolation cells: 0
+[09/11 10:26:46     49s] Total number of power switch cells: 0
+[09/11 10:26:46     49s] Total number of pulse generator cells: 0
+[09/11 10:26:46     49s] Total number of always on buffers: 0
+[09/11 10:26:46     49s] Total number of retention cells: 0
+[09/11 10:26:46     49s] List of usable buffers: BUFX2 BUFX12 BUFX16 BUFX20 CLKBUFX2 BUFX3 BUFX4 BUFX6 BUFX8 CLKBUFX12 CLKBUFX16 CLKBUFX20 CLKBUFX3 CLKBUFX4 CLKBUFX6 CLKBUFX8
+[09/11 10:26:46     49s] Total number of usable buffers: 16
+[09/11 10:26:46     49s] List of unusable buffers:
+[09/11 10:26:46     49s] Total number of unusable buffers: 0
+[09/11 10:26:46     49s] List of usable inverters: CLKINVX1 CLKINVX2 CLKINVX12 CLKINVX16 CLKINVX20 CLKINVX3 CLKINVX4 CLKINVX6 CLKINVX8 INVX1 INVX2 INVX12 INVX16 INVX20 INVXL INVX3 INVX4 INVX6 INVX8
+[09/11 10:26:46     49s] Total number of usable inverters: 19
+[09/11 10:26:46     49s] List of unusable inverters:
+[09/11 10:26:46     49s] Total number of unusable inverters: 0
+[09/11 10:26:46     49s] List of identified usable delay cells: DLY1X1 DLY1X4 DLY2X1 DLY2X4 DLY3X1 DLY3X4 DLY4X1 DLY4X4
+[09/11 10:26:46     49s] Total number of identified usable delay cells: 8
+[09/11 10:26:46     49s] List of identified unusable delay cells:
+[09/11 10:26:46     49s] Total number of identified unusable delay cells: 0
+[09/11 10:26:46     49s] 
+[09/11 10:26:46     49s] TimeStamp Creating Cell Server ...(0, 1, 1, 1) in restoreDesign End ...
+[09/11 10:26:46     49s] 
+[09/11 10:26:46     49s] TimeStamp Deleting Cell Server Begin ...
+[09/11 10:26:46     49s] 
+[09/11 10:26:46     49s] TimeStamp Deleting Cell Server End ...
+[09/11 10:26:46     49s] **WARN: (IMPCTE-107):	The following globals have been obsoleted since version . They will be removed in the next release. 
+[09/11 10:26:46     49s] timing_enable_separate_device_slew_effect_sensitivities
+[09/11 10:26:46     49s] #% End load design ... (date=09/11 10:26:46, total cpu=0:00:02.5, real=0:00:03.0, peak res=1458.3M, current mem=1439.6M)
+[09/11 10:26:46     49s] 
+[09/11 10:26:46     49s] *** Summary of all messages that are not suppressed in this session:
+[09/11 10:26:46     49s] Severity  ID               Count  Summary                                  
+[09/11 10:26:46     49s] WARNING   IMPLF-200            1  Pin '%s' in macro '%s' has no ANTENNAGAT...
+[09/11 10:26:46     49s] WARNING   IMPLF-105            2  The layer '%s' specified in SAMENET spac...
+[09/11 10:26:46     49s] WARNING   IMPFP-3961           4  The techSite '%s' has no related standar...
+[09/11 10:26:46     49s] WARNING   IMPEXT-2766          9  The sheet resistance for layer %s is not...
+[09/11 10:26:46     49s] WARNING   IMPEXT-2773          1  The via resistance between layers %s and...
+[09/11 10:26:46     49s] WARNING   IMPEXT-2776          8  The via resistance between layers %s and...
+[09/11 10:26:46     49s] WARNING   IMPVL-159          958  Pin '%s' of cell '%s' is defined in LEF ...
+[09/11 10:26:46     49s] WARNING   IMPOPT-3602          1  The specified path group name %s is not ...
+[09/11 10:26:46     49s] WARNING   IMPCTE-107           1  The following globals have been obsolete...
+[09/11 10:26:46     49s] *** Message Summary: 985 warning(s), 0 error(s)
+[09/11 10:26:46     49s] 
+[09/11 10:26:46     49s] <CMD> setDrawView fplan
+[09/11 10:26:46     49s] <CMD> encMessage warning 1
+[09/11 10:26:46     49s] <CMD> encMessage debug 0
+[09/11 10:26:53     49s] <CMD> encMessage warning 0
+[09/11 10:26:53     49s] Suppress "**WARN ..." messages.
+[09/11 10:26:53     49s] <CMD> encMessage debug 0
+[09/11 10:26:53     49s] <CMD> is_common_ui_mode
+[09/11 10:26:53     49s] <CMD> restoreDesign /home/vlsi12/24BVD1041/pd_demo/fir/fir_4tap_post_route_1.enc.dat fir_4tap
+[09/11 10:26:53     49s] #% Begin load design ... (date=09/11 10:26:53, mem=1842.3M)
+[09/11 10:26:53     49s] 
+[09/11 10:26:53     49s] 
+[09/11 10:26:53     49s] ERROR: **ERROR: (IMPIMEX-7031):	#CUI#restoreDesign#read_db# more than once in the same Innovus session is dangerous and not recommended. Some internal state of applications or global settings cannot be reset, so it's not reliable enough in real flow. If you are just experimenting and/or debugging and accept the risks, you can set the global restore_db_stop_at_design_in_memory to 0 and try again.
+[09/11 10:26:53     49s] 
+[09/11 10:26:53     49s] 
+[09/11 10:26:53     49s] **ERROR: (IMPIMEX-7031):	#CUI#restoreDesign#read_db# more than once in the same Innovus session is dangerous and not recommended. Some internal state of applications or global settings cannot be reset, so it's not reliable enough in real flow. If you are just experimenting and/or debugging and accept the risks, you can set the global restore_db_stop_at_design_in_memory to 0 and try again.
+[09/11 10:26:53     49s] 
+[09/11 10:26:53     49s]     while executing
+[09/11 10:26:53     49s] "error $catchMsg"
+[09/11 10:26:53     49s]     (procedure "restoreDesign" line 33)
+[09/11 10:26:53     49s] 
+[09/11 10:26:53     49s] **ERROR: (IMPSYT-6300):	Failed to execute command 'source'. For more details, refer to error message: **ERROR: (IMPIMEX-7031):	restoreDesign more than once in the same Innovus session is dangerous and not recommended. Some internal state of applications or global settings cannot be reset, so it's not reliable enough in real flow. If you are just experimenting and/or debugging and accept the risks, you can set the global restore_db_stop_at_design_in_memory to 0 and try again.
+[09/11 10:26:53     49s] 
+[09/11 10:26:58     51s] <CMD> encMessage warning 1
+[09/11 10:26:58     51s] Un-suppress "**WARN ..." messages.
+[09/11 10:26:58     51s] <CMD> encMessage debug 0
+[09/11 10:27:09     53s] <CMD> encMessage warning 0
+[09/11 10:27:09     53s] Suppress "**WARN ..." messages.
+[09/11 10:27:09     53s] <CMD> encMessage debug 0
+[09/11 10:27:09     53s] <CMD> is_common_ui_mode
+[09/11 10:27:09     53s] <CMD> restoreDesign /home/vlsi12/24BVD1041/pd_demo/fir/fir_4tap_post_route_1.enc.dat fir_4tap
+[09/11 10:27:09     53s] report_message: '-start_cmd/-end_cmd' can not be nested. Interior calls do nothing. Ignore.
+[09/11 10:27:09     53s] % Begin load design ... (date=09/11 10:27:09, mem=1842.5M)
+[09/11 10:27:09     53s] 
+[09/11 10:27:09     53s] 
+[09/11 10:27:09     53s] ERROR: **ERROR: (IMPIMEX-7031):	#CUI#restoreDesign#read_db# more than once in the same Innovus session is dangerous and not recommended. Some internal state of applications or global settings cannot be reset, so it's not reliable enough in real flow. If you are just experimenting and/or debugging and accept the risks, you can set the global restore_db_stop_at_design_in_memory to 0 and try again.
+[09/11 10:27:09     53s] 
+[09/11 10:27:09     53s] 
+[09/11 10:27:09     53s] **ERROR: (IMPIMEX-7031):	#CUI#restoreDesign#read_db# more than once in the same Innovus session is dangerous and not recommended. Some internal state of applications or global settings cannot be reset, so it's not reliable enough in real flow. If you are just experimenting and/or debugging and accept the risks, you can set the global restore_db_stop_at_design_in_memory to 0 and try again.
+[09/11 10:27:09     53s] 
+[09/11 10:27:09     53s]     while executing
+[09/11 10:27:09     53s] "error $catchMsg"
+[09/11 10:27:09     53s]     (procedure "restoreDesign" line 33)
+[09/11 10:27:09     53s] 
+[09/11 10:27:09     53s] **ERROR: (IMPSYT-6300):	Failed to execute command 'source'. For more details, refer to error message: **ERROR: (IMPIMEX-7031):	restoreDesign more than once in the same Innovus session is dangerous and not recommended. Some internal state of applications or global settings cannot be reset, so it's not reliable enough in real flow. If you are just experimenting and/or debugging and accept the risks, you can set the global restore_db_stop_at_design_in_memory to 0 and try again.
+[09/11 10:27:09     53s] 
+[09/11 10:27:11     53s] <CMD> encMessage warning 1
+[09/11 10:27:11     53s] Un-suppress "**WARN ..." messages.
+[09/11 10:27:11     53s] <CMD> encMessage debug 0
+[09/11 10:27:12     53s] <CMD> encMessage warning 0
+[09/11 10:27:12     53s] Suppress "**WARN ..." messages.
+[09/11 10:27:12     53s] <CMD> encMessage debug 0
+[09/11 10:27:12     53s] <CMD> is_common_ui_mode
+[09/11 10:27:12     53s] <CMD> restoreDesign /home/vlsi12/24BVD1041/pd_demo/fir/fir_4tap_post_route_1.enc.dat fir_4tap
+[09/11 10:27:12     53s] report_message: '-start_cmd/-end_cmd' can not be nested. Interior calls do nothing. Ignore.
+[09/11 10:27:12     53s] % Begin load design ... (date=09/11 10:27:12, mem=1842.7M)
+[09/11 10:27:12     53s] 
+[09/11 10:27:12     53s] 
+[09/11 10:27:12     53s] ERROR: **ERROR: (IMPIMEX-7031):	#CUI#restoreDesign#read_db# more than once in the same Innovus session is dangerous and not recommended. Some internal state of applications or global settings cannot be reset, so it's not reliable enough in real flow. If you are just experimenting and/or debugging and accept the risks, you can set the global restore_db_stop_at_design_in_memory to 0 and try again.
+[09/11 10:27:12     53s] 
+[09/11 10:27:12     53s] 
+[09/11 10:27:12     53s] **ERROR: (IMPIMEX-7031):	#CUI#restoreDesign#read_db# more than once in the same Innovus session is dangerous and not recommended. Some internal state of applications or global settings cannot be reset, so it's not reliable enough in real flow. If you are just experimenting and/or debugging and accept the risks, you can set the global restore_db_stop_at_design_in_memory to 0 and try again.
+[09/11 10:27:12     53s] 
+[09/11 10:27:12     53s]     while executing
+[09/11 10:27:12     53s] "error $catchMsg"
+[09/11 10:27:12     53s]     (procedure "restoreDesign" line 33)
+[09/11 10:27:12     53s] 
+[09/11 10:27:12     53s] **ERROR: (IMPSYT-6300):	Failed to execute command 'source'. For more details, refer to error message: **ERROR: (IMPIMEX-7031):	restoreDesign more than once in the same Innovus session is dangerous and not recommended. Some internal state of applications or global settings cannot be reset, so it's not reliable enough in real flow. If you are just experimenting and/or debugging and accept the risks, you can set the global restore_db_stop_at_design_in_memory to 0 and try again.
+[09/11 10:27:12     53s] 
+[09/11 10:27:13     53s] <CMD> encMessage warning 1
+[09/11 10:27:13     53s] Un-suppress "**WARN ..." messages.
+[09/11 10:27:13     53s] <CMD> encMessage debug 0
+[09/11 10:28:27     56s] <CMD> encMessage warning 0
+[09/11 10:28:27     56s] Suppress "**WARN ..." messages.
+[09/11 10:28:27     56s] <CMD> encMessage debug 0
+[09/11 10:28:27     56s] <CMD> is_common_ui_mode
+[09/11 10:28:27     56s] <CMD> restoreDesign /home/vlsi12/24BVD1041/pd_demo/fir/fir_4tap_post_route_1.enc.dat fir_4tap
+[09/11 10:28:27     56s] report_message: '-start_cmd/-end_cmd' can not be nested. Interior calls do nothing. Ignore.
+[09/11 10:28:27     56s] % Begin load design ... (date=09/11 10:28:27, mem=1842.6M)
+[09/11 10:28:27     56s] 
+[09/11 10:28:27     56s] 
+[09/11 10:28:27     56s] ERROR: **ERROR: (IMPIMEX-7031):	#CUI#restoreDesign#read_db# more than once in the same Innovus session is dangerous and not recommended. Some internal state of applications or global settings cannot be reset, so it's not reliable enough in real flow. If you are just experimenting and/or debugging and accept the risks, you can set the global restore_db_stop_at_design_in_memory to 0 and try again.
+[09/11 10:28:27     56s] 
+[09/11 10:28:27     56s] 
+[09/11 10:28:27     56s] **ERROR: (IMPIMEX-7031):	#CUI#restoreDesign#read_db# more than once in the same Innovus session is dangerous and not recommended. Some internal state of applications or global settings cannot be reset, so it's not reliable enough in real flow. If you are just experimenting and/or debugging and accept the risks, you can set the global restore_db_stop_at_design_in_memory to 0 and try again.
+[09/11 10:28:27     56s] 
+[09/11 10:28:27     56s]     while executing
+[09/11 10:28:27     56s] "error $catchMsg"
+[09/11 10:28:27     56s]     (procedure "restoreDesign" line 33)
+[09/11 10:28:27     56s] 
+[09/11 10:28:27     56s] **ERROR: (IMPSYT-6300):	Failed to execute command 'source'. For more details, refer to error message: **ERROR: (IMPIMEX-7031):	restoreDesign more than once in the same Innovus session is dangerous and not recommended. Some internal state of applications or global settings cannot be reset, so it's not reliable enough in real flow. If you are just experimenting and/or debugging and accept the risks, you can set the global restore_db_stop_at_design_in_memory to 0 and try again.
+[09/11 10:28:27     56s] 
+[09/11 10:29:33     77s] <CMD> encMessage warning 1
+[09/11 10:29:33     77s] Un-suppress "**WARN ..." messages.
+[09/11 10:29:33     77s] <CMD> encMessage debug 0
+[09/11 10:31:53     82s] <CMD> encMessage warning 0
+[09/11 10:31:53     82s] Suppress "**WARN ..." messages.
+[09/11 10:31:53     82s] <CMD> encMessage debug 0
+[09/11 10:31:53     82s] <CMD> is_common_ui_mode
+[09/11 10:31:53     82s] <CMD> restoreDesign /home/vlsi12/24BVD1041/pd_demo/fir/fir_4tap_postroute_final_e.enc.dat fir_4tap
+[09/11 10:31:53     82s] report_message: '-start_cmd/-end_cmd' can not be nested. Interior calls do nothing. Ignore.
+[09/11 10:31:53     82s] % Begin load design ... (date=09/11 10:31:53, mem=1845.4M)
+[09/11 10:31:53     82s] 
+[09/11 10:31:53     82s] 
+[09/11 10:31:53     82s] ERROR: **ERROR: (IMPIMEX-7031):	#CUI#restoreDesign#read_db# more than once in the same Innovus session is dangerous and not recommended. Some internal state of applications or global settings cannot be reset, so it's not reliable enough in real flow. If you are just experimenting and/or debugging and accept the risks, you can set the global restore_db_stop_at_design_in_memory to 0 and try again.
+[09/11 10:31:53     82s] 
+[09/11 10:31:53     82s] 
+[09/11 10:31:53     82s] **ERROR: (IMPIMEX-7031):	#CUI#restoreDesign#read_db# more than once in the same Innovus session is dangerous and not recommended. Some internal state of applications or global settings cannot be reset, so it's not reliable enough in real flow. If you are just experimenting and/or debugging and accept the risks, you can set the global restore_db_stop_at_design_in_memory to 0 and try again.
+[09/11 10:31:53     82s] 
+[09/11 10:31:53     82s]     while executing
+[09/11 10:31:53     82s] "error $catchMsg"
+[09/11 10:31:53     82s]     (procedure "restoreDesign" line 33)
+[09/11 10:31:53     82s] 
+[09/11 10:31:53     82s] **ERROR: (IMPSYT-6300):	Failed to execute command 'source'. For more details, refer to error message: **ERROR: (IMPIMEX-7031):	restoreDesign more than once in the same Innovus session is dangerous and not recommended. Some internal state of applications or global settings cannot be reset, so it's not reliable enough in real flow. If you are just experimenting and/or debugging and accept the risks, you can set the global restore_db_stop_at_design_in_memory to 0 and try again.
+[09/11 10:31:53     82s] 
+[09/11 10:31:54     82s] <CMD> encMessage warning 1
+[09/11 10:31:54     82s] Un-suppress "**WARN ..." messages.
+[09/11 10:31:54     82s] <CMD> encMessage debug 0
+[09/11 10:31:55     82s] <CMD> encMessage warning 0
+[09/11 10:31:55     82s] Suppress "**WARN ..." messages.
+[09/11 10:31:55     82s] <CMD> encMessage debug 0
+[09/11 10:31:55     82s] <CMD> is_common_ui_mode
+[09/11 10:31:55     82s] <CMD> restoreDesign /home/vlsi12/24BVD1041/pd_demo/fir/fir_4tap_postroute_final_e.enc.dat fir_4tap
+[09/11 10:31:55     82s] report_message: '-start_cmd/-end_cmd' can not be nested. Interior calls do nothing. Ignore.
+[09/11 10:31:55     82s] % Begin load design ... (date=09/11 10:31:55, mem=1845.4M)
+[09/11 10:31:55     82s] 
+[09/11 10:31:55     82s] 
+[09/11 10:31:55     82s] ERROR: **ERROR: (IMPIMEX-7031):	#CUI#restoreDesign#read_db# more than once in the same Innovus session is dangerous and not recommended. Some internal state of applications or global settings cannot be reset, so it's not reliable enough in real flow. If you are just experimenting and/or debugging and accept the risks, you can set the global restore_db_stop_at_design_in_memory to 0 and try again.
+[09/11 10:31:55     82s] 
+[09/11 10:31:55     82s] 
+[09/11 10:31:55     82s] **ERROR: (IMPIMEX-7031):	#CUI#restoreDesign#read_db# more than once in the same Innovus session is dangerous and not recommended. Some internal state of applications or global settings cannot be reset, so it's not reliable enough in real flow. If you are just experimenting and/or debugging and accept the risks, you can set the global restore_db_stop_at_design_in_memory to 0 and try again.
+[09/11 10:31:55     82s] 
+[09/11 10:31:55     82s]     while executing
+[09/11 10:31:55     82s] "error $catchMsg"
+[09/11 10:31:55     82s]     (procedure "restoreDesign" line 33)
+[09/11 10:31:55     82s] 
+[09/11 10:31:55     82s] **ERROR: (IMPSYT-6300):	Failed to execute command 'source'. For more details, refer to error message: **ERROR: (IMPIMEX-7031):	restoreDesign more than once in the same Innovus session is dangerous and not recommended. Some internal state of applications or global settings cannot be reset, so it's not reliable enough in real flow. If you are just experimenting and/or debugging and accept the risks, you can set the global restore_db_stop_at_design_in_memory to 0 and try again.
+[09/11 10:31:55     82s] 
+[09/11 10:31:58     83s] <CMD> encMessage warning 1
+[09/11 10:31:58     83s] Un-suppress "**WARN ..." messages.
+[09/11 10:31:58     83s] <CMD> encMessage debug 0
+[09/11 10:32:08     84s] 
+--------------------------------------------------------------------------------
+Exiting Innovus on Fri Sep 11 10:32:08 2026
+  Total CPU time:     0:01:27
+  Total real time:    0:12:11
+  Peak memory (main): 1857.36MB
+
+[09/11 10:32:08     84s] 
+[09/11 10:32:08     84s] *** Memory Usage v#1 (Current mem = 1949.293M, initial mem = 483.887M) ***
+[09/11 10:32:08     84s] 
+[09/11 10:32:08     84s] *** Summary of all messages that are not suppressed in this session:
+[09/11 10:32:08     84s] Severity  ID               Count  Summary                                  
+[09/11 10:32:08     84s] WARNING   IMPLF-200            1  Pin '%s' in macro '%s' has no ANTENNAGAT...
+[09/11 10:32:08     84s] WARNING   IMPLF-105            2  The layer '%s' specified in SAMENET spac...
+[09/11 10:32:08     84s] WARNING   IMPFP-3961           4  The techSite '%s' has no related standar...
+[09/11 10:32:08     84s] WARNING   IMPEXT-2766          9  The sheet resistance for layer %s is not...
+[09/11 10:32:08     84s] WARNING   IMPEXT-2773          1  The via resistance between layers %s and...
+[09/11 10:32:08     84s] WARNING   IMPEXT-2776          8  The via resistance between layers %s and...
+[09/11 10:32:08     84s] ERROR     IMPSYT-6300         12  Failed to execute command '%s'. For more...
+[09/11 10:32:08     84s] ERROR     IMPSYT-6299          1  Cannot find restore design file.         
+[09/11 10:32:08     84s] WARNING   IMPVL-159          958  Pin '%s' of cell '%s' is defined in LEF ...
+[09/11 10:32:08     84s] WARNING   IMPOPT-3602          1  The specified path group name %s is not ...
+[09/11 10:32:08     84s] WARNING   IMPCTE-107           1  The following globals have been obsolete...
+[09/11 10:32:08     84s] ERROR     IMPIMEX-7031         6  %s more than once in the same Innovus se...
+[09/11 10:32:08     84s] *** Message Summary: 985 warning(s), 19 error(s)
+[09/11 10:32:08     84s] 
+[09/11 10:32:08     84s] --- Ending "Innovus" (totcpu=0:01:24, real=0:12:10, mem=1949.3M) ---

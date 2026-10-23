@@ -1,0 +1,24 @@
+ncsim(64): 15.20-s086: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+
+-------------------------------------
+Relinquished control to SimVision...
+ncsim> 
+ncsim> database -open waves -into waves.shm -default
+Created default SHM database waves
+ncsim> probe -create -shm tb_ripple_carry_adder.A tb_ripple_carry_adder.B tb_ripple_carry_adder.Cin tb_ripple_carry_adder.Cout tb_ripple_carry_adder.Sum
+Created probe 1
+ncsim> run
+ A     B    Cin | Sum  Cout
+0000 0000 0 | 0000 0
+0011 0010 0 | 0101 0
+0101 0011 0 | 1000 0
+1111 0001 0 | 0000 1
+1010 0110 1 | 0001 1
+1111 1111 1 | 1111 1
+Simulation complete via $finish(1) at time 60 NS + 0
+/home/vlsi12/24BVD1035/Experiments/Experiment_1/tb_ripple_carry_adder.v:42 $finish;
+ncsim> ...Regained control from SimVision
+-------------------------------------
+
+ncsim> ncsim: Memory Usage - 38.6M program + 275.7M data = 314.3M total (317.1M Peak)
+ncsim: CPU Usage - 0.7s system + 0.1s user = 0.8s total (345.5s, 0.2% cpu)

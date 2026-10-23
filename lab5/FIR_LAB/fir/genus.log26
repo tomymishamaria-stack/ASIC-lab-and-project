@@ -1,0 +1,173 @@
+Cadence Genus(TM) Synthesis Solution.
+Copyright 2022 Cadence Design Systems, Inc. All rights reserved worldwide.
+Cadence and the Cadence logo are registered trademarks and Genus is a trademark
+of Cadence Design Systems, Inc. in the United States and other countries.
+
+[18:51:27.328642] Configured Lic search path (21.01-s002): 5281@14.139.1.126:1717@14.139.1.126
+
+Version: 21.14-s082_1, built Thu Jun 23 02:02:08 PDT 2022
+Options: -files fir_4taps.tcl 
+Date:    Tue Sep 08 18:51:27 2026
+Host:    cad312vitcc.vit.ac.in (x86_64 w/Linux 4.18.0-553.150.1.el8_10.x86_64) (16cores*64cpus*2physical cpus*INTEL(R) XEON(R) GOLD 6526Y 38400KB) (2112776988KB)
+PID:     2725622
+OS:      Red Hat Enterprise Linux release 8.10 (Ootpa)
+
+Checkout succeeded: Genus_Synthesis/3FFB3787901511A9760E
+	License file: 5281@14.139.1.126
+	License Server: 5281@14.139.1.126
+
+[18:51:29.060184] Periodic Lic check successful
+[18:51:29.060185] Feature usage summary:
+[18:51:29.060186] Genus_Synthesis
+Checking out license: Genus_Synthesis
+
+
+***********************************************************************************************************
+***********************************************************************************************************
+
+
+
+Loading tool scripts...
+Finished loading tool scripts (5 seconds elapsed).
+
+#@ Processing -files option
+@genus 1> source fir_4taps.tcl
+#@ Begin verbose source ./fir_4taps.tcl
+@file(fir_4taps.tcl) 5: set TOP_MODULE "fir_4tap"
+@file(fir_4taps.tcl) 6: set RTL_FILE   "fir_4tap.v"
+@file(fir_4taps.tcl) 7: set SDC_FILE   "fir_4tap.sdc"
+@file(fir_4taps.tcl) 9: set WORK_DIR [pwd]
+@file(fir_4taps.tcl) 12: foreach tech {45nm 90nm 180nm} {
+    foreach corner {slow typical fast} {
+        file mkdir "$WORK_DIR/output/$tech/$corner"
+        file mkdir "$WORK_DIR/output/$tech/$corner/netlist"
+        file mkdir "$WORK_DIR/output/$tech/$corner/constraints"
+        file mkdir "$WORK_DIR/output/$tech/$corner/reports"
+        file mkdir "$WORK_DIR/output/$tech/$corner/logs"
+    }
+}
+@file(fir_4taps.tcl) 25: proc check_synthesis_log ...
+@file(fir_4taps.tcl) 48: proc create_corner_script ...
+@file(fir_4taps.tcl) 137: set LIB45_DIR  "/home/install/FOUNDRY/digital/45nm/dig/lib"
+@file(fir_4taps.tcl) 138: set LIB90_DIR  "/home/install/FOUNDRY/digital/90nm/dig/lib"
+@file(fir_4taps.tcl) 139: set LIB180_DIR "/home/install/FOUNDRY/digital/180nm/RC_Libs/libraries/lib/STDCELL"
+@file(fir_4taps.tcl) 142: dict set lib_files 45nm slow    "slow.lib"
+@file(fir_4taps.tcl) 143: dict set lib_files 45nm typical "typical.lib"
+@file(fir_4taps.tcl) 144: dict set lib_files 45nm fast    "fast.lib"
+@file(fir_4taps.tcl) 147: dict set lib_files 90nm slow    "slow.lib"
+@file(fir_4taps.tcl) 148: dict set lib_files 90nm typical "typical.lib"
+@file(fir_4taps.tcl) 149: dict set lib_files 90nm fast    "fast.lib"
+@file(fir_4taps.tcl) 152: dict set lib_files 180nm slow    "slow.lib"
+@file(fir_4taps.tcl) 153: dict set lib_files 180nm typical "typical.lib"
+@file(fir_4taps.tcl) 154: dict set lib_files 180nm fast    "fast.lib"
+@file(fir_4taps.tcl) 156: dict set lib_dirs 45nm  $LIB45_DIR
+@file(fir_4taps.tcl) 157: dict set lib_dirs 90nm  $LIB90_DIR
+@file(fir_4taps.tcl) 158: dict set lib_dirs 180nm $LIB180_DIR
+@file(fir_4taps.tcl) 163: foreach tech {45nm 90nm 180nm} {
+    set current_lib_dir [dict get $lib_dirs $tech]
+
+    foreach corner {slow typical fast} {
+        set current_lib_file [dict get $lib_files $tech $corner]
+        set script_file [create_corner_script $WORK_DIR $tech $corner $current_lib_dir $current_lib_file]
+        set log_file "$WORK_DIR/output/$tech/$corner/logs/genus.log"
+
+        puts ""
+        puts "############################################################"
+        puts "# STARTING $tech [string toupper $corner]"
+        puts "############################################################"
+
+        set result [catch {
+            exec genus -batch -files $script_file -log $log_file 2>&1
+        } output]
+
+        set real_errors [check_synthesis_log $log_file]
+
+        if {[llength $real_errors] > 0} {
+            puts "WARNING: $tech [string toupper $corner] ENCOUNTERED ERRORS:"
+            foreach err $real_errors {
+                puts "  -> $err"
+            }
+        } else {
+            puts "$tech [string toupper $corner] SUCCESS"
+        }
+    }
+}
+
+############################################################
+# STARTING 45nm SLOW
+############################################################
+45nm SLOW SUCCESS
+
+############################################################
+# STARTING 45nm TYPICAL
+############################################################
+45nm TYPICAL SUCCESS
+
+############################################################
+# STARTING 45nm FAST
+############################################################
+45nm FAST SUCCESS
+
+############################################################
+# STARTING 90nm SLOW
+############################################################
+90nm SLOW SUCCESS
+
+############################################################
+# STARTING 90nm TYPICAL
+############################################################
+90nm TYPICAL SUCCESS
+
+############################################################
+# STARTING 90nm FAST
+############################################################
+90nm FAST SUCCESS
+
+############################################################
+# STARTING 180nm SLOW
+############################################################
+180nm SLOW SUCCESS
+
+############################################################
+# STARTING 180nm TYPICAL
+############################################################
+WARNING: 180nm TYPICAL ENCOUNTERED ERRORS:
+  -> Error   : Cannot perform synthesis because libraries do not have usable inverters. [LBR-171] [syn_generic]
+  -> Error   : Synthesis can't be performed because libraries do not have usable basic gates. [LBR-172] [syn_generic]
+
+############################################################
+# STARTING 180nm FAST
+############################################################
+WARNING: 180nm FAST ENCOUNTERED ERRORS:
+  -> Error   : Cannot perform synthesis because libraries do not have usable inverters. [LBR-171] [syn_generic]
+  -> Error   : Synthesis can't be performed because libraries do not have usable basic gates. [LBR-172] [syn_generic]
+@file(fir_4taps.tcl) 196: puts ""
+
+@file(fir_4taps.tcl) 197: puts "============================================================"
+============================================================
+@file(fir_4taps.tcl) 198: puts "                  ALL RUNS FINISHED"
+                  ALL RUNS FINISHED
+@file(fir_4taps.tcl) 199: puts "============================================================"
+============================================================
+@file(fir_4taps.tcl) 200: puts "Outputs generated in output/<tech>/<corner>/:"
+Outputs generated in output/<tech>/<corner>/:
+@file(fir_4taps.tcl) 201: puts "  - Netlists    : netlist/"
+  - Netlists    : netlist/
+@file(fir_4taps.tcl) 202: puts "  - Constraints : constraints/"
+  - Constraints : constraints/
+@file(fir_4taps.tcl) 203: puts "  - Reports     : reports/ (area, timing, power, qor, gates)"
+  - Reports     : reports/ (area, timing, power, qor, gates)
+@file(fir_4taps.tcl) 204: puts "  - Log files   : logs/"
+  - Log files   : logs/
+@file(fir_4taps.tcl) 205: puts "============================================================"
+============================================================
+#@ End verbose source ./fir_4taps.tcl
+WARNING: This version of the tool is 1538 days old.
+@genus:root: 2> exit
+
+Lic Summary:
+[19:07:38.281643] Cdslmd servers: cadence-c2s
+[19:07:38.281651] Feature usage summary:
+[19:07:38.281656] Genus_Synthesis
+
+Normal exit.

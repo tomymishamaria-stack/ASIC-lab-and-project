@@ -1,0 +1,127 @@
+Cadence Genus(TM) Synthesis Solution.
+Copyright 2022 Cadence Design Systems, Inc. All rights reserved worldwide.
+Cadence and the Cadence logo are registered trademarks and Genus is a trademark
+of Cadence Design Systems, Inc. in the United States and other countries.
+
+[12:26:14.328578] Configured Lic search path (21.01-s002): 5281@14.139.1.126:1717@14.139.1.126
+
+Version: 21.14-s082_1, built Thu Jun 23 02:02:08 PDT 2022
+Options: -files fir_4taps.tcl 
+Date:    Wed Sep 09 12:26:14 2026
+Host:    cad312vitcc.vit.ac.in (x86_64 w/Linux 4.18.0-553.150.1.el8_10.x86_64) (16cores*64cpus*2physical cpus*INTEL(R) XEON(R) GOLD 6526Y 38400KB) (2112776988KB)
+PID:     4184062
+OS:      Red Hat Enterprise Linux release 8.10 (Ootpa)
+
+Checkout succeeded: Genus_Synthesis/3FFB3787901511A9760E
+	License file: 5281@14.139.1.126
+	License Server: 5281@14.139.1.126
+
+[12:26:15.264552] Periodic Lic check successful
+[12:26:15.264561] Feature usage summary:
+[12:26:15.264562] Genus_Synthesis
+Checking out license: Genus_Synthesis
+
+
+***********************************************************************************************************
+***********************************************************************************************************
+
+
+
+Loading tool scripts...
+Finished loading tool scripts (6 seconds elapsed).
+
+#@ Processing -files option
+@genus 1> source fir_4taps.tcl
+#@ Begin verbose source ./fir_4taps.tcl
+@file(fir_4taps.tcl) 1: set TOP_MODULE "fir_4tap"
+@file(fir_4taps.tcl) 4: set nodes {180nm 90nm 45nm}
+@file(fir_4taps.tcl) 5: set corners {slow typical fast}
+@file(fir_4taps.tcl) 8: array set lib_search_path {
+    180nm /home/install/FOUNDRY/digital/180nm/dig/lib
+    90nm  /home/install/FOUNDRY/digital/90nm/dig/lib
+    45nm  /home/install/FOUNDRY/digital/45nm/dig/lib
+}
+@file(fir_4taps.tcl) 15: array set lib_files {
+    180nm,slow    slow.lib
+    180nm,typical typical.lib
+    180nm,fast    fast.lib
+    90nm,slow     slow.lib
+    90nm,typical  typical.lib
+    90nm,fast     fast.lib
+    45nm,slow     slow.lib
+    45nm,typical  typical.lib
+    45nm,fast     fast.lib
+}
+@file(fir_4taps.tcl) 28: foreach node $nodes {
+    # Inner loop: Operating Corners
+    foreach corner $corners {
+        
+        puts "=================================================="
+        puts " Starting Synthesis for Node: $node | Corner: $corner"
+        puts "=================================================="
+
+        # Clear active designs from database safely without removing root
+        if {[llength [get_db designs -quiet *]] > 0} {
+            delete_obj [get_db designs *]
+        }
+
+        # Define dynamic output directory
+        set outdir "output/${node}/${corner}"
+        file mkdir "${outdir}/netlist"
+        file mkdir "${outdir}/constraints"
+        file mkdir "${outdir}/reports"
+
+        # Load specific technology libraries
+        set_db init_lib_search_path $lib_search_path($node)
+        read_libs $lib_files($node,$corner)
+
+        # Read Design Files and Elaborate
+        read_hdl {DFF.v fir_4tap.v}
+        elaborate $TOP_MODULE
+        read_sdc fir_4tap.sdc
+
+        # Set Synthesis Efforts
+        set_db syn_generic_effort medium
+        set_db syn_map_effort medium
+        set_db syn_opt_effort medium
+
+        # Run Synthesis Steps
+        syn_generic
+        write_hdl > ${outdir}/netlist/${TOP_MODULE}_generic.v
+
+        syn_map
+        write_hdl > ${outdir}/netlist/${TOP_MODULE}_mapped.v
+
+        syn_opt
+        write_hdl > ${outdir}/netlist/${TOP_MODULE}_opt.v
+
+        # Export Constraints and Corner-Specific Reports
+        write_sdc > ${outdir}/constraints/${TOP_MODULE}_synth.sdc
+
+        report_timing > ${outdir}/reports/${TOP_MODULE}_timing.rpt
+        report_power  > ${outdir}/reports/${TOP_MODULE}_power.rpt
+        report_area   > ${outdir}/reports/${TOP_MODULE}_area.rpt
+        report_gates  > ${outdir}/reports/${TOP_MODULE}_gates.rpt
+        report_qor    > ${outdir}/reports/${TOP_MODULE}_qor.rpt
+
+        puts "Completed run for: $node / $corner"
+    }
+}
+==================================================
+ Starting Synthesis for Node: 180nm | Corner: slow
+==================================================
+Error   : A command argument did not match any of the acceptable command options. [TUI-170] [get_db]
+        : '-quiet' is not a legal option for the command.
+        : Check the command usage and correct the input to the command.
+#@ End verbose source ./fir_4taps.tcl
+1
+Encountered problems processing file: fir_4taps.tcl
+WARNING: This version of the tool is 1538 days old.
+@genus:root: 2> exit
+
+Lic Summary:
+[12:27:41.136897] Cdslmd servers: cadence-c2s
+[12:27:41.136906] Feature usage summary:
+[12:27:41.136906] Genus_Synthesis
+
+Normal exit.

@@ -1,0 +1,21 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+-access
++rwc
+rtl/activity_monitor.v
+rtl/adaptive_threshold.v
+rtl/clock_divider.v
+rtl/clock_gate.v
+rtl/csr.v
+rtl/idle_counter.v
+rtl/power_fsm.v
+rtl/power_gate_ctrl.v
+rtl/predictor.v
+rtl/retention_ctrl.v
+rtl/statistics.v
+rtl/top.v
+tb/tb_top.v
+-top
+tb_top

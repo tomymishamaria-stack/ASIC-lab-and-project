@@ -1,0 +1,71 @@
+Cadence Genus(TM) Synthesis Solution.
+Copyright 2022 Cadence Design Systems, Inc. All rights reserved worldwide.
+Cadence and the Cadence logo are registered trademarks and Genus is a trademark
+of Cadence Design Systems, Inc. in the United States and other countries.
+
+[18:05:05.328602] Configured Lic search path (21.01-s002): 5281@14.139.1.126:1717@14.139.1.126
+
+Version: 21.14-s082_1, built Thu Jun 23 02:02:08 PDT 2022
+Options: -files fir_4taps.tcl 
+Date:    Tue Sep 08 18:05:05 2026
+Host:    cad312vitcc.vit.ac.in (x86_64 w/Linux 4.18.0-553.150.1.el8_10.x86_64) (16cores*64cpus*2physical cpus*INTEL(R) XEON(R) GOLD 6526Y 38400KB) (2112776988KB)
+PID:     2511455
+OS:      Red Hat Enterprise Linux release 8.10 (Ootpa)
+
+Checkout succeeded: Genus_Synthesis/3FFB3787901511A9760E
+	License file: 5281@14.139.1.126
+	License Server: 5281@14.139.1.126
+
+[18:05:06.161128] Periodic Lic check successful
+[18:05:06.161130] Feature usage summary:
+[18:05:06.161130] Genus_Synthesis
+Checking out license: Genus_Synthesis
+
+
+***********************************************************************************************************
+***********************************************************************************************************
+
+
+
+Loading tool scripts...
+Finished loading tool scripts (6 seconds elapsed).
+
+#@ Processing -files option
+@genus 1> source fir_4taps.tcl
+#@ Begin verbose source ./fir_4taps.tcl
+@file(fir_4taps.tcl) 6: set TOP_MODULE "fir_4tap"
+@file(fir_4taps.tcl) 7: set RTL_FILE   "fir_4tap.v"
+@file(fir_4taps.tcl) 8: set SDC_FILE   "fir_4tap.sdc"
+@file(fir_4taps.tcl) 14: proc run_synthesis ...
+@file(fir_4taps.tcl) 152: set LIB45 "/home/install/FOUNDRY/digital/45nm/dig/lib"
+@file(fir_4taps.tcl) 158: run_synthesis \
+    "45nm" \
+    "slow" \
+    ${LIB45} \
+    "slow.lib"
+
+============================================================
+ STARTING: 45nm - slow
+ Library : slow.lib
+============================================================
+Error   : No designs are available. A design must first be read in and elaborated. [TUI-10] [run_synthesis]
+        : There is no design here.
+        : A design must first be read in with 'read_hdl' command and elaborated with 'elaborate' command.
+#@ End verbose source ./fir_4taps.tcl
+Failed on find_unique_design
+Encountered problems processing file: fir_4taps.tcl
+WARNING: This version of the tool is 1538 days old.
+
+Another Ctrl-C within 1 second will terminate the tool.
+CURRENT RESOURCES: RT {elapsed: 38s, ST: 5s, FG: 5s, CPU: 1.9%}, MEM {curr: 1.0G, peak: 1.0G, phys curr: 0.3G, phys peak: 0.3G}, SYS {load: 1.0, cpu: 64, total: 2014.9G, free: 1884.3G}
+
+Another Ctrl-C within 1 second will terminate the tool.
+CURRENT RESOURCES: RT {elapsed: 98s, ST: 6s, FG: 6s, CPU: 1.8%}, MEM {curr: 1.0G, peak: 1.0G, phys curr: 0.3G, phys peak: 0.3G}, SYS {load: 1.0, cpu: 64, total: 2014.9G, free: 1883.7G}
+@genus:root: 2> exit
+
+Lic Summary:
+[18:06:46.185955] Cdslmd servers: cadence-c2s
+[18:06:46.185962] Feature usage summary:
+[18:06:46.185962] Genus_Synthesis
+
+Normal exit.

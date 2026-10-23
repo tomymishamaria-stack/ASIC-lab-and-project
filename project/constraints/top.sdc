@@ -1,0 +1,5 @@
+create_clock -name pclk -period 10.0 [get_ports pclk]
+set_clock_uncertainty 0.1 [get_clocks pclk]
+set_input_delay 1.0 -clock pclk [remove_from_collection [all_inputs] [get_ports {pclk prst_n}]]
+set_output_delay 1.0 -clock pclk [all_outputs]
+set_load 0.05 [all_outputs]

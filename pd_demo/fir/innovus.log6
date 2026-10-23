@@ -1,0 +1,365 @@
+
+Cadence Innovus(TM) Implementation System.
+Copyright 2021 Cadence Design Systems, Inc. All rights reserved worldwide.
+
+Version:	v21.15-s110_1, built Fri Sep 23 13:08:12 PDT 2022
+Options:	
+Date:		Fri Sep 11 10:32:16 2026
+Host:		cad312vitcc.vit.ac.in (x86_64 w/Linux 4.18.0-553.150.1.el8_10.x86_64) (16cores*64cpus*INTEL(R) XEON(R) GOLD 6526Y 38400KB)
+OS:		Red Hat Enterprise Linux release 8.10 (Ootpa)
+
+License:
+		[10:32:16.328554] Configured Lic search path (21.01-s002): 5281@14.139.1.126:1717@14.139.1.126
+
+		invs	Innovus Implementation System	21.1	checkout succeeded
+		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+Change the soft stacksize limit to 0.2%RAM (4126 mbytes). Set global soft_stack_size_limit to change the value.
+
+**INFO:  MMMC transition support version v31-84 
+
+<CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+<CMD> suppressMessage ENCEXT-2799
+<CMD> getVersion
+<CMD> getVersion
+<CMD> getVersion
+[INFO] Loading PVS 22.20 fill procedures
+<CMD> win
+<CMD> encMessage warning 0
+Suppress "**WARN ..." messages.
+<CMD> encMessage debug 0
+<CMD> is_common_ui_mode
+<CMD> restoreDesign /home/vlsi12/24BVD1041/pd_demo/fir/fir_4tap_postroute_final_e.enc.dat fir_4tap
+#% Begin load design ... (date=09/11 10:32:45, mem=1027.9M)
+Set Default Input Pin Transition as 0.1 ps.
+Loading design 'fir_4tap' saved by 'Innovus' '21.15-s110_1' on 'Thu Sep 10 19:32:40 2026'.
+% Begin Load MMMC data ... (date=09/11 10:32:45, mem=1029.3M)
+% End Load MMMC data ... (date=09/11 10:32:45, total cpu=0:00:00.0, real=0:00:00.0, peak res=1030.2M, current mem=1030.2M)
+default_rc_corner
+
+Loading LEF file /home/vlsi12/24BVD1041/pd_demo/fir/fir_4tap_postroute_final_e.enc.dat/libs/lef/gsclib090_translated.lef ...
+**WARN: (IMPLF-105):	The layer 'Oxide' specified in SAMENET spacing
+rule is neither a routing layer nor a cut layer. The rule is ignored.
+**WARN: (IMPLF-105):	The layer 'Poly' specified in SAMENET spacing
+rule is neither a routing layer nor a cut layer. The rule is ignored.
+Set DBUPerIGU to M2 pitch 580.
+**WARN: (IMPLF-200):	Pin 'A' in macro 'ANTENNA' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+
+##  Check design process and node:  
+##  Both design process and tech node are not set.
+
+Loading view definition file from /home/vlsi12/24BVD1041/pd_demo/fir/fir_4tap_postroute_final_e.enc.dat/viewDefinition.tcl
+Reading max_timing timing library '/home/install/FOUNDRY/digital/90nm/dig/lib/slow.lib' ...
+Read 479 cells in library 'slow' 
+Reading min_timing timing library '/home/install/FOUNDRY/digital/90nm/dig/lib/fast.lib' ...
+Read 479 cells in library 'fast' 
+*** End library_loading (cpu=0.01min, real=0.00min, mem=29.0M, fe_cpu=0.24min, fe_real=0.50min, fe_mem=1127.9M) ***
+% Begin Load netlist data ... (date=09/11 10:32:46, mem=1052.0M)
+*** Begin netlist parsing (mem=1127.9M) ***
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR3XL' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR3XL' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR3X1' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR3X1' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR2XL' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR2XL' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR2X4' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR2X4' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR2X2' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR2X2' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR2X1' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR2X1' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'XNOR3XL' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'XNOR3XL' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'XNOR3X1' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'XNOR3X1' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'XNOR2XL' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'XNOR2XL' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'XNOR2X4' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'XNOR2X4' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (EMS-27):	Message (IMPVL-159) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+Created 479 new cells from 2 timing libraries.
+Reading netlist ...
+Backslashed names will retain backslash and a trailing blank character.
+Reading verilogBinary netlist '/home/vlsi12/24BVD1041/pd_demo/fir/fir_4tap_postroute_final_e.enc.dat/fir_4tap.v.bin'
+
+*** Memory Usage v#1 (Current mem = 1135.895M, initial mem = 483.887M) ***
+*** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=1135.9M) ***
+% End Load netlist data ... (date=09/11 10:32:46, total cpu=0:00:00.0, real=0:00:00.0, peak res=1066.1M, current mem=1066.1M)
+Top level cell is fir_4tap.
+Hooked 958 DB cells to tlib cells.
+Starting recursive module instantiation check.
+No recursion found.
+Building hierarchical netlist for Cell fir_4tap ...
+*** Netlist is unique.
+** info: there are 967 modules.
+** info: there are 102 stdCell insts.
+
+*** Memory Usage v#1 (Current mem = 1185.309M, initial mem = 483.887M) ***
+*info: set bottom ioPad orient R0
+**WARN: (IMPFP-3961):	The techSite 'pad' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'corner' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+Horizontal Layer M1 offset = 290 (derived)
+Vertical Layer M2 offset = 290 (derived)
+Start create_tracks
+Generated pitch 0.29 in Metal8 is different from 0.87 defined in technology file in unpreferred direction.
+Loading preference file /home/vlsi12/24BVD1041/pd_demo/fir/fir_4tap_postroute_final_e.enc.dat/gui.pref.tcl ...
+**WARN: (IMPOPT-3602):	The specified path group name reg2reg is not defined.
+Type 'man IMPOPT-3602' for more detail.
+Effort level <high> specified for reg2reg path_group
+**WARN: (IMPTCM-77):	Option "-drouteStartIteration" for command setNanoRouteMode is obsolete and will be removed in a future release. The obsolete option still works in this release but to avoid this warning and to ensure compatibility with future releases, remove the obsolete option from your script.
+#WARNING (NRIF-90) Option setNanoRouteMode -routeBottomRoutingLayer is obsolete. It will continue to work for the current release. To ensure compatibility with future releases, use option setDesignMode -bottomRoutingLayer instead.
+#WARNING (NRIF-91) Option setNanoRouteMode -routeTopRoutingLayer is obsolete. It will continue to work for the current release. To ensure compatibility with future releases, use option setDesignMode -topRoutingLayer instead.
+AAE_INFO: switching -siAware from false to true ...
+AAE_INFO: The setting is changed from false to true in setDelayCalMode -SIAware
+addRing command will ignore shorts while creating rings.
+addRing command will disallow rings to go over rows.
+addRing command will consider rows while creating rings.
+The ring targets are set to core/block ring wires.
+addStripe will allow jog to connect padcore ring and block ring.
+
+Stripes will not extend to closest target.
+When breaking rings, the power planner will consider the existence of blocks.
+addStripe will break automatically at non-default domains when generating global stripes over the core area or default domain.
+The entire stripe set will break at the domain if one of the nets is not in the domain.
+Stripes will not be created over regions without power planning wires.
+Offset for stripe breaking is set to 0.
+Stripes will stop at the boundary of the specified area.
+The power planner will set stripe antenna targets to none (no trimming allowed).
+Change floorplan default-technical-site to 'gsclib090site'.
+*Info: initialize multi-corner CTS.
+Total number of combinational cells: 317
+Total number of sequential cells: 152
+Total number of tristate cells: 10
+Total number of level shifter cells: 0
+Total number of power gating cells: 0
+Total number of isolation cells: 0
+Total number of power switch cells: 0
+Total number of pulse generator cells: 0
+Total number of always on buffers: 0
+Total number of retention cells: 0
+List of usable buffers: BUFX2 BUFX12 BUFX16 BUFX20 CLKBUFX2 BUFX3 BUFX4 BUFX6 BUFX8 CLKBUFX12 CLKBUFX16 CLKBUFX20 CLKBUFX3 CLKBUFX4 CLKBUFX6 CLKBUFX8
+Total number of usable buffers: 16
+List of unusable buffers:
+Total number of unusable buffers: 0
+List of usable inverters: CLKINVX1 CLKINVX2 CLKINVX12 CLKINVX16 CLKINVX20 CLKINVX3 CLKINVX4 CLKINVX6 CLKINVX8 INVX1 INVX2 INVX12 INVX16 INVX20 INVXL INVX3 INVX4 INVX6 INVX8
+Total number of usable inverters: 19
+List of unusable inverters:
+Total number of unusable inverters: 0
+List of identified usable delay cells: DLY1X1 DLY1X4 DLY2X1 DLY2X4 DLY3X1 DLY3X4 DLY4X1 DLY4X4
+Total number of identified usable delay cells: 8
+List of identified unusable delay cells:
+Total number of identified unusable delay cells: 0
+Reading floorplan file - /home/vlsi12/24BVD1041/pd_demo/fir/fir_4tap_postroute_final_e.enc.dat/fir_4tap.fp.gz (mem = 1435.4M).
+% Begin Load floorplan data ... (date=09/11 10:32:47, mem=1354.5M)
+*info: reset 162 existing net BottomPreferredLayer and AvoidDetour
+Deleting old partition specification.
+Set FPlanBox to (0 0 129340 116000)
+**WARN: (IMPFP-3961):	The techSite 'pad' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'corner' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+Horizontal Layer M1 offset = 290 (derived)
+Vertical Layer M2 offset = 290 (derived)
+Start create_tracks
+Generated pitch 0.29 in Metal8 is different from 0.87 defined in technology file in unpreferred direction.
+ ... processed partition successfully.
+Reading binary special route file /home/vlsi12/24BVD1041/pd_demo/fir/fir_4tap_postroute_final_e.enc.dat/fir_4tap.fp.spr.gz (Created by Innovus v21.15-s110_1 on Thu Sep 10 19:32:37 2026, version: 1)
+Convert 0 swires and 0 svias from compressed groups
+24 swires and 196 svias were compressed
+71 swires and 228 svias were decompressed from small or sparse groups
+Ending "Read special route file" (total cpu=0:00:00.0, real=0:00:00.0, peak res=1355.1M, current mem=1355.1M)
+Extracting standard cell pins and blockage ...... 
+Pin and blockage extraction finished
+% End Load floorplan data ... (date=09/11 10:32:47, total cpu=0:00:00.0, real=0:00:00.0, peak res=1357.2M, current mem=1357.2M)
+Reading congestion map file /home/vlsi12/24BVD1041/pd_demo/fir/fir_4tap_postroute_final_e.enc.dat/fir_4tap.route.congmap.gz ...
+% Begin Load SymbolTable ... (date=09/11 10:32:47, mem=1357.7M)
+Un-suppress "**WARN ..." messages.
+% End Load SymbolTable ... (date=09/11 10:32:47, total cpu=0:00:00.0, real=0:00:00.0, peak res=1358.4M, current mem=1358.4M)
+Loading place ...
+% Begin Load placement data ... (date=09/11 10:32:47, mem=1358.4M)
+Reading placement file - /home/vlsi12/24BVD1041/pd_demo/fir/fir_4tap_postroute_final_e.enc.dat/fir_4tap.place.gz.
+** Reading stdCellPlacement_binary (Created by Innovus v21.15-s110_1 on Thu Sep 10 19:32:38 2026, version# 2) ...
+Read Views for adaptive view pruning ...
+Read 0 views from Binary DB for adaptive view pruning
+*** Completed restorePlace (cpu=0:00:00.0 real=0:00:00.0 mem=1436.4M) ***
+Total net length = 1.473e+03 (7.188e+02 7.540e+02) (ext = 4.327e+02)
+% End Load placement data ... (date=09/11 10:32:47, total cpu=0:00:00.0, real=0:00:00.0, peak res=1361.2M, current mem=1359.2M)
+Reading PG file /home/vlsi12/24BVD1041/pd_demo/fir/fir_4tap_postroute_final_e.enc.dat/fir_4tap.pg.gz, version#2, (Created by Innovus v21.15-s110_1 on       Thu Sep 10 19:32:38 2026)
+*** Completed restorePGFile (cpu=0:00:00.0 real=0:00:00.0 mem=1433.4M) ***
+% Begin Load routing data ... (date=09/11 10:32:47, mem=1359.5M)
+Reading routing file - /home/vlsi12/24BVD1041/pd_demo/fir/fir_4tap_postroute_final_e.enc.dat/fir_4tap.route.gz.
+Reading Innovus routing data (Created by Innovus v21.15-s110_1 on Thu Sep 10 19:32:38 2026 Format: 20.1) ...
+*** Total 156 nets are successfully restored.
+*** Completed restoreRoute (cpu=0:00:00.0 real=0:00:00.0 mem=1433.4M) ***
+% End Load routing data ... (date=09/11 10:32:47, total cpu=0:00:00.0, real=0:00:01.0, peak res=1360.1M, current mem=1360.1M)
+TAT_INFO: restoreCongMap REAL = 0 : CPU = 0 : MEM = 0.
+Reading property file /home/vlsi12/24BVD1041/pd_demo/fir/fir_4tap_postroute_final_e.enc.dat/fir_4tap.prop
+*** Completed restoreProperty (cpu=0:00:00.0 real=0:00:00.0 mem=1436.4M) ***
+Reading dirtyarea snapshot file /home/vlsi12/24BVD1041/pd_demo/fir/fir_4tap_postroute_final_e.enc.dat/fir_4tap.db.da.gz (Create by Innovus v21.15-s110_1 on Thu Sep 10 19:32:39 2026, version: 4).
+Set Default Input Pin Transition as 0.1 ps.
+Extraction setup Started 
+Initializing multi-corner RC extraction with 1 active RC Corners ...
+**WARN: (IMPEXT-2773):	The via resistance between layers M0 and M1 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+Type 'man IMPEXT-2773' for more detail.
+**WARN: (IMPEXT-2776):	The via resistance between layers M1 and M2 is not defined in the capacitance table file. The via resistance of 1.4 Ohms defined in the LEF technology file will be used as via resistance between these layers.
+Type 'man IMPEXT-2776' for more detail.
+**WARN: (IMPEXT-2776):	The via resistance between layers M2 and M3 is not defined in the capacitance table file. The via resistance of 1.4 Ohms defined in the LEF technology file will be used as via resistance between these layers.
+Type 'man IMPEXT-2776' for more detail.
+**WARN: (IMPEXT-2776):	The via resistance between layers M3 and M4 is not defined in the capacitance table file. The via resistance of 1.4 Ohms defined in the LEF technology file will be used as via resistance between these layers.
+Type 'man IMPEXT-2776' for more detail.
+**WARN: (IMPEXT-2776):	The via resistance between layers M4 and M5 is not defined in the capacitance table file. The via resistance of 1.4 Ohms defined in the LEF technology file will be used as via resistance between these layers.
+Type 'man IMPEXT-2776' for more detail.
+**WARN: (IMPEXT-2776):	The via resistance between layers M5 and M6 is not defined in the capacitance table file. The via resistance of 1.4 Ohms defined in the LEF technology file will be used as via resistance between these layers.
+Type 'man IMPEXT-2776' for more detail.
+**WARN: (IMPEXT-2776):	The via resistance between layers M6 and M7 is not defined in the capacitance table file. The via resistance of 1.4 Ohms defined in the LEF technology file will be used as via resistance between these layers.
+Type 'man IMPEXT-2776' for more detail.
+**WARN: (IMPEXT-2776):	The via resistance between layers M7 and M8 is not defined in the capacitance table file. The via resistance of 0.35 Ohms defined in the LEF technology file will be used as via resistance between these layers.
+Type 'man IMPEXT-2776' for more detail.
+**WARN: (IMPEXT-2776):	The via resistance between layers M8 and M9 is not defined in the capacitance table file. The via resistance of 0.35 Ohms defined in the LEF technology file will be used as via resistance between these layers.
+Type 'man IMPEXT-2776' for more detail.
+**WARN: (IMPEXT-2766):	The sheet resistance for layer M1 is not defined in the cap table. Therefore, the LEF value 0.08 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+**WARN: (IMPEXT-2766):	The sheet resistance for layer M2 is not defined in the cap table. Therefore, the LEF value 0.06 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+**WARN: (IMPEXT-2766):	The sheet resistance for layer M3 is not defined in the cap table. Therefore, the LEF value 0.06 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+**WARN: (IMPEXT-2766):	The sheet resistance for layer M4 is not defined in the cap table. Therefore, the LEF value 0.06 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+**WARN: (IMPEXT-2766):	The sheet resistance for layer M5 is not defined in the cap table. Therefore, the LEF value 0.06 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+**WARN: (IMPEXT-2766):	The sheet resistance for layer M6 is not defined in the cap table. Therefore, the LEF value 0.06 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+**WARN: (IMPEXT-2766):	The sheet resistance for layer M7 is not defined in the cap table. Therefore, the LEF value 0.06 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+**WARN: (IMPEXT-2766):	The sheet resistance for layer M8 is not defined in the cap table. Therefore, the LEF value 0.02 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+**WARN: (IMPEXT-2766):	The sheet resistance for layer M9 is not defined in the cap table. Therefore, the LEF value 0.02 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+Summary of Active RC-Corners : 
+ 
+ Analysis View: worst_case
+    RC-Corner Name        : default_rc_corner
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PreRoute Res Factor         : 1
+    RC-Corner PreRoute Cap Factor         : 1
+    RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+    RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+    RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+    RC-Corner PreRoute Clock Res Factor   : 1	[Derived from Cap Table]
+    RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from Cap Table]
+    RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 	[Derived from postRoute_res (effortLevel low)]
+    RC-Corner PostRoute Clock coupling capacitance Factor : 1 {1 1 1} 
+ 
+ Analysis View: best_case
+    RC-Corner Name        : default_rc_corner
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PreRoute Res Factor         : 1
+    RC-Corner PreRoute Cap Factor         : 1
+    RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+    RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+    RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+    RC-Corner PreRoute Clock Res Factor   : 1	[Derived from Cap Table]
+    RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from Cap Table]
+    RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 	[Derived from postRoute_res (effortLevel low)]
+    RC-Corner PostRoute Clock coupling capacitance Factor : 1 {1 1 1} 
+Initializing multi-corner resistance tables ...
+Start generating vias ..
+#Skip building auto via since it is not turned on.
+Extracting standard cell pins and blockage ...... 
+Pin and blockage extraction finished
+Via generation completed.
+% Begin Load power constraints ... (date=09/11 10:32:48, mem=1368.7M)
+'set_default_switching_activity' finished successfully.
+% End Load power constraints ... (date=09/11 10:32:48, total cpu=0:00:00.0, real=0:00:00.0, peak res=1375.8M, current mem=1375.8M)
+max_delay min_delay
+% Begin load AAE data ... (date=09/11 10:32:48, mem=1424.2M)
+AAE DB initialization (MEM=1525.65 CPU=0:00:00.0 REAL=0:00:00.0) 
+% End load AAE data ... (date=09/11 10:32:49, total cpu=0:00:00.5, real=0:00:01.0, peak res=1430.6M, current mem=1430.6M)
+Restoring CCOpt config...
+  Extracting original clock gating for CLK...
+    clock_tree CLK contains 36 sinks and 0 clock gates.
+  Extracting original clock gating for CLK done.
+  The skew group CLK/fir_const_3 was created. It contains 36 sinks and 1 sources.
+Restoring CCOpt config done.
+Total number of combinational cells: 317
+Total number of sequential cells: 152
+Total number of tristate cells: 10
+Total number of level shifter cells: 0
+Total number of power gating cells: 0
+Total number of isolation cells: 0
+Total number of power switch cells: 0
+Total number of pulse generator cells: 0
+Total number of always on buffers: 0
+Total number of retention cells: 0
+List of usable buffers: BUFX2 BUFX12 BUFX16 BUFX20 CLKBUFX2 BUFX3 BUFX4 BUFX6 BUFX8 CLKBUFX12 CLKBUFX16 CLKBUFX20 CLKBUFX3 CLKBUFX4 CLKBUFX6 CLKBUFX8
+Total number of usable buffers: 16
+List of unusable buffers:
+Total number of unusable buffers: 0
+List of usable inverters: CLKINVX1 CLKINVX2 CLKINVX12 CLKINVX16 CLKINVX20 CLKINVX3 CLKINVX4 CLKINVX6 CLKINVX8 INVX1 INVX2 INVX12 INVX16 INVX20 INVXL INVX3 INVX4 INVX6 INVX8
+Total number of usable inverters: 19
+List of unusable inverters:
+Total number of unusable inverters: 0
+List of identified usable delay cells: DLY1X1 DLY1X4 DLY2X1 DLY2X4 DLY3X1 DLY3X4 DLY4X1 DLY4X4
+Total number of identified usable delay cells: 8
+List of identified unusable delay cells:
+Total number of identified unusable delay cells: 0
+**WARN: (IMPCTE-107):	The following globals have been obsoleted since version . They will be removed in the next release. 
+timing_enable_separate_device_slew_effect_sensitivities
+#% End load design ... (date=09/11 10:32:49, total cpu=0:00:02.7, real=0:00:04.0, peak res=1454.7M, current mem=1436.0M)
+
+*** Summary of all messages that are not suppressed in this session:
+Severity  ID               Count  Summary                                  
+WARNING   IMPLF-200            1  Pin '%s' in macro '%s' has no ANTENNAGAT...
+WARNING   IMPLF-105            2  The layer '%s' specified in SAMENET spac...
+WARNING   IMPFP-3961           4  The techSite '%s' has no related standar...
+WARNING   IMPEXT-2766          9  The sheet resistance for layer %s is not...
+WARNING   IMPEXT-2773          1  The via resistance between layers %s and...
+WARNING   IMPEXT-2776          8  The via resistance between layers %s and...
+WARNING   IMPVL-159          958  Pin '%s' of cell '%s' is defined in LEF ...
+WARNING   IMPOPT-3602          1  The specified path group name %s is not ...
+WARNING   IMPCTE-107           1  The following globals have been obsolete...
+WARNING   IMPTCM-77            1  Option "%s" for command %s is obsolete a...
+*** Message Summary: 986 warning(s), 0 error(s)
+
+<CMD> setDrawView fplan
+<CMD> encMessage warning 1
+<CMD> encMessage debug 0
+**ERROR: (IMPSYT-6000):	No Object Selected.
+<CMD> selectWire 2.0100 11.4200 62.6600 13.2200 9 VSS
+<CMD> deselectAll
+<CMD> selectWire 8.1200 23.6000 56.5500 23.9600 1 VDD
+<CMD> deselectAll
+<CMD> selectWire 4.3100 26.9500 60.3600 28.7500 9 VDD
+<CMD> deselectAll
+
+--------------------------------------------------------------------------------
+Exiting Innovus on Fri Sep 11 10:34:36 2026
+  Total CPU time:     0:00:22
+  Total real time:    0:02:21
+  Peak memory (main): 1857.13MB
+
+
+*** Memory Usage v#1 (Current mem = 1944.957M, initial mem = 483.887M) ***
+*** Message Summary: 986 warning(s), 2 error(s)
+
+--- Ending "Innovus" (totcpu=0:00:19.5, real=0:02:20, mem=1945.0M) ---

@@ -1,0 +1,147 @@
+Cadence Genus(TM) Synthesis Solution.
+Copyright 2022 Cadence Design Systems, Inc. All rights reserved worldwide.
+Cadence and the Cadence logo are registered trademarks and Genus is a trademark
+of Cadence Design Systems, Inc. in the United States and other countries.
+
+[18:41:01.328570] Configured Lic search path (21.01-s002): 5281@14.139.1.126:1717@14.139.1.126
+
+Version: 21.14-s082_1, built Thu Jun 23 02:02:08 PDT 2022
+Options: -files scripts/run_synth.tcl 
+Date:    Tue Oct 13 18:41:01 2026
+Host:    cad312vitcc.vit.ac.in (x86_64 w/Linux 4.18.0-553.150.1.el8_10.x86_64) (16cores*64cpus*2physical cpus*INTEL(R) XEON(R) GOLD 6526Y 38400KB) (2112776972KB)
+PID:     896059
+OS:      Red Hat Enterprise Linux release 8.10 (Ootpa)
+
+Checkout succeeded: Genus_Synthesis/3FFB3787901511A9760E
+	License file: 5281@14.139.1.126
+	License Server: 5281@14.139.1.126
+
+[18:41:03.173379] Periodic Lic check successful
+[18:41:03.173386] Feature usage summary:
+[18:41:03.173387] Genus_Synthesis
+Checking out license: Genus_Synthesis
+
+
+***********************************************************************************************************
+***********************************************************************************************************
+
+
+
+Loading tool scripts...
+Finished loading tool scripts (6 seconds elapsed).
+
+#@ Processing -files option
+@genus 1> source scripts/run_synth.tcl
+#@ Begin verbose source ./scripts/run_synth.tcl
+@file(run_synth.tcl) 1: set TOP_MODULE "top"
+@file(run_synth.tcl) 4: set_db init_lib_search_path /home/install/FOUNDRY/digital/90nm/dig/lib
+  Setting attribute of root '/': 'init_lib_search_path' = /home/install/FOUNDRY/digital/90nm/dig/lib
+@file(run_synth.tcl) 5: read_libs slow.lib
+
+Threads Configured:3
+
+  Message Summary for Library slow.lib:
+  *************************************
+  Missing a function attribute in the output pin definition. [LBR-518]: 1
+  Missing library level attribute. [LBR-516]: 1
+  *************************************
+ 
+Info    : Created nominal operating condition. [LBR-412]
+        : Operating condition '_nominal_' was created for the PVT values (1.000000, 0.900000, 125.000000) in library 'slow.lib'.
+        : The nominal operating condition is represented, either by the nominal PVT values specified in the library source (via nom_process,nom_voltage and nom_temperature respectively), or by the default PVT values (1.0,1.0,1.0).
+@file(run_synth.tcl) 8: read_hdl -sv {
+    rtl/activity_monitor.v
+    rtl/adaptive_threshold.v
+    rtl/clock_divider.v
+    rtl/clock_gate.v
+    rtl/csr.v
+    rtl/idle_counter.v
+    rtl/power_fsm.v
+    rtl/power_gate_ctrl.v
+    rtl/predictor.v
+    rtl/retention_ctrl.v
+    rtl/statistics.v
+    rtl/top.v
+}
+    always @(posedge clk or negedge rst_n) begin
+         |
+Warning : Bad use of clock signal as data. [VLOGPT-415]
+        : Clock 'clk' in file 'rtl/clock_divider.v' on line 12, column 10.
+@file(run_synth.tcl) 22: elaborate $TOP_MODULE
+  Library has 324 usable logic and 128 usable sequential lib-cells.
+Info    : Elaborating Design. [ELAB-1]
+        : Elaborating top-level block 'top' from file 'rtl/top.v'.
+Warning : Unreachable statements for case item. [CDFG-472]
+        : Case item 'default' in module 'statistics' in file 'rtl/statistics.v' on line 24.
+Info    : Done Elaborating Design. [ELAB-3]
+        : Done elaborating 'top'.
+Checking for analog nets...
+Check completed for analog nets.
+Checking for source RTL...
+Check completed for source RTL.
+Running Unified Mux Engine Tricks...
+Completed Unified Mux Engine Tricks
+
+Stage: post_elab
+--------------------------------------------------------
+| Trick             | Accepts | Rejects | Runtime (ms) | 
+--------------------------------------------------------
+| ume_constant_bmux |       0 |       0 |         0.00 | 
+--------------------------------------------------------
+Starting clip mux common data inputs [v1.0] (stage: post_elab, startdef: top, recur: true)
+Completed clip mux common data inputs (accepts: 0, rejects: 0, runtime: 0.000s)
+Starting clip the non-user hierarchies [v2.0] (stage: post_elab, startdef: top, recur: true)
+Completed clip the non-user hierarchies (accepts: 0, rejects: 0, runtime: 0.000s)
+
+Stage: post_elab
+---------------------------------------------------------
+| Transform          | Accepts | Rejects | Runtime (ms) | 
+---------------------------------------------------------
+| hlo_clip_mux_input |       0 |       0 |         0.00 | 
+| hlo_clip           |       0 |       0 |         0.00 | 
+---------------------------------------------------------
+UM:   flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+UM:*                                                                   elaborate
+@file(run_synth.tcl) 25: create_clock -name pclk -period 10.0 [get_ports pclk]
+@file(run_synth.tcl) 26: set_clock_uncertainty 0.1 [get_clocks pclk]
+@file(run_synth.tcl) 27: set_input_delay 1.0 -clock pclk [all_inputs -except_ports {pclk prst_n}]
+Error   : A command argument did not match any of the acceptable command options. [TUI-64] [parse_options]
+        : The argument in question is '-except_ports'.
+        : Check the command usage and correct the input to the command.
+
+Usage: all_inputs [-clock <clock>+] [-clock_domains <clock_domain>+] [-edge_triggered] [-level_sensitive] [-no_clocks]
+
+    [-clock <clock>+]:
+        returns all input ports with input delay relative to this clock(s) 
+    [-clock_domains <clock_domain>+]:
+        returns all input ports with input delay relative to clocks in this clock domain 
+    [-edge_triggered]:
+        returns all input ports with non level sensitive input delay 
+    [-level_sensitive]:
+        returns all input ports with level sensitive input delay 
+    [-no_clocks]:
+        returns all input ports which do not have a clock definition on them 
+#@ End verbose source ./scripts/run_synth.tcl
+
+Encountered problems processing file: scripts/run_synth.tcl
+WARNING: This version of the tool is 1573 days old.
+@genus:root: 2> exit\
+exit
+Error   : A command argument is of the wrong type. [TUI-66] [exit]
+        : An integer was expected, but 'exit' was seen instead.
+        : Check the command usage and correct the input to the command.
+  exit: exits this program 
+
+Usage: exit [<integer>]
+
+    [<integer>]:
+        nos exit code 
+1
+@genus:root: 3> exit
+
+Lic Summary:
+[18:43:35.175610] Cdslmd servers: cadence-c2s
+[18:43:35.175618] Feature usage summary:
+[18:43:35.175619] Genus_Synthesis
+
+Normal exit.
